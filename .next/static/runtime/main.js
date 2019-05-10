@@ -6655,7 +6655,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      source_map_support_1.rewriteStacktrace(error, "/home/anat2906/projects/JS/devtube/.next");
+      source_map_support_1.rewriteStacktrace(error, "/home/anat2906/projects/JS/PA_individual_project/.next");
       return error;
     }
   };

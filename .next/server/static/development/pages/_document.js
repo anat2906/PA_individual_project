@@ -2258,7 +2258,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/anat2906/projects/JS/devtube/pages/_document.js";
+var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/pages/_document.js";
 
 
 

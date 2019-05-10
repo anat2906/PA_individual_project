@@ -38,14 +38,16 @@ class Sidebar extends Component {
       display: flex;
       justify-content: space-between;
       margin-bottom: 0.2em;
+      border-bottom: 1px solid ${colors.dark_1};
       a {
         font-family: "PT Mono";
+        font-size: 15px;
         font-weight: 700;
         margin-right: 0.5em;
-        text-decoration: underline !important;
       }
       span {
         font-family: "PT Mono";
+        font-size: 13px;
       }
     `;
 
@@ -55,7 +57,7 @@ class Sidebar extends Component {
           <div className="mb-4">
             <SectionTitle>
               <h5>Upcoming Events</h5>
-              <img src="https://img.icons8.com/carbon-copy/100/000000/calendar.png" />
+              <img src="static/icons/svg/calendar.svg" />
             </SectionTitle>
             <Events>
               <Event>
@@ -78,7 +80,7 @@ class Sidebar extends Component {
           <div className="mb-4">
             <SectionTitle>
               <h5>Trending Topics</h5>
-              <img src="https://img.icons8.com/carbon-copy/100/000000/news.png" />
+              <img src="static/icons/svg/tag-alt.svg" />
             </SectionTitle>
             <Hashtag>python</Hashtag>
             <Hashtag>react</Hashtag>
@@ -95,9 +97,9 @@ class Sidebar extends Component {
           <div className="mb-4">
             <SectionTitle>
               <h5>Watching Now</h5>
-              <img src="https://img.icons8.com/carbon-copy/100/000000/unchecked-circle.png" />
+              <img src="static/icons/svg/radio.svg" />
             </SectionTitle>
-              <Video />
+            <Video />
           </div>
         </StyledSidebar>
         <StyledSidebar className="mt-3">

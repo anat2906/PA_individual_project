@@ -10,8 +10,9 @@ const LoginIcon = styled.div`
     margin: 0;
   }
   img {
-    width: 35px;
-    height: 35px;
+    margin-left: 0.5em;
+    width: 25px;
+    height: 25px;
   }
 `;
 
@@ -20,11 +21,11 @@ function HeaderLogin(props) {
     <Row className="justify-content-end align-items-center">
       <LoginIcon className="mr-3">
       <p>Languages</p>
-        <img src="https://img.icons8.com/carbon-copy/100/000000/language.png " />
+        <img src="static/icons/svg/language.svg" />
       </LoginIcon>
       <LoginIcon>
         <p> Login </p>
-        <img src="https://img.icons8.com/carbon-copy/100/000000/user-female.png" />
+        <img src="static/icons/svg/user.svg" />
       </LoginIcon>
     </Row>
   );

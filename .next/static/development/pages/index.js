@@ -19,7 +19,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _config_var__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../config/var */ "./config/var.js");
 
-var _jsxFileName = "/home/anat2906/projects/JS/devtube/components/block/Block.js";
+var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/block/Block.js";
 
 
 
@@ -107,7 +107,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/anat2906/projects/JS/devtube/components/box-shadow/Shadow.js";
+var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/box-shadow/Shadow.js";
 
 
 
@@ -172,7 +172,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/anat2906/projects/JS/devtube/components/button/Button.js";
+var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/button/Button.js";
 
 
 
@@ -224,7 +224,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-var _jsxFileName = "/home/anat2906/projects/JS/devtube/components/emoji/Emoji.js";
+var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/emoji/Emoji.js";
 
 
 var Em = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].span.withConfig({
@@ -259,7 +259,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _config_var__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../config/var */ "./config/var.js");
-var _jsxFileName = "/home/anat2906/projects/JS/devtube/components/hashtag/Hashtag.js";
+var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/hashtag/Hashtag.js";
 
 
 
@@ -323,7 +323,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/anat2906/projects/JS/devtube/components/header/Header.js";
+var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/header/Header.js";
 
 
 
@@ -438,7 +438,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-bootstrap-grid */ "./node_modules/styled-bootstrap-grid/dist/index.js");
 /* harmony import */ var styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _config_var__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../config/var */ "./config/var.js");
-var _jsxFileName = "/home/anat2906/projects/JS/devtube/components/header/HeaderLogin.js";
+var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/header/HeaderLogin.js";
 
 
 
@@ -446,53 +446,53 @@ var _jsxFileName = "/home/anat2906/projects/JS/devtube/components/header/HeaderL
 var LoginIcon = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "HeaderLogin__LoginIcon",
   componentId: "eh5gpj-0"
-})(["display:flex;align-items:center;p{margin:0;}img{width:35px;height:35px;}"]);
+})(["display:flex;align-items:center;p{margin:0;}img{margin-left:0.5em;width:25px;height:25px;}"]);
 
 function HeaderLogin(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_2__["Row"], {
     className: "justify-content-end align-items-center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LoginIcon, {
     className: "mr-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 22
     },
     __self: this
-  }, "Languages"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "https://img.icons8.com/carbon-copy/100/000000/language.png ",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LoginIcon, {
+  }, "Languages"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "static/icons/svg/language.svg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 24
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LoginIcon, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
     },
     __self: this
-  }, " Login "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "https://img.icons8.com/carbon-copy/100/000000/user-female.png",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
+    },
+    __self: this
+  }, " Login "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "static/icons/svg/user.svg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
     },
     __self: this
   })));
@@ -524,7 +524,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/anat2906/projects/JS/devtube/components/header/HeaderLogo.js";
+var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/header/HeaderLogo.js";
 
 
 
@@ -590,7 +590,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/anat2906/projects/JS/devtube/components/header/HeaderNav.js";
+var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/header/HeaderNav.js";
 
 
 
@@ -762,7 +762,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/anat2906/projects/JS/devtube/components/header/HeaderSearch.js";
+var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/header/HeaderSearch.js";
 
 
 
@@ -840,7 +840,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/anat2906/projects/JS/devtube/components/main/MainSection.js";
+var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/main/MainSection.js";
 
 
 
@@ -901,7 +901,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/anat2906/projects/JS/devtube/components/main/MainSlide.js";
+var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/main/MainSlide.js";
 
 
 
@@ -969,7 +969,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/anat2906/projects/JS/devtube/components/main/MainSlider.js";
+var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/main/MainSlider.js";
 
 
 
@@ -1074,7 +1074,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/anat2906/projects/JS/devtube/components/sidebar/Sidebar.js";
+var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/sidebar/Sidebar.js";
 
 
 
@@ -1110,289 +1110,289 @@ function (_Component) {
       var Event = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].li.withConfig({
         displayName: "Sidebar__Event",
         componentId: "nkyc98-3"
-      })(["display:flex;justify-content:space-between;margin-bottom:0.2em;a{font-family:\"PT Mono\";font-weight:700;margin-right:0.5em;text-decoration:underline !important;}span{font-family:\"PT Mono\";}"]);
+      })(["display:flex;justify-content:space-between;margin-bottom:0.2em;border-bottom:1px solid ", ";a{font-family:\"PT Mono\";font-size:15px;font-weight:700;margin-right:0.5em;}span{font-family:\"PT Mono\";font-size:13px;}"], _config_var__WEBPACK_IMPORTED_MODULE_7__["colors"].dark_1);
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_5___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(StyledSidebar, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 56
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "mb-4",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 57
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(SectionTitle, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 58
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h5", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 59
         },
         __self: this
       }, "Upcoming Events"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
-        src: "https://img.icons8.com/carbon-copy/100/000000/calendar.png",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 58
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Events, {
+        src: "static/icons/svg/calendar.svg",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 60
         },
         __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Events, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62
+        },
+        __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Event, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 63
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 62
-        },
-        __self: this
-      }, "Holy JS"), " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 62
-        },
-        __self: this
-      }, "25/05/2019")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Event, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 64
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+      }, "Holy JS"), " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
-        },
-        __self: this
-      }, "Highload ++"), " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 64
         },
         __self: this
       }, "25/05/2019")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Event, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 66
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 67
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+      }, "Highload ++"), " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
-        },
-        __self: this
-      }, "PyConf 2019"), " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 67
         },
         __self: this
       }, "25/05/2019")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Event, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 69
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 70
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+      }, "PyConf 2019"), " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
-        },
-        __self: this
-      }, "Holy JS"), " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 70
         },
         __self: this
       }, "25/05/2019")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Event, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 72
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 73
         },
         __self: this
       }, "Holy JS"), " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 73
+        },
+        __self: this
+      }, "25/05/2019")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Event, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 75
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 76
+        },
+        __self: this
+      }, "Holy JS"), " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 76
         },
         __self: this
       }, "25/05/2019")))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "mb-4",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78
+          lineNumber: 80
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(SectionTitle, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 81
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h5", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 82
         },
         __self: this
       }, "Trending Topics"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
-        src: "https://img.icons8.com/carbon-copy/100/000000/news.png",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 81
-        },
-        __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        src: "static/icons/svg/tag-alt.svg",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 83
         },
         __self: this
-      }, "python"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 84
-        },
-        __self: this
-      }, "react"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 85
         },
         __self: this
-      }, "go"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      }, "python"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 86
         },
         __self: this
-      }, "python"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      }, "react"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 87
         },
         __self: this
-      }, "react"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      }, "go"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 88
         },
         __self: this
-      }, "AI"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      }, "python"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 89
         },
         __self: this
-      }, "Highload2019"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      }, "react"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 90
         },
         __self: this
-      }, "accessibility"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      }, "AI"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 91
         },
         __self: this
-      }, "react_native"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      }, "Highload2019"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 92
         },
         __self: this
-      }, "vue"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      }, "accessibility"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 93
+        },
+        __self: this
+      }, "react_native"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 94
+        },
+        __self: this
+      }, "vue"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 95
         },
         __self: this
       }, "data_science")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "mb-4",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 97
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(SectionTitle, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 98
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h5", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 99
         },
         __self: this
       }, "Watching Now"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
-        src: "https://img.icons8.com/carbon-copy/100/000000/unchecked-circle.png",
+        src: "static/icons/svg/radio.svg",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 100
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_video_Video__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 102
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(StyledSidebar, {
         className: "mt-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103
+          lineNumber: 105
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 104
+          lineNumber: 106
         },
         __self: this
       }, "About"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 105
+          lineNumber: 107
         },
         __self: this
       }, "Contacts"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "d-flex",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106
+          lineNumber: 108
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 107
+          lineNumber: 109
         },
         __self: this
       }))));
@@ -1431,7 +1431,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/anat2906/projects/JS/devtube/components/title/Title.js";
+var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/title/Title.js";
 
 
 
@@ -1495,7 +1495,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/anat2906/projects/JS/devtube/components/video/Video.js";
+var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/video/Video.js";
 
 
 var Img = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].div.withConfig({
@@ -4930,10 +4930,10 @@ function index (resultFn, isEqual) {
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2Fhome%2Fanat2906%2Fprojects%2FJS%2Fdevtube%2Fpages%2Findex.js!./":
-/*!****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2Fhome%2Fanat2906%2Fprojects%2FJS%2Fdevtube%2Fpages%2Findex.js ***!
-  \****************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2Fhome%2Fanat2906%2Fprojects%2FJS%2FPA_individual_project%2Fpages%2Findex.js!./":
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2Fhome%2Fanat2906%2Fprojects%2FJS%2FPA_individual_project%2Fpages%2Findex.js ***!
+  \******************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18624,7 +18624,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_button_Button__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/button/Button */ "./components/button/Button.js");
 /* harmony import */ var _components_emoji_Emoji__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/emoji/Emoji */ "./components/emoji/Emoji.js");
 
-var _jsxFileName = "/home/anat2906/projects/JS/devtube/pages/index.js";
+var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/pages/index.js";
 
 function _templateObject() {
   var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n      * {\n        font-family: \"Roboto\", sans-serif;\n      }\n\n      body {\n        background: white;\n        color: ", ";\n      }\n\n      a {\n        text-decoraton: none;\n        color: inherit;\n        cursor: pointer;\n      }\n      \n      .slick-next:before {\n        font-size: 30px;\n        color: ", ";\n        content: \"\u27AD\";\n        transform: translateX(-50%);\n        position: absolute;\n        line-height: 0;\n        display: none;\n      }\n      .slick-prev:before {\n        transform: translateX(-50%);\n        position: absolute;\n        line-height: 0;\n        font-size: 30px;\n        color: ", ";\n        content: \"\u27AD\";\n        transform: translateX(-50%);\n        margin-top: -50%;\n        display: none;\n      }\n      .slick-prev {\n        transform: scaleX(-1);\n      }\n      \n      @keyframes shadow {\n        0% {\n          background-position: 0% 50%;\n        }\n        50% {\n          background-position: 100% 50%;\n        }\n        100% {\n          background-position: 0% 50%;\n        }\n      }\n    "]);
@@ -18948,13 +18948,13 @@ var Index = function Index() {
 /***/ }),
 
 /***/ 0:
-/*!********************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fanat2906%2Fprojects%2FJS%2Fdevtube%2Fpages%2Findex.js ***!
-  \********************************************************************************************************************************/
+/*!**********************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fanat2906%2Fprojects%2FJS%2FPA_individual_project%2Fpages%2Findex.js ***!
+  \**********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fanat2906%2Fprojects%2FJS%2Fdevtube%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2Fhome%2Fanat2906%2Fprojects%2FJS%2Fdevtube%2Fpages%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fanat2906%2Fprojects%2FJS%2FPA_individual_project%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2Fhome%2Fanat2906%2Fprojects%2FJS%2FPA_individual_project%2Fpages%2Findex.js!./");
 
 
 /***/ }),
