@@ -4,53 +4,53 @@ import { colors } from "../../config/var";
 import VideoCard from "../videoCard/VideoCard";
 import Hashtag from "../hashtag/Hashtag";
 
+export const StyledSidebar = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em 1.5em;
+  border: 1px solid ${colors.shadow};
+  box-shadow: 1px 1px 0px ${colors.shadow};
+`;
+const Events = styled.ul`
+  list-style-type: none;
+  font-family: "PT Mono";
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+`;
+const SectionTitle = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+  img {
+    width: 27px;
+    height: 27px;
+  }
+  h5 {
+    margin-right: 0.5em;
+    margin-bottom: 0;
+  }
+`;
+const Event = styled.li`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.2em;
+  border-bottom: 1px solid ${colors.dark_1};
+  a {
+    font-family: "PT Mono";
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 0.5em;
+  }
+  span {
+    font-family: "PT Mono";
+    font-size: 13px;
+  }
+`;
+
 class Sidebar extends Component {
   render() {
-    const StyledSidebar = styled.div`
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 1em 1.5em;
-      border: 1px solid ${colors.shadow};
-      box-shadow: 1px 1px 0px ${colors.shadow};
-    `;
-    const Events = styled.ul`
-      list-style-type: none;
-      font-family: "PT Mono";
-      font-size: 18px;
-      margin: 0;
-      padding: 0;
-    `;
-    const SectionTitle = styled.div`
-      display: flex;
-      align-items: center;
-      margin-bottom: 0.5em;
-      img {
-        width: 27px;
-        height: 27px;
-      }
-      h5 {
-        margin-right: 0.5em;
-        margin-bottom: 0;
-      }
-    `;
-    const Event = styled.li`
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 0.2em;
-      border-bottom: 1px solid ${colors.dark_1};
-      a {
-        font-family: "PT Mono";
-        font-size: 15px;
-        font-weight: 700;
-        margin-right: 0.5em;
-      }
-      span {
-        font-family: "PT Mono";
-        font-size: 13px;
-      }
-    `;
-
     return (
       <>
         <StyledSidebar>

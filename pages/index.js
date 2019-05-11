@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 import { Container, Row, GridThemeProvider, Col } from "styled-bootstrap-grid";
 import { colors } from "../config/var";
 import Header from "../components/header/Header";
-import MainSection from "../components/main/MainSection";
+import Section from "../components/section/Section";
 import MainSlider from "../components/main/MainSlider";
 import Title from "../components/title/Title";
 import Shadow from "../components/box-shadow/Shadow";
@@ -88,7 +88,7 @@ const Index = () => (
         <main>
           <Container className="d-flex">
             <Col xs={2} sm={2} md={2} lg={2}>
-              <MainSection>
+              <Section>
                 <ColorBlock>
                   <ColorBlockTitle>
                     <h5>Browse by</h5>
@@ -99,10 +99,10 @@ const Index = () => (
                     <Button>Speakers</Button>
                   </ColorBlockContent>
                 </ColorBlock>
-              </MainSection>
+              </Section>
             </Col>
             <Col xs={7} sm={7} md={7} lg={7}>
-              <MainSection>
+              <Section>
                 <Container fluid="true">
                   <Shadow color={colors.accent_3}>
                     <Title>
@@ -111,8 +111,8 @@ const Index = () => (
                     <MainSlider className="mb-1" />
                   </Shadow>
                 </Container>
-              </MainSection>
-              <MainSection>
+              </Section>
+              <Section>
                 <Container fluid="true">
                   <Shadow color={colors.accent_2}>
                     <Title>
@@ -121,8 +121,8 @@ const Index = () => (
                     <MainSlider className="mb-1" />
                   </Shadow>
                 </Container>
-              </MainSection>
-              <MainSection>
+              </Section>
+              <Section>
                 <Container fluid="true">
                   <Shadow color={colors.accent_4}>
                     <Title>
@@ -131,8 +131,8 @@ const Index = () => (
                     <MainSlider className="mb-1" />
                   </Shadow>
                 </Container>
-              </MainSection>
-              <MainSection>
+              </Section>
+              <Section>
                 <Container fluid="true">
                   <Shadow color={colors.accent_1}>
                     <Title>
@@ -141,12 +141,12 @@ const Index = () => (
                     <MainSlider className="mb-1" />
                   </Shadow>
                 </Container>
-              </MainSection>
+              </Section>
             </Col>
             <Col xs={3} sm={3} md={3} lg={3}>
-              <MainSection>
+              <Section>
                 <Sidebar />
-              </MainSection>
+              </Section>
             </Col>
           </Container>
         </main>

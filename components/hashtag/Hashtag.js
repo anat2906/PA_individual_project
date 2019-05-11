@@ -1,8 +1,7 @@
-import React from "react";
 import styled from "styled-components";
 import { colors } from "../../config/var";
 
-const TagWrapper = styled.div`
+const Hashtag = styled.div`
   display: inline-block;
   background: ${colors.pale_2};
   border-radius: 15px;
@@ -11,15 +10,5 @@ const TagWrapper = styled.div`
   font-family: "PT Mono";
   margin: 0.2em;
 `;
-const Hashtag = function(props) {
-  return (
-    <TagWrapper>
-      <a>
-        <span>#</span>
-        {props.children}
-      </a>
-    </TagWrapper>
-  );
-};
 
 export default Hashtag;
