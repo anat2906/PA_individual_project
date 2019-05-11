@@ -20,6 +20,7 @@ const CBlockTitle = styled.div`
  width: 100%;
  background: ${colors.brand};
  padding: 0.3em 0.5em;
+ color: white;
 `;
 
 const CBlockContent = styled.div`

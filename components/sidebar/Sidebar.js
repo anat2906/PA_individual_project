@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import styled from "styled-components";
 import { colors } from "../../config/var";
-import Video from "../video/Video";
+import VideoCard from "../videoCard/VideoCard";
 import Hashtag from "../hashtag/Hashtag";
 
 class Sidebar extends Component {
@@ -99,7 +99,7 @@ class Sidebar extends Component {
               <h5>Watching Now</h5>
               <img src="static/icons/svg/radio.svg" />
             </SectionTitle>
-            <Video />
+            <VideoCard />
           </div>
         </StyledSidebar>
         <StyledSidebar className="mt-3">

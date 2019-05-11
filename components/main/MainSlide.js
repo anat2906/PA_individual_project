@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import Video from "../video/Video";
+import VideoCard from "../videoCard/VideoCard";
 
 class MainSlide extends Component {
   render() {
     return (
       <div>
-        <Video className="mx-auto" />
+        <VideoCard className="mx-auto" />
       </div>
     );
   }
