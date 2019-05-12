@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { Col } from "styled-bootstrap-grid";
 import STooltip from "../tooltip/Tooltip";
 import { colors, font_size } from "../../config/var";
+import { PlayIcon, LikeIcon, CommentIcon, UserIcon } from "../icons";
 
 const Video = styled.div`
   cursor: pointer;
@@ -39,7 +40,7 @@ export const FInfo = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  img {
+  svg {
     width: 15px;
     height: 15px;
   }
@@ -73,7 +74,7 @@ class VideoCard extends Component {
                 <STooltip content="Author">
                   {/* TODO: Doesn't work properly with long names */}
                   <FInfo>
-                    <img src="static/icons/svg/aperture.svg" />
+                    <UserIcon />
                     <span>JS Conf</span>
                   </FInfo>
                 </STooltip>
@@ -83,7 +84,7 @@ class VideoCard extends Component {
               <a>
                 <STooltip content="Likes">
                   <FInfo>
-                    <img src="static/icons/svg/favourite.svg" />
+                    <LikeIcon />
                     <span>200</span>
                   </FInfo>
                 </STooltip>
@@ -95,7 +96,7 @@ class VideoCard extends Component {
               <a>
                 <STooltip content="Views">
                   <FInfo>
-                    <img src="static/icons/svg/tv.svg" />
+                    <PlayIcon />
                     <span>2750</span>
                   </FInfo>
                 </STooltip>
@@ -105,7 +106,7 @@ class VideoCard extends Component {
               <a>
                 <STooltip content="Comments">
                   <FInfo>
-                    <img src="static/icons/svg/chat-alt.svg" />
+                    <CommentIcon />
                     <span>35</span>
                   </FInfo>
                 </STooltip>

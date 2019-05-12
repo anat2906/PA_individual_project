@@ -16,6 +16,14 @@ import { FInfo } from "../components/videoCard/VideoCard";
 import VideoCard from "../components/videoCard/VideoCard";
 import Hashtag from "../components/hashtag/Hashtag";
 import { CommentInput, Comment } from "../components/comment";
+import {
+  UserIcon,
+  PlayIcon,
+  LikeIcon,
+  CommentIcon,
+  RecommendationsIcon,
+  CollectionIcon
+} from "../components/icons";
 
 const Global = createGlobalStyle`
       * {
@@ -100,7 +108,7 @@ const AuthorSection = styled.div`
   align-items: center;
   border-bottom: 1px solid ${colors.shadow};
   padding-bottom: 1em;
-  img {
+  svg {
     width: 35px;
     height: 35px;
     margin-right: 0.5em;
@@ -119,7 +127,7 @@ const ViewsSection = styled.div`
 `;
 
 const VideoInfo = styled(FInfo)`
-  img {
+  svg {
     width: 20px;
     height: 20px;
   }
@@ -162,7 +170,7 @@ class VideoPage extends Component {
                     </DateSection>
                     <AuthorSection>
                       <div className="d-flex align-items-center">
-                        <img src="static/icons/svg/user.svg" />
+                        <UserIcon />
                         <h6>Username</h6>
                       </div>
                       <Button>Follow</Button>
@@ -171,7 +179,7 @@ class VideoPage extends Component {
                       <a>
                         <STooltip content="Views" className="mr-3">
                           <VideoInfo>
-                            <img src="static/icons/svg/tv.svg" />
+                            <PlayIcon />
                             <span>2750</span>
                           </VideoInfo>
                         </STooltip>
@@ -179,7 +187,7 @@ class VideoPage extends Component {
                       <a>
                         <STooltip content="Likes" className="mr-3">
                           <VideoInfo>
-                            <img src="static/icons/svg/favourite.svg" />
+                            <LikeIcon />
                             <span>200</span>
                           </VideoInfo>
                         </STooltip>
@@ -187,7 +195,7 @@ class VideoPage extends Component {
                       <a>
                         <STooltip content="Comments" className="mr-3">
                           <VideoInfo>
-                            <img src="static/icons/svg/chat-alt.svg" />
+                            <CommentIcon />
                             <span>35</span>
                           </VideoInfo>
                         </STooltip>
@@ -195,7 +203,7 @@ class VideoPage extends Component {
                       <a>
                         <STooltip content="Collections">
                           <VideoInfo>
-                            <img src="static/icons/svg/star.svg" />
+                            <CollectionIcon />
                             <span>10</span>
                           </VideoInfo>
                         </STooltip>
@@ -226,7 +234,7 @@ class VideoPage extends Component {
                     <Shadow color={colors.accent_3}>
                       <SectionTitle className="mb-3">
                         <h5>Recommended</h5>
-                        <img src="static/icons/svg/happy-face.svg" />
+                        <RecommendationsIcon />
                       </SectionTitle>
                       <VideoCard className="mb-3" />
                       <VideoCard className="mb-3" />

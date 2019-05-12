@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Row } from "styled-bootstrap-grid";
 import { colors, font_size } from "../../config/var";
+import { LanguageIcon, UserIcon } from "../icons";
 
 const LoginIcon = styled.div`
   display: flex;
@@ -11,7 +12,7 @@ const LoginIcon = styled.div`
     font-family: "Roboto", sans-serif;
     font-size: ${font_size.text};
   }
-  img {
+  svg {
     margin-left: 0.5em;
     width: 25px;
     height: 25px;
@@ -23,11 +24,11 @@ function HeaderLogin(props) {
     <Row className="justify-content-end align-items-center">
       <LoginIcon className="mr-3">
         <p>Languages</p>
-        <img src="static/icons/svg/language.svg" />
+        <LanguageIcon />
       </LoginIcon>
       <LoginIcon>
         <p> Login </p>
-        <img src="static/icons/svg/user.svg" />
+        <UserIcon />
       </LoginIcon>
     </Row>
   );

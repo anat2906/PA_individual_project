@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { colors, font_size } from "../../config/var";
 import VideoCard from "../videoCard/VideoCard";
 import Hashtag from "../hashtag/Hashtag";
+import { CalendarIcon, TagIcon, LiveIcon } from "../icons";
 
 export const StyledSidebar = styled.div`
   display: flex;
@@ -22,14 +23,14 @@ export const SectionTitle = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 0.5em;
-  img {
+  svg {
     width: 27px;
     height: 27px;
   }
   h5 {
     margin-right: 0.5em;
     margin-bottom: 0;
-    font-size: ${font_size.title_sm}
+    font-size: ${font_size.title_sm};
   }
 `;
 const Event = styled.li`
@@ -57,7 +58,7 @@ class Sidebar extends Component {
           <div className="mb-4">
             <SectionTitle>
               <h5>Upcoming Events</h5>
-              <img src="static/icons/svg/calendar.svg" />
+              <CalendarIcon />
             </SectionTitle>
             <Events>
               <Event>
@@ -80,7 +81,7 @@ class Sidebar extends Component {
           <div className="mb-4">
             <SectionTitle>
               <h5>Trending Topics</h5>
-              <img src="static/icons/svg/tag-alt.svg" />
+              <TagIcon />
             </SectionTitle>
             <Hashtag>python</Hashtag>
             <Hashtag>react</Hashtag>
@@ -97,7 +98,7 @@ class Sidebar extends Component {
           <div className="mb-4">
             <SectionTitle>
               <h5>Watching Now</h5>
-              <img src="static/icons/svg/radio.svg" />
+              <LiveIcon />
             </SectionTitle>
             <VideoCard />
           </div>
