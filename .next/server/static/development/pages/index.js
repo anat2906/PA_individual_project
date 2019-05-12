@@ -248,14 +248,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _HeaderLogo__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./HeaderLogo */ "./components/header/HeaderLogo.js");
 /* harmony import */ var _HeaderLogin__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./HeaderLogin */ "./components/header/HeaderLogin.js");
 /* harmony import */ var _HeaderSearch__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./HeaderSearch */ "./components/header/HeaderSearch.js");
-/* harmony import */ var _HeaderNav__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./HeaderNav */ "./components/header/HeaderNav.js");
 
 
 
 
 
 var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/header/Header.js";
-
 
 
 
@@ -285,14 +283,14 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Header, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 21
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_7__["Container"], {
         className: "d-flex",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 22
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_7__["Col"], {
@@ -302,13 +300,13 @@ function (_Component) {
         lg: 2,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 23
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_HeaderLogo__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 24
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_7__["Col"], {
@@ -318,13 +316,13 @@ function (_Component) {
         lg: 7,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 26
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_HeaderSearch__WEBPACK_IMPORTED_MODULE_11__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 27
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_7__["Col"], {
@@ -334,13 +332,13 @@ function (_Component) {
         lg: 3,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 29
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_HeaderLogin__WEBPACK_IMPORTED_MODULE_10__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 30
         },
         __self: this
       }))));
@@ -493,183 +491,6 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (HeaderLogo);
-
-/***/ }),
-
-/***/ "./components/header/HeaderNav.js":
-/*!****************************************!*\
-  !*** ./components/header/HeaderNav.js ***!
-  \****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _config_var__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../config/var */ "./config/var.js");
-/* harmony import */ var _HeaderSearch__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./HeaderSearch */ "./components/header/HeaderSearch.js");
-/* harmony import */ var _button_Button__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../button/Button */ "./components/button/Button.js");
-
-
-
-
-
-
-var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/header/HeaderNav.js";
-
-
-
-
-
-var Nav = styled_components__WEBPACK_IMPORTED_MODULE_7___default.a.ul.withConfig({
-  displayName: "HeaderNav__Nav",
-  componentId: "sc-3tpedg-0"
-})(["list-style-type:none;width:100%;height:100%;display:flex;align-items:center;justify-content:flex-start;margin:0;padding:0;"]);
-var NavLink = styled_components__WEBPACK_IMPORTED_MODULE_7___default.a.li.withConfig({
-  displayName: "HeaderNav__NavLink",
-  componentId: "sc-3tpedg-1"
-})(["margin:0 0.5em;padding:0 0.5em;text-transform:uppercase;a{font-weight:700;}&:hover{background:", ";color:white;box-shadow:3px 2px 0px 1px rgba(0,0,0,0.75);}"], _config_var__WEBPACK_IMPORTED_MODULE_8__["colors"].brand);
-var CloseIcon = styled_components__WEBPACK_IMPORTED_MODULE_7___default.a.a.withConfig({
-  displayName: "HeaderNav__CloseIcon",
-  componentId: "sc-3tpedg-2"
-})(["margin-left:1em;img{width:27px;height:27px;}"]);
-
-var HeaderNav =
-/*#__PURE__*/
-function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(HeaderNav, _Component);
-
-  function HeaderNav(props) {
-    var _this;
-
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, HeaderNav);
-
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(HeaderNav).call(this, props));
-    _this.toggleSearchBox = _this.toggleSearchBox.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this));
-    _this.state = {
-      displaySearchBox: false
-    };
-    return _this;
-  }
-
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(HeaderNav, [{
-    key: "toggleSearchBox",
-    value: function toggleSearchBox() {
-      this.setState({
-        displaySearchBox: !this.state.displaySearchBox
-      });
-      console.log(this.state);
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var displaySearchBox = this.state.displaySearchBox;
-      return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "d-flex",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 56
-        },
-        __self: this
-      }, displaySearchBox ? react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_HeaderSearch__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 59
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(CloseIcon, {
-        onClick: this.toggleSearchBox,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 60
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
-        src: "https://img.icons8.com/carbon-copy/100/000000/delete-sign.png",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 61
-        },
-        __self: this
-      }))) : react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Nav, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 66
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(NavLink, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 67
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 68
-        },
-        __self: this
-      }, "Events")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(NavLink, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 70
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 71
-        },
-        __self: this
-      }, "Speakers")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(NavLink, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 73
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 74
-        },
-        __self: this
-      }, "Events")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_button_Button__WEBPACK_IMPORTED_MODULE_10__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 76
-        },
-        __self: this
-      }, "Speakers")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(SearchIcon, {
-        onClick: this.toggleSearchBox,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 78
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
-        src: "https://img.icons8.com/carbon-copy/100/000000/search.png",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 79
-        },
-        __self: this
-      }))));
-    }
-  }]);
-
-  return HeaderNav;
-}(react__WEBPACK_IMPORTED_MODULE_6__["Component"]);
-
-/* harmony default export */ __webpack_exports__["default"] = (HeaderNav);
 
 /***/ }),
 

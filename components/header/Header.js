@@ -5,7 +5,6 @@ import { colors } from "../../config/var";
 import HeaderLogo from "./HeaderLogo";
 import HeaderLogin from "./HeaderLogin";
 import HeaderSearch from "./HeaderSearch";
-import HeaderNav from "./HeaderNav";
 
 class Header extends Component {
   render() {
