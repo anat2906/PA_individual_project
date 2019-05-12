@@ -1,13 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import { Row } from "styled-bootstrap-grid";
-import { colors } from "../../config/var";
+import { colors, font_size } from "../../config/var";
 
 const LoginIcon = styled.div`
   display: flex;
   align-items: center;
   p {
     margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: ${font_size.text};
   }
   img {
     margin-left: 0.5em;
@@ -20,7 +22,7 @@ function HeaderLogin(props) {
   return (
     <Row className="justify-content-end align-items-center">
       <LoginIcon className="mr-3">
-      <p>Languages</p>
+        <p>Languages</p>
         <img src="static/icons/svg/language.svg" />
       </LoginIcon>
       <LoginIcon>

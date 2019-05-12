@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { colors } from "../../config/var";
+import { colors, font_size } from "../../config/var";
 
 const SearchIcon = styled.a`
   img {
@@ -25,6 +25,7 @@ const Input = styled.input`
   border: none;
   font-family: "PT Mono";
   padding: 0.2em 0.3em;
+  font-size: ${font_size.text};
   &:focus {
     outline: none;
   }
@@ -35,9 +36,6 @@ class HeaderSearch extends Component {
     return (
       <SearchBox>
         <Input type="text" placeholder="search" />
-        {/* <SearchIcon> */}
-          {/* <img src="https://img.icons8.com/carbon-copy/100/000000/search.png" /> */}
-        {/* </SearchIcon> */}
       </SearchBox>
     );
   }

@@ -1,5 +1,5 @@
 import Tooltip from "react-simple-tooltip";
-import { colors } from "../../config/var";
+import { colors, font_size } from "../../config/var";
 
 function STooltip(props) {
   return (
@@ -9,7 +9,7 @@ function STooltip(props) {
       padding={3}
       color={colors.dark_1}
       placement="top"
-      fontSize="13px"
+      fontSize={font_size.text_sm}
       fontFamily="Roboto"
     >
       {props.children}

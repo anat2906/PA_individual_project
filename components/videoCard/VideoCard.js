@@ -3,7 +3,7 @@ import Link from "next/link";
 import styled from "styled-components";
 import { Col } from "styled-bootstrap-grid";
 import STooltip from "../tooltip/Tooltip";
-import { colors } from "../../config/var";
+import { colors, font_size } from "../../config/var";
 
 const Video = styled.div`
   cursor: pointer;
@@ -24,7 +24,7 @@ const Footer = styled.div`
 
 const FTitle = styled.div`
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: ${font_size.text_sm};
   position: absolute;
   padding: 0.3em;
   top: 0;
@@ -46,7 +46,7 @@ export const FInfo = styled.div`
   span {
     font-family: "PT Mono";
     margin-left: 0.5em;
-    font-size: 14px;
+    font-size: ${font_size.text_sm};
   }
 `;
 class VideoCard extends Component {

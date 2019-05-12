@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { colors } from "../../config/var";
+import { colors, font_size } from "../../config/var";
 
 const Button = styled.button`
   font-family: "Roboto";
-  font-size: 15px;
+  font-size: ${font_size.text};
   font-weight: 600;
   text-transform: uppercase;
   color: ${colors.dark_1};

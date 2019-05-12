@@ -136,8 +136,122 @@ __webpack_require__.r(__webpack_exports__);
 var Button = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.button.withConfig({
   displayName: "Button",
   componentId: "sc-136r50i-0"
-})(["font-family:\"Roboto\";font-size:15px;font-weight:600;text-transform:uppercase;color:", ";padding:0.1em 0.8em;background:white;border:none;border:3px solid ", ";border-radius:3px;position:relative;box-shadow:3px 3px 0px ", ";&::after{display:none;content:\" \";z-index:-1;position:absolute;width:100%;height:100%;border-radius:3px;background:repeating-linear-gradient( 45deg,", ",", " 4px,white 4px,white 8px );background-size:500%;bottom:-7px;right:-7px;animation:shadow linear 25s;animation-iteration-count:infinite;}&:focus{outline:none;}&:hover{box-shadow:none;::after{display:block;}}"], _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1);
+})(["font-family:\"Roboto\";font-size:", ";font-weight:600;text-transform:uppercase;color:", ";padding:0.1em 0.8em;background:white;border:none;border:3px solid ", ";border-radius:3px;position:relative;box-shadow:3px 3px 0px ", ";&::after{display:none;content:\" \";z-index:-1;position:absolute;width:100%;height:100%;border-radius:3px;background:repeating-linear-gradient( 45deg,", ",", " 4px,white 4px,white 8px );background-size:500%;bottom:-7px;right:-7px;animation:shadow linear 25s;animation-iteration-count:infinite;}&:focus{outline:none;}&:hover{box-shadow:none;::after{display:block;}}"], _config_var__WEBPACK_IMPORTED_MODULE_1__["font_size"].text, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1);
 /* harmony default export */ __webpack_exports__["default"] = (Button);
+
+/***/ }),
+
+/***/ "./components/comment/Comment.js":
+/*!***************************************!*\
+  !*** ./components/comment/Comment.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _config_var__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../config/var */ "./config/var.js");
+
+
+
+
+
+var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/comment/Comment.js";
+
+
+
+var SComment = styled_components__WEBPACK_IMPORTED_MODULE_6___default.a.div.withConfig({
+  displayName: "Comment__SComment",
+  componentId: "jha5jg-0"
+})(["font-family:\"Roboto\",sans-serif;display:flex;p,h6{font-size:", " !important;margin:0;padding:0;}span{font-size:", ";color:", ";margin:0;margin-right:0.5em;padding:0;}a{font-size:", ";}img{width:30px;height:30px;margin-right:0.5em;}"], _config_var__WEBPACK_IMPORTED_MODULE_7__["font_size"].text, _config_var__WEBPACK_IMPORTED_MODULE_7__["font_size"].text_sm, _config_var__WEBPACK_IMPORTED_MODULE_7__["colors"].dark_3, _config_var__WEBPACK_IMPORTED_MODULE_7__["font_size"].text_sm);
+
+var Comment =
+/*#__PURE__*/
+function (_Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Comment, _Component);
+
+  function Comment() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Comment);
+
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Comment).apply(this, arguments));
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Comment, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(SComment, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
+        src: "static/icons/svg/user.svg",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h6", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41
+        },
+        __self: this
+      }, "First name Last name"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
+        },
+        __self: this
+      }, "Some comment bla bla bla bla bla bla"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "d-flex",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
+        },
+        __self: this
+      }, "5 minutes ago"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45
+        },
+        __self: this
+      }, "Reply"))));
+    }
+  }]);
+
+  return Comment;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Comment);
 
 /***/ }),
 
@@ -167,11 +281,11 @@ var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/
 var Input = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.textarea.withConfig({
   displayName: "CommentInput__Input",
   componentId: "sc-6nwsek-0"
-})(["font-family:\"PT Mono\";font-size:13px;border:1px solid ", ";border-radius:3px;padding:0.3em;width:100%;display:block;color:", ";margin-bottom:0.5em;&:focus{outline:none !important;}"], _config_var__WEBPACK_IMPORTED_MODULE_2__["colors"].dark_2, _config_var__WEBPACK_IMPORTED_MODULE_2__["colors"].dark_3);
+})(["font-family:\"PT Mono\";font-size:", ";border:1px solid ", ";border-radius:3px;padding:0.3em;width:100%;display:block;color:", ";margin-bottom:0.5em;&:focus{outline:none !important;}"], _config_var__WEBPACK_IMPORTED_MODULE_2__["font_size"].text_sm, _config_var__WEBPACK_IMPORTED_MODULE_2__["colors"].dark_2, _config_var__WEBPACK_IMPORTED_MODULE_2__["colors"].dark_3);
 var Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "CommentInput__Wrapper",
   componentId: "sc-6nwsek-1"
-})(["background:", ";padding:1em;margin-top:1em;border-radius:3px;width:50%;a{font-family:\"Roboto\",sans-serif;font-size:13px;&:hover{font-weight:700;}}"], _config_var__WEBPACK_IMPORTED_MODULE_2__["colors"].light_2);
+})(["background:", ";padding:1em;margin-top:1em;border-radius:3px;width:50%;a{font-family:\"Roboto\",sans-serif;font-size:", ";&:hover{font-weight:700;}}"], _config_var__WEBPACK_IMPORTED_MODULE_2__["colors"].light_2, _config_var__WEBPACK_IMPORTED_MODULE_2__["font_size"].text_sm);
 
 function CommentInput(props) {
   return (// <Col xs={8} sm={8} md={8} lg={8}>
@@ -197,7 +311,7 @@ function CommentInput(props) {
       },
       __self: this
     }, "Submit ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_emoji_Emoji__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      size: "13px",
+      size: _config_var__WEBPACK_IMPORTED_MODULE_2__["font_size"].text_sm,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 43
@@ -216,13 +330,17 @@ function CommentInput(props) {
 /*!*************************************!*\
   !*** ./components/comment/index.js ***!
   \*************************************/
-/*! exports provided: CommentInput */
+/*! exports provided: CommentInput, Comment */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _CommentInput__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CommentInput */ "./components/comment/CommentInput.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CommentInput", function() { return _CommentInput__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+/* harmony import */ var _Comment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Comment */ "./components/comment/Comment.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Comment", function() { return _Comment__WEBPACK_IMPORTED_MODULE_1__["default"]; });
+
 
 
 
@@ -268,7 +386,7 @@ __webpack_require__.r(__webpack_exports__);
 var Hashtag = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "Hashtag",
   componentId: "sc-1kitrpj-0"
-})(["display:inline-block;background:", ";border-radius:15px;font-size:13px;padding:0.2em 0.7em;font-family:\"PT Mono\";margin:0.2em;"], _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].pale_2);
+})(["display:inline-block;background:", ";border-radius:15px;font-size:", ";padding:0.2em 0.7em;font-family:\"PT Mono\";margin:0.2em;"], _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].pale_2, _config_var__WEBPACK_IMPORTED_MODULE_1__["font_size"].text_sm);
 /* harmony default export */ __webpack_exports__["default"] = (Hashtag);
 
 /***/ }),
@@ -425,53 +543,53 @@ var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/
 var LoginIcon = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "HeaderLogin__LoginIcon",
   componentId: "eh5gpj-0"
-})(["display:flex;align-items:center;p{margin:0;}img{margin-left:0.5em;width:25px;height:25px;}"]);
+})(["display:flex;align-items:center;p{margin:0;font-family:\"Roboto\",sans-serif;font-size:", ";}img{margin-left:0.5em;width:25px;height:25px;}"], _config_var__WEBPACK_IMPORTED_MODULE_3__["font_size"].text);
 
 function HeaderLogin(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_2__["Row"], {
     className: "justify-content-end align-items-center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 23
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LoginIcon, {
     className: "mr-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 24
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 25
     },
     __self: this
   }, "Languages"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "static/icons/svg/language.svg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 26
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LoginIcon, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 28
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 29
     },
     __self: this
   }, " Login "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "static/icons/svg/user.svg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 30
     },
     __self: this
   })));
@@ -582,7 +700,7 @@ var SearchBox = styled_components__WEBPACK_IMPORTED_MODULE_6___default.a.div.wit
 var Input = styled_components__WEBPACK_IMPORTED_MODULE_6___default.a.input.withConfig({
   displayName: "HeaderSearch__Input",
   componentId: "sc-1ozgnbo-2"
-})(["background:none;width:95%;border:none;font-family:\"PT Mono\";padding:0.2em 0.3em;&:focus{outline:none;}"]);
+})(["background:none;width:95%;border:none;font-family:\"PT Mono\";padding:0.2em 0.3em;font-size:", ";&:focus{outline:none;}"], _config_var__WEBPACK_IMPORTED_MODULE_7__["font_size"].text);
 
 var HeaderSearch =
 /*#__PURE__*/
@@ -601,7 +719,7 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(SearchBox, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 37
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Input, {
@@ -609,7 +727,7 @@ function (_Component) {
         placeholder: "search",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 38
         },
         __self: this
       }));
@@ -851,15 +969,15 @@ var StyledSidebar = styled_components__WEBPACK_IMPORTED_MODULE_6___default.a.div
 var Events = styled_components__WEBPACK_IMPORTED_MODULE_6___default.a.ul.withConfig({
   displayName: "Sidebar__Events",
   componentId: "nkyc98-1"
-})(["list-style-type:none;font-family:\"PT Mono\";font-size:18px;margin:0;padding:0;"]);
+})(["list-style-type:none;font-family:\"PT Mono\";margin:0;padding:0;"]);
 var SectionTitle = styled_components__WEBPACK_IMPORTED_MODULE_6___default.a.div.withConfig({
   displayName: "Sidebar__SectionTitle",
   componentId: "nkyc98-2"
-})(["display:flex;align-items:center;margin-bottom:0.5em;img{width:27px;height:27px;}h5{margin-right:0.5em;margin-bottom:0;}"]);
+})(["display:flex;align-items:center;margin-bottom:0.5em;img{width:27px;height:27px;}h5{margin-right:0.5em;margin-bottom:0;font-size:", "}"], _config_var__WEBPACK_IMPORTED_MODULE_7__["font_size"].title_sm);
 var Event = styled_components__WEBPACK_IMPORTED_MODULE_6___default.a.li.withConfig({
   displayName: "Sidebar__Event",
   componentId: "nkyc98-3"
-})(["display:flex;justify-content:space-between;margin-bottom:0.2em;border-bottom:1px solid ", ";a{font-family:\"PT Mono\";font-size:15px;font-weight:700;margin-right:0.5em;}span{font-family:\"PT Mono\";font-size:13px;}"], _config_var__WEBPACK_IMPORTED_MODULE_7__["colors"].dark_1);
+})(["display:flex;justify-content:space-between;margin-bottom:0.2em;border-bottom:1px solid ", ";a{font-family:\"PT Mono\";font-size:", ";font-weight:700;margin-right:0.5em;}span{font-family:\"PT Mono\";font-size:", ";}"], _config_var__WEBPACK_IMPORTED_MODULE_7__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_7__["font_size"].text, _config_var__WEBPACK_IMPORTED_MODULE_7__["font_size"].text_sm);
 
 var Sidebar =
 /*#__PURE__*/
@@ -1187,7 +1305,7 @@ __webpack_require__.r(__webpack_exports__);
 var Title = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.h2.withConfig({
   displayName: "Title",
   componentId: "sc-4dtb22-0"
-})(["font-family:\"Roboto\",sans-serif;font-size:25px;font-weight:700;color:", ";"], _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1);
+})(["font-family:\"Roboto\",sans-serif;font-size:", ";font-weight:700;color:", ";"], _config_var__WEBPACK_IMPORTED_MODULE_1__["font_size"].title, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1);
 /* harmony default export */ __webpack_exports__["default"] = (Title);
 
 /***/ }),
@@ -1219,7 +1337,7 @@ function STooltip(props) {
     padding: 3,
     color: _config_var__WEBPACK_IMPORTED_MODULE_3__["colors"].dark_1,
     placement: "top",
-    fontSize: "13px",
+    fontSize: _config_var__WEBPACK_IMPORTED_MODULE_3__["font_size"].text_sm,
     fontFamily: "Roboto",
     __source: {
       fileName: _jsxFileName,
@@ -1283,11 +1401,11 @@ var Footer = styled_components__WEBPACK_IMPORTED_MODULE_8___default.a.div.withCo
 var FTitle = styled_components__WEBPACK_IMPORTED_MODULE_8___default.a.div.withConfig({
   displayName: "VideoCard__FTitle",
   componentId: "lk15sg-2"
-})(["font-family:\"Roboto\",sans-serif;font-size:14px;position:absolute;padding:0.3em;top:0;left:0;span{line-height:0px;font-weight:700;background:white;}"]);
+})(["font-family:\"Roboto\",sans-serif;font-size:", ";position:absolute;padding:0.3em;top:0;left:0;span{line-height:0px;font-weight:700;background:white;}"], _config_var__WEBPACK_IMPORTED_MODULE_11__["font_size"].text_sm);
 var FInfo = styled_components__WEBPACK_IMPORTED_MODULE_8___default.a.div.withConfig({
   displayName: "VideoCard__FInfo",
   componentId: "lk15sg-3"
-})(["display:flex;align-items:center;flex-wrap:wrap;img{width:15px;height:15px;}span{font-family:\"PT Mono\";margin-left:0.5em;font-size:14px;}"]);
+})(["display:flex;align-items:center;flex-wrap:wrap;img{width:15px;height:15px;}span{font-family:\"PT Mono\";margin-left:0.5em;font-size:", ";}"], _config_var__WEBPACK_IMPORTED_MODULE_11__["font_size"].text_sm);
 
 var VideoCard =
 /*#__PURE__*/
@@ -1546,12 +1664,13 @@ function (_Component) {
 /*!***********************!*\
   !*** ./config/var.js ***!
   \***********************/
-/*! exports provided: colors */
+/*! exports provided: colors, font_size */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "colors", function() { return colors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "font_size", function() { return font_size; });
 /* harmony import */ var polished__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! polished */ "polished");
 /* harmony import */ var polished__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(polished__WEBPACK_IMPORTED_MODULE_0__);
 
@@ -1572,6 +1691,12 @@ var colors = {
   pale_3: "#c2e5e1",
   pale_4: "#d3f4fb",
   shadow: Object(polished__WEBPACK_IMPORTED_MODULE_0__["lighten"])(0.2, "#999999")
+};
+var font_size = {
+  title: "25px",
+  title_sm: "18px",
+  text: "15px",
+  text_sm: "13px"
 };
 
 /***/ }),
@@ -2517,11 +2642,11 @@ var gridTheme = {
 var DateSection = styled_components__WEBPACK_IMPORTED_MODULE_7___default.a.div.withConfig({
   displayName: "video__DateSection",
   componentId: "cv7kgv-0"
-})(["display:flex;align-items:end;p{font-family:\"PT Mono\";font-size:15px;font-weight:700;margin-right:0.5em;}span{color:", ";font-family:\"PT Mono\";font-size:13px;}"], _config_var__WEBPACK_IMPORTED_MODULE_9__["colors"].dark_2);
+})(["display:flex;align-items:end;p{font-family:\"PT Mono\";font-size:", ";font-weight:700;margin-right:0.5em;}span{color:", ";font-family:\"PT Mono\";font-size:", ";}"], _config_var__WEBPACK_IMPORTED_MODULE_9__["font_size"].text, _config_var__WEBPACK_IMPORTED_MODULE_9__["colors"].dark_2, _config_var__WEBPACK_IMPORTED_MODULE_9__["font_size"].text_sm);
 var AuthorSection = styled_components__WEBPACK_IMPORTED_MODULE_7___default.a.div.withConfig({
   displayName: "video__AuthorSection",
   componentId: "cv7kgv-1"
-})(["display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid ", ";padding-bottom:1em;img{width:35px;height:35px;margin-right:0.5em;}h6{margin:0;font-family:\"Roboto\",sans-serif;font-size:16px;}"], _config_var__WEBPACK_IMPORTED_MODULE_9__["colors"].shadow);
+})(["display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid ", ";padding-bottom:1em;img{width:35px;height:35px;margin-right:0.5em;}h6{margin:0;font-family:\"Roboto\",sans-serif;font-size:", ";}"], _config_var__WEBPACK_IMPORTED_MODULE_9__["colors"].shadow, _config_var__WEBPACK_IMPORTED_MODULE_9__["font_size"].text);
 var ViewsSection = styled_components__WEBPACK_IMPORTED_MODULE_7___default.a.div.withConfig({
   displayName: "video__ViewsSection",
   componentId: "cv7kgv-2"
@@ -2533,7 +2658,11 @@ var VideoInfo = styled_components__WEBPACK_IMPORTED_MODULE_7___default()(_compon
 var Description = styled_components__WEBPACK_IMPORTED_MODULE_7___default.a.div.withConfig({
   displayName: "video__Description",
   componentId: "cv7kgv-4"
-})(["border-bottom:1px solid ", ";padding-bottom:1em;p{display:block;font-size:16px;margin-bottom:0.5em;}"], _config_var__WEBPACK_IMPORTED_MODULE_9__["colors"].shadow);
+})(["border-bottom:1px solid ", ";padding-bottom:1em;p{display:block;font-size:", ";margin-bottom:0.5em;}"], _config_var__WEBPACK_IMPORTED_MODULE_9__["colors"].shadow, _config_var__WEBPACK_IMPORTED_MODULE_9__["font_size"].text);
+var CommentSection = styled_components__WEBPACK_IMPORTED_MODULE_7___default.a.div.withConfig({
+  displayName: "video__CommentSection",
+  componentId: "cv7kgv-5"
+})(["padding-top:1.5em;"]);
 
 var VideoPage =
 /*#__PURE__*/
@@ -2552,33 +2681,33 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Global, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 145
+          lineNumber: 149
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_8__["GridThemeProvider"], {
         gridTheme: gridTheme,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 146
+          lineNumber: 150
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_header_Header__WEBPACK_IMPORTED_MODULE_10__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 148
+          lineNumber: 152
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("main", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 149
+          lineNumber: 153
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_8__["Container"], {
         className: "d-flex",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 150
+          lineNumber: 154
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_8__["Col"], {
@@ -2588,88 +2717,88 @@ function (_Component) {
         lg: 9,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 151
+          lineNumber: 155
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_section_Section__WEBPACK_IMPORTED_MODULE_11__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 152
+          lineNumber: 156
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_player_Player__WEBPACK_IMPORTED_MODULE_13__["default"], {
         className: "mb-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 153
+          lineNumber: 157
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_title_Title__WEBPACK_IMPORTED_MODULE_14__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 154
+          lineNumber: 158
         },
         __self: this
       }, "Video Title"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(DateSection, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 155
+          lineNumber: 159
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 156
+          lineNumber: 160
         },
         __self: this
       }, "Published at"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 157
+          lineNumber: 161
         },
         __self: this
       }, "25/09/2019")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(AuthorSection, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 159
+          lineNumber: 163
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: "d-flex align-items-center",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 160
+          lineNumber: 164
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
         src: "static/icons/svg/user.svg",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 161
+          lineNumber: 165
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h6", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 162
+          lineNumber: 166
         },
         __self: this
       }, "Username")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_button_Button__WEBPACK_IMPORTED_MODULE_15__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 164
+          lineNumber: 168
         },
         __self: this
       }, "Follow")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(ViewsSection, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 166
+          lineNumber: 170
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 167
+          lineNumber: 171
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_tooltip_Tooltip__WEBPACK_IMPORTED_MODULE_17__["default"], {
@@ -2677,32 +2806,32 @@ function (_Component) {
         className: "mr-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 168
+          lineNumber: 172
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(VideoInfo, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 169
+          lineNumber: 173
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
         src: "static/icons/svg/tv.svg",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 170
+          lineNumber: 174
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 171
+          lineNumber: 175
         },
         __self: this
       }, "2750")))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 175
+          lineNumber: 179
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_tooltip_Tooltip__WEBPACK_IMPORTED_MODULE_17__["default"], {
@@ -2710,32 +2839,32 @@ function (_Component) {
         className: "mr-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 176
+          lineNumber: 180
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(VideoInfo, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 177
+          lineNumber: 181
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
         src: "static/icons/svg/favourite.svg",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 178
+          lineNumber: 182
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 179
+          lineNumber: 183
         },
         __self: this
       }, "200")))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 183
+          lineNumber: 187
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_tooltip_Tooltip__WEBPACK_IMPORTED_MODULE_17__["default"], {
@@ -2743,198 +2872,210 @@ function (_Component) {
         className: "mr-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 184
+          lineNumber: 188
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(VideoInfo, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 185
+          lineNumber: 189
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
         src: "static/icons/svg/chat-alt.svg",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 186
+          lineNumber: 190
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 187
+          lineNumber: 191
         },
         __self: this
       }, "35")))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 191
+          lineNumber: 195
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_tooltip_Tooltip__WEBPACK_IMPORTED_MODULE_17__["default"], {
         content: "Collections",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 192
+          lineNumber: 196
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(VideoInfo, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 193
+          lineNumber: 197
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
         src: "static/icons/svg/star.svg",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 194
+          lineNumber: 198
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 195
+          lineNumber: 199
         },
         __self: this
       }, "10"))))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(Description, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 200
+          lineNumber: 204
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 201
+          lineNumber: 205
         },
         __self: this
       }, "Some video description In some cases you might want to change which tag or component a styled component renders. This is common when building a navigation bar for example, where there are a mix of anchor links and buttons but they should be styled identically."), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_19__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 208
+          lineNumber: 212
         },
         __self: this
       }, "#development"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_19__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 209
+          lineNumber: 213
         },
         __self: this
       }, "#node_js"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_19__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 210
+          lineNumber: 214
         },
         __self: this
       }, "#js"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_19__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 211
+          lineNumber: 215
         },
         __self: this
       }, "#ryan_dahl"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_hashtag_Hashtag__WEBPACK_IMPORTED_MODULE_19__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 212
+          lineNumber: 216
         },
         __self: this
       }, "#js_conf_eu")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_comment__WEBPACK_IMPORTED_MODULE_20__["CommentInput"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 214
+          lineNumber: 218
         },
         __self: this
-      }))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_8__["Col"], {
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(CommentSection, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 219
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_comment__WEBPACK_IMPORTED_MODULE_20__["Comment"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 220
+        },
+        __self: this
+      })))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_8__["Col"], {
         xs: 3,
         sm: 3,
         md: 3,
         lg: 3,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 217
+          lineNumber: 224
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_section_Section__WEBPACK_IMPORTED_MODULE_11__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 218
+          lineNumber: 225
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_box_shadow_Shadow__WEBPACK_IMPORTED_MODULE_16__["default"], {
         color: _config_var__WEBPACK_IMPORTED_MODULE_9__["colors"].accent_3,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 219
+          lineNumber: 226
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_sidebar_Sidebar__WEBPACK_IMPORTED_MODULE_12__["SectionTitle"], {
         className: "mb-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 220
+          lineNumber: 227
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h5", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 221
+          lineNumber: 228
         },
         __self: this
       }, "Recommended"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
         src: "static/icons/svg/happy-face.svg",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 222
+          lineNumber: 229
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_videoCard_VideoCard__WEBPACK_IMPORTED_MODULE_18__["default"], {
         className: "mb-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 224
+          lineNumber: 231
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_videoCard_VideoCard__WEBPACK_IMPORTED_MODULE_18__["default"], {
         className: "mb-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 225
+          lineNumber: 232
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_videoCard_VideoCard__WEBPACK_IMPORTED_MODULE_18__["default"], {
         className: "mb-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 226
+          lineNumber: 233
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_videoCard_VideoCard__WEBPACK_IMPORTED_MODULE_18__["default"], {
         className: "mb-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 227
+          lineNumber: 234
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_videoCard_VideoCard__WEBPACK_IMPORTED_MODULE_18__["default"], {
         className: "mb-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 228
+          lineNumber: 235
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_videoCard_VideoCard__WEBPACK_IMPORTED_MODULE_18__["default"], {
         className: "mb-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 229
+          lineNumber: 236
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_videoCard_VideoCard__WEBPACK_IMPORTED_MODULE_18__["default"], {
         className: "mb-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 230
+          lineNumber: 237
         },
         __self: this
       })))))))));

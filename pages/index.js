@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { Container, Row, Col } from "styled-bootstrap-grid";
 import { createGlobalStyle } from "styled-components";
 import { GridThemeProvider } from "styled-bootstrap-grid";
-import { colors } from "../config/var";
+import { colors, font_size } from "../config/var";
 import Header from "../components/header/Header";
 import Section from "../components/section/Section";
 import MainSlider from "../components/main/MainSlider";
@@ -105,7 +105,7 @@ const Index = () => (
                 <Container fluid="true">
                   <Shadow color={colors.accent_3}>
                     <Title>
-                      Newest <Emoji size="13px">🌈</Emoji>
+                      Newest <Emoji size={font_size.text}>🌈</Emoji>
                     </Title>
                     <MainSlider className="mb-1" />
                   </Shadow>
@@ -115,7 +115,7 @@ const Index = () => (
                 <Container fluid="true">
                   <Shadow color={colors.accent_2}>
                     <Title>
-                      Top Rated <Emoji size="13px">🚀🚀🚀</Emoji>
+                      Top Rated <Emoji size={font_size.text}>🚀🚀🚀</Emoji>
                     </Title>
                     <MainSlider className="mb-1" />
                   </Shadow>
@@ -125,7 +125,7 @@ const Index = () => (
                 <Container fluid="true">
                   <Shadow color={colors.accent_4}>
                     <Title>
-                      Popular on this week <Emoji size="13px">🔥🔥🔥</Emoji>
+                      Popular on this week <Emoji size={font_size.text}>🔥🔥🔥</Emoji>
                     </Title>
                     <MainSlider className="mb-1" />
                   </Shadow>
@@ -135,7 +135,7 @@ const Index = () => (
                 <Container fluid="true">
                   <Shadow color={colors.accent_1}>
                     <Title>
-                      Live Streams <Emoji size="13px">🎥✨</Emoji>
+                      Live Streams <Emoji size={font_size.text}>🎥✨</Emoji>
                     </Title>
                     <MainSlider className="mb-1" />
                   </Shadow>

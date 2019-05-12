@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 import { GridThemeProvider } from "styled-bootstrap-grid";
 import { Container, Col } from "styled-bootstrap-grid";
-import { colors } from "../config/var";
+import { colors, font_size } from "../config/var";
 import Header from "../components/header/Header";
 import Section from "../components/section/Section";
 import { StyledSidebar, SectionTitle } from "../components/sidebar/Sidebar";
@@ -15,7 +15,7 @@ import STooltip from "../components/tooltip/Tooltip";
 import { FInfo } from "../components/videoCard/VideoCard";
 import VideoCard from "../components/videoCard/VideoCard";
 import Hashtag from "../components/hashtag/Hashtag";
-import { CommentInput } from "../components/comment";
+import { CommentInput, Comment } from "../components/comment";
 
 const Global = createGlobalStyle`
       * {
@@ -83,14 +83,14 @@ const DateSection = styled.div`
   align-items: end;
   p {
     font-family: "PT Mono";
-    font-size: 15px;
+    font-size: ${font_size.text};
     font-weight: 700;
     margin-right: 0.5em;
   }
   span {
     color: ${colors.dark_2};
     font-family: "PT Mono";
-    font-size: 13px;
+    font-size: ${font_size.text_sm};
   }
 `;
 
@@ -108,7 +108,7 @@ const AuthorSection = styled.div`
   h6 {
     margin: 0;
     font-family: "Roboto", sans-serif;
-    font-size: 16px;
+    font-size: ${font_size.text};
   }
 `;
 
@@ -133,9 +133,13 @@ const Description = styled.div`
   padding-bottom: 1em;
   p {
     display: block;
-    font-size: 16px;
+    font-size: ${font_size.text};
     margin-bottom: 0.5em;
   }
+`;
+
+const CommentSection = styled.div`
+  padding-top: 1.5em;
 `;
 
 class VideoPage extends Component {
@@ -212,6 +216,9 @@ class VideoPage extends Component {
                       <Hashtag>#js_conf_eu</Hashtag>
                     </Description>
                     <CommentInput />
+                    <CommentSection>
+                      <Comment />
+                    </CommentSection>
                   </Section>
                 </Col>
                 <Col xs={3} sm={3} md={3} lg={3}>

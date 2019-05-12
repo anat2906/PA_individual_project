@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { colors } from "../../config/var";
+import { colors, font_size } from "../../config/var";
 import { Col } from "styled-bootstrap-grid";
 import Emoji from "../emoji/Emoji";
 
 const Input = styled.textarea`
   font-family: "PT Mono";
-  font-size: 13px;
+  font-size: ${font_size.text_sm};
   border: 1px solid ${colors.dark_2};
   border-radius: 3px;
   padding: 0.3em;
@@ -27,7 +27,7 @@ const Wrapper = styled.div`
   width: 50%;
   a {
     font-family: "Roboto", sans-serif;
-    font-size: 13px;
+    font-size: ${font_size.text_sm};
     &:hover {
       font-weight: 700;
     }
@@ -37,12 +37,12 @@ const Wrapper = styled.div`
 function CommentInput(props) {
   return (
     // <Col xs={8} sm={8} md={8} lg={8}>
-      <Wrapper>
-        <Input type="text" placeholder="Leave your comment :)" rows="3"/>
-        <a>
-          Submit <Emoji size="13px">👨‍💻</Emoji>
-        </a>
-      </Wrapper>
+    <Wrapper>
+      <Input type="text" placeholder="Leave your comment :)" rows="3" />
+      <a>
+        Submit <Emoji size={font_size.text_sm}>👨‍💻</Emoji>
+      </a>
+    </Wrapper>
     // </Col>
   );
 }

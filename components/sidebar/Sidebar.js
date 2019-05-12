@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import styled from "styled-components";
-import { colors } from "../../config/var";
+import { colors, font_size } from "../../config/var";
 import VideoCard from "../videoCard/VideoCard";
 import Hashtag from "../hashtag/Hashtag";
 
@@ -15,7 +15,6 @@ export const StyledSidebar = styled.div`
 const Events = styled.ul`
   list-style-type: none;
   font-family: "PT Mono";
-  font-size: 18px;
   margin: 0;
   padding: 0;
 `;
@@ -30,6 +29,7 @@ export const SectionTitle = styled.div`
   h5 {
     margin-right: 0.5em;
     margin-bottom: 0;
+    font-size: ${font_size.title_sm}
   }
 `;
 const Event = styled.li`
@@ -39,13 +39,13 @@ const Event = styled.li`
   border-bottom: 1px solid ${colors.dark_1};
   a {
     font-family: "PT Mono";
-    font-size: 15px;
+    font-size: ${font_size.text};
     font-weight: 700;
     margin-right: 0.5em;
   }
   span {
     font-family: "PT Mono";
-    font-size: 13px;
+    font-size: ${font_size.text_sm};
   }
 `;
 

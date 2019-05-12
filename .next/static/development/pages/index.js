@@ -81,7 +81,7 @@ __webpack_require__.r(__webpack_exports__);
 var Button = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].button.withConfig({
   displayName: "Button",
   componentId: "sc-136r50i-0"
-})(["font-family:\"Roboto\";font-size:15px;font-weight:600;text-transform:uppercase;color:", ";padding:0.1em 0.8em;background:white;border:none;border:3px solid ", ";border-radius:3px;position:relative;box-shadow:3px 3px 0px ", ";&::after{display:none;content:\" \";z-index:-1;position:absolute;width:100%;height:100%;border-radius:3px;background:repeating-linear-gradient( 45deg,", ",", " 4px,white 4px,white 8px );background-size:500%;bottom:-7px;right:-7px;animation:shadow linear 25s;animation-iteration-count:infinite;}&:focus{outline:none;}&:hover{box-shadow:none;::after{display:block;}}"], _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1);
+})(["font-family:\"Roboto\";font-size:", ";font-weight:600;text-transform:uppercase;color:", ";padding:0.1em 0.8em;background:white;border:none;border:3px solid ", ";border-radius:3px;position:relative;box-shadow:3px 3px 0px ", ";&::after{display:none;content:\" \";z-index:-1;position:absolute;width:100%;height:100%;border-radius:3px;background:repeating-linear-gradient( 45deg,", ",", " 4px,white 4px,white 8px );background-size:500%;bottom:-7px;right:-7px;animation:shadow linear 25s;animation-iteration-count:infinite;}&:focus{outline:none;}&:hover{box-shadow:none;::after{display:block;}}"], _config_var__WEBPACK_IMPORTED_MODULE_1__["font_size"].text, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1);
 /* harmony default export */ __webpack_exports__["default"] = (Button);
 
 /***/ }),
@@ -123,7 +123,7 @@ __webpack_require__.r(__webpack_exports__);
 var Hashtag = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "Hashtag",
   componentId: "sc-1kitrpj-0"
-})(["display:inline-block;background:", ";border-radius:15px;font-size:13px;padding:0.2em 0.7em;font-family:\"PT Mono\";margin:0.2em;"], _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].pale_2);
+})(["display:inline-block;background:", ";border-radius:15px;font-size:", ";padding:0.2em 0.7em;font-family:\"PT Mono\";margin:0.2em;"], _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].pale_2, _config_var__WEBPACK_IMPORTED_MODULE_1__["font_size"].text_sm);
 /* harmony default export */ __webpack_exports__["default"] = (Hashtag);
 
 /***/ }),
@@ -278,53 +278,53 @@ var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/
 var LoginIcon = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
   displayName: "HeaderLogin__LoginIcon",
   componentId: "eh5gpj-0"
-})(["display:flex;align-items:center;p{margin:0;}img{margin-left:0.5em;width:25px;height:25px;}"]);
+})(["display:flex;align-items:center;p{margin:0;font-family:\"Roboto\",sans-serif;font-size:", ";}img{margin-left:0.5em;width:25px;height:25px;}"], _config_var__WEBPACK_IMPORTED_MODULE_3__["font_size"].text);
 
 function HeaderLogin(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_2__["Row"], {
     className: "justify-content-end align-items-center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 23
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LoginIcon, {
     className: "mr-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 24
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 25
     },
     __self: this
   }, "Languages"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "static/icons/svg/language.svg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 26
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LoginIcon, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 28
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 29
     },
     __self: this
   }, " Login "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "static/icons/svg/user.svg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 30
     },
     __self: this
   })));
@@ -433,7 +433,7 @@ var SearchBox = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.wi
 var Input = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].input.withConfig({
   displayName: "HeaderSearch__Input",
   componentId: "sc-1ozgnbo-2"
-})(["background:none;width:95%;border:none;font-family:\"PT Mono\";padding:0.2em 0.3em;&:focus{outline:none;}"]);
+})(["background:none;width:95%;border:none;font-family:\"PT Mono\";padding:0.2em 0.3em;font-size:", ";&:focus{outline:none;}"], _config_var__WEBPACK_IMPORTED_MODULE_7__["font_size"].text);
 
 var HeaderSearch =
 /*#__PURE__*/
@@ -452,7 +452,7 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(SearchBox, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 37
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Input, {
@@ -460,7 +460,7 @@ function (_Component) {
         placeholder: "search",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 38
         },
         __self: this
       }));
@@ -704,15 +704,15 @@ var StyledSidebar = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].di
 var Events = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].ul.withConfig({
   displayName: "Sidebar__Events",
   componentId: "nkyc98-1"
-})(["list-style-type:none;font-family:\"PT Mono\";font-size:18px;margin:0;padding:0;"]);
+})(["list-style-type:none;font-family:\"PT Mono\";margin:0;padding:0;"]);
 var SectionTitle = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].div.withConfig({
   displayName: "Sidebar__SectionTitle",
   componentId: "nkyc98-2"
-})(["display:flex;align-items:center;margin-bottom:0.5em;img{width:27px;height:27px;}h5{margin-right:0.5em;margin-bottom:0;}"]);
+})(["display:flex;align-items:center;margin-bottom:0.5em;img{width:27px;height:27px;}h5{margin-right:0.5em;margin-bottom:0;font-size:", "}"], _config_var__WEBPACK_IMPORTED_MODULE_7__["font_size"].title_sm);
 var Event = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].li.withConfig({
   displayName: "Sidebar__Event",
   componentId: "nkyc98-3"
-})(["display:flex;justify-content:space-between;margin-bottom:0.2em;border-bottom:1px solid ", ";a{font-family:\"PT Mono\";font-size:15px;font-weight:700;margin-right:0.5em;}span{font-family:\"PT Mono\";font-size:13px;}"], _config_var__WEBPACK_IMPORTED_MODULE_7__["colors"].dark_1);
+})(["display:flex;justify-content:space-between;margin-bottom:0.2em;border-bottom:1px solid ", ";a{font-family:\"PT Mono\";font-size:", ";font-weight:700;margin-right:0.5em;}span{font-family:\"PT Mono\";font-size:", ";}"], _config_var__WEBPACK_IMPORTED_MODULE_7__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_7__["font_size"].text, _config_var__WEBPACK_IMPORTED_MODULE_7__["font_size"].text_sm);
 
 var Sidebar =
 /*#__PURE__*/
@@ -1039,7 +1039,7 @@ __webpack_require__.r(__webpack_exports__);
 var Title = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].h2.withConfig({
   displayName: "Title",
   componentId: "sc-4dtb22-0"
-})(["font-family:\"Roboto\",sans-serif;font-size:25px;font-weight:700;color:", ";"], _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1);
+})(["font-family:\"Roboto\",sans-serif;font-size:", ";font-weight:700;color:", ";"], _config_var__WEBPACK_IMPORTED_MODULE_1__["font_size"].title, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1);
 /* harmony default export */ __webpack_exports__["default"] = (Title);
 
 /***/ }),
@@ -1070,7 +1070,7 @@ function STooltip(props) {
     padding: 3,
     color: _config_var__WEBPACK_IMPORTED_MODULE_3__["colors"].dark_1,
     placement: "top",
-    fontSize: "13px",
+    fontSize: _config_var__WEBPACK_IMPORTED_MODULE_3__["font_size"].text_sm,
     fontFamily: "Roboto",
     __source: {
       fileName: _jsxFileName,
@@ -1133,11 +1133,11 @@ var Footer = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div.withC
 var FTitle = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div.withConfig({
   displayName: "VideoCard__FTitle",
   componentId: "lk15sg-2"
-})(["font-family:\"Roboto\",sans-serif;font-size:14px;position:absolute;padding:0.3em;top:0;left:0;span{line-height:0px;font-weight:700;background:white;}"]);
+})(["font-family:\"Roboto\",sans-serif;font-size:", ";position:absolute;padding:0.3em;top:0;left:0;span{line-height:0px;font-weight:700;background:white;}"], _config_var__WEBPACK_IMPORTED_MODULE_11__["font_size"].text_sm);
 var FInfo = styled_components__WEBPACK_IMPORTED_MODULE_8__["default"].div.withConfig({
   displayName: "VideoCard__FInfo",
   componentId: "lk15sg-3"
-})(["display:flex;align-items:center;flex-wrap:wrap;img{width:15px;height:15px;}span{font-family:\"PT Mono\";margin-left:0.5em;font-size:14px;}"]);
+})(["display:flex;align-items:center;flex-wrap:wrap;img{width:15px;height:15px;}span{font-family:\"PT Mono\";margin-left:0.5em;font-size:", ";}"], _config_var__WEBPACK_IMPORTED_MODULE_11__["font_size"].text_sm);
 
 var VideoCard =
 /*#__PURE__*/
@@ -1396,12 +1396,13 @@ function (_Component) {
 /*!***********************!*\
   !*** ./config/var.js ***!
   \***********************/
-/*! exports provided: colors */
+/*! exports provided: colors, font_size */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "colors", function() { return colors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "font_size", function() { return font_size; });
 /* harmony import */ var polished__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! polished */ "./node_modules/polished/dist/polished.es.js");
 
 var colors = {
@@ -1421,6 +1422,12 @@ var colors = {
   pale_3: "#c2e5e1",
   pale_4: "#d3f4fb",
   shadow: Object(polished__WEBPACK_IMPORTED_MODULE_0__["lighten"])(0.2, "#999999")
+};
+var font_size = {
+  title: "25px",
+  title_sm: "18px",
+  text: "15px",
+  text_sm: "13px"
 };
 
 /***/ }),
@@ -26543,7 +26550,7 @@ var Index = function Index() {
     },
     __self: this
   }, "Newest ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_emoji_Emoji__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    size: "13px",
+    size: _config_var__WEBPACK_IMPORTED_MODULE_4__["font_size"].text,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 108
@@ -26583,7 +26590,7 @@ var Index = function Index() {
     },
     __self: this
   }, "Top Rated ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_emoji_Emoji__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    size: "13px",
+    size: _config_var__WEBPACK_IMPORTED_MODULE_4__["font_size"].text,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 118
@@ -26623,7 +26630,7 @@ var Index = function Index() {
     },
     __self: this
   }, "Popular on this week ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_emoji_Emoji__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    size: "13px",
+    size: _config_var__WEBPACK_IMPORTED_MODULE_4__["font_size"].text,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 128
@@ -26663,7 +26670,7 @@ var Index = function Index() {
     },
     __self: this
   }, "Live Streams ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_emoji_Emoji__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    size: "13px",
+    size: _config_var__WEBPACK_IMPORTED_MODULE_4__["font_size"].text,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 138
