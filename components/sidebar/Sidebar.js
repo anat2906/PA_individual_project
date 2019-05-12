@@ -19,7 +19,7 @@ const Events = styled.ul`
   margin: 0;
   padding: 0;
 `;
-const SectionTitle = styled.div`
+export const SectionTitle = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 0.5em;

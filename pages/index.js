@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
+import { Container, Row, Col } from "styled-bootstrap-grid";
 import { createGlobalStyle } from "styled-components";
-import { Container, Row, GridThemeProvider, Col } from "styled-bootstrap-grid";
+import { GridThemeProvider } from "styled-bootstrap-grid";
 import { colors } from "../config/var";
 import Header from "../components/header/Header";
 import Section from "../components/section/Section";
@@ -69,7 +70,6 @@ const Global = createGlobalStyle`
         }
       }
     `;
-
 const gridTheme = {
   col: {
     padding: 5
@@ -78,7 +78,6 @@ const gridTheme = {
     padding: 5
   }
 };
-
 const Index = () => (
   <>
     <Global />
@@ -106,7 +105,7 @@ const Index = () => (
                 <Container fluid="true">
                   <Shadow color={colors.accent_3}>
                     <Title>
-                      Newest <Emoji>🌈</Emoji>
+                      Newest <Emoji size="13px">🌈</Emoji>
                     </Title>
                     <MainSlider className="mb-1" />
                   </Shadow>
@@ -116,7 +115,7 @@ const Index = () => (
                 <Container fluid="true">
                   <Shadow color={colors.accent_2}>
                     <Title>
-                      Top Rated <Emoji>🚀🚀🚀</Emoji>
+                      Top Rated <Emoji size="13px">🚀🚀🚀</Emoji>
                     </Title>
                     <MainSlider className="mb-1" />
                   </Shadow>
@@ -126,7 +125,7 @@ const Index = () => (
                 <Container fluid="true">
                   <Shadow color={colors.accent_4}>
                     <Title>
-                      Popular on this week <Emoji>🔥🔥🔥</Emoji>
+                      Popular on this week <Emoji size="13px">🔥🔥🔥</Emoji>
                     </Title>
                     <MainSlider className="mb-1" />
                   </Shadow>
@@ -136,7 +135,7 @@ const Index = () => (
                 <Container fluid="true">
                   <Shadow color={colors.accent_1}>
                     <Title>
-                      Live Streams <Emoji>🎥✨</Emoji>
+                      Live Streams <Emoji size="13px">🎥✨</Emoji>
                     </Title>
                     <MainSlider className="mb-1" />
                   </Shadow>

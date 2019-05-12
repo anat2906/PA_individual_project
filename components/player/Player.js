@@ -29,7 +29,7 @@ const Progress = styled.div`
 class Player extends Component {
   render() {
     return (
-      <div>
+      <div {...this.props}>
         <Img src="https://img.youtube.com/vi/M3BM9TB-8yA/hqdefault.jpg" />
         <Control>
           <Col xs={1} sm={1} md={1} lg={1} className="text-left mx-0 px-0">

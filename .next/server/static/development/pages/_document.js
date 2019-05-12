@@ -2279,13 +2279,13 @@ function (_Document) {
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("html", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10
+          lineNumber: 11
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_9__["Head"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 12
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
@@ -2295,7 +2295,7 @@ function (_Document) {
         crossOrigin: "anonymous",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12
+          lineNumber: 13
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
@@ -2303,7 +2303,7 @@ function (_Document) {
         rel: "stylesheet",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 19
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
@@ -2311,7 +2311,7 @@ function (_Document) {
         rel: "stylesheet",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 23
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
@@ -2321,7 +2321,7 @@ function (_Document) {
         href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 27
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
@@ -2330,15 +2330,7 @@ function (_Document) {
         href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
-        rel: "stylesheet",
-        href: "https://cdn.plyr.io/3.5.2/plyr.css",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 33
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("body", {

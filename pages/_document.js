@@ -1,3 +1,4 @@
+import React, { Fragment } from "react";
 import Document, { Head, Main, NextScript } from "next/document";
 
 export default class MyDocument extends Document {
@@ -34,7 +35,6 @@ export default class MyDocument extends Document {
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
           />
-          <link rel="stylesheet" href="https://cdn.plyr.io/3.5.2/plyr.css" />
         </Head>
         <body>
           <Main />
