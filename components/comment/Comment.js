@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { colors, font_size } from "../../config/var";
+import { UserIcon, LikeIcon } from "../icons";
 
 const SComment = styled.div`
   font-family: "Roboto", sans-serif;
   display: flex;
+  margin-bottom: 1em;
   p,
   h6 {
     font-size: ${font_size.text} !important;
@@ -21,12 +23,15 @@ const SComment = styled.div`
 
   a {
     font-size: ${font_size.text_sm};
+    &:hover{
+      font-weight: 700;
+    }
   }
 
-  img {
+  svg {
     width: 30px;
     height: 30px;
-    margin-right: 0.5em;
+    margin-right: 1em;
   }
 `;
 
@@ -35,7 +40,7 @@ class Comment extends Component {
     return (
       <SComment>
         <div>
-          <img src="static/icons/svg/user.svg" />
+          <UserIcon/>
         </div>
         <div>
           <h6>First name Last name</h6>
@@ -43,7 +48,6 @@ class Comment extends Component {
           <div className="d-flex">
             <span>5 minutes ago</span>
             <a>Reply</a>
-            
           </div>
         </div>
       </SComment>

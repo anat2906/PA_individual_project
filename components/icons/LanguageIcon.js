@@ -9,9 +9,9 @@ export default function LanguageIcon(props) {
       viewBox="0 0 24 24"
       aria-labelledby="languageIconTitle languageIconDesc"
       stroke="#333333"
-      stroke-width="2.4"
-      stroke-linecap="square"
-      stroke-linejoin="miter"
+      strokeWidth="2.4"
+      strokeLinecap="square"
+      strokeLineJoin="miter"
       fill="none"
       color="#333333"
     >

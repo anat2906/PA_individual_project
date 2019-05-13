@@ -10,11 +10,13 @@ import TagIcon from "./TagIcon";
 import UserIcon from "./UserIcon";
 import VolumeLoudIcon from "./VolumeLoud";
 import CollectionIcon from "./CollectionIcon";
+import FilterIcon from "./FilterIcon";
 
 export {
   CalendarIcon,
   CollectionIcon,
   CommentIcon,
+  FilterIcon,
   LanguageIcon,
   LikeIcon,
   LiveIcon,

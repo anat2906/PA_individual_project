@@ -28,9 +28,8 @@ const Wrapper = styled.div`
   a {
     font-family: "Roboto", sans-serif;
     font-size: ${font_size.text_sm};
-    &:hover {
-      font-weight: 700;
-    }
+    font-weight: 700;
+    text-transform: uppercase;
   }
 `;
 

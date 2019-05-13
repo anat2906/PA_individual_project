@@ -8,6 +8,7 @@ const Button = styled.button`
   text-transform: uppercase;
   color: ${colors.dark_1};
   padding: 0.1em 0.8em;
+  max-height: 31px;
   background: white;
   border: none;
   border: 3px solid ${colors.dark_1};

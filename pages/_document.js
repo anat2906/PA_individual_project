@@ -1,5 +1,69 @@
 import React, { Fragment } from "react";
 import Document, { Head, Main, NextScript } from "next/document";
+import { createGlobalStyle } from "styled-components";
+import { GridThemeProvider } from "styled-bootstrap-grid";
+import { colors, font_size } from "../config/var";
+
+const Global = createGlobalStyle`
+      * {
+        font-family: "Roboto", sans-serif;
+      }
+
+      body {
+        background: white;
+        color: ${colors.dark_1};
+      }
+
+      a {
+        text-decoraton: none;
+        color: inherit;
+        cursor: pointer;
+      }
+      
+      .slick-next:before {
+        font-size: 30px;
+        color: ${colors.dark_3};
+        content: "➭";
+        transform: translateX(-50%);
+        position: absolute;
+        line-height: 0;
+        display: none;
+      }
+      .slick-prev:before {
+        transform: translateX(-50%);
+        position: absolute;
+        line-height: 0;
+        font-size: 30px;
+        color: ${colors.dark_3};
+        content: "➭";
+        transform: translateX(-50%);
+        margin-top: -50%;
+        display: none;
+      }
+      .slick-prev {
+        transform: scaleX(-1);
+      }
+      
+      @keyframes shadow {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    `;
+const gridTheme = {
+  col: {
+    padding: 5
+  },
+  container: {
+    padding: 5
+  }
+};
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -10,6 +74,7 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
+          X{" "}
           <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -37,8 +102,13 @@ export default class MyDocument extends Document {
           />
         </Head>
         <body>
-          <Main />
-          <NextScript />
+          <GridThemeProvider gridTheme={gridTheme}>
+            <>
+              <Global />
+              <Main />
+              <NextScript />
+            </>
+          </GridThemeProvider>
         </body>
       </html>
     );

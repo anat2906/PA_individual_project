@@ -177,7 +177,7 @@ __webpack_require__.r(__webpack_exports__);
 var Button = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.button.withConfig({
   displayName: "Button",
   componentId: "sc-136r50i-0"
-})(["font-family:\"Roboto\";font-size:", ";font-weight:600;text-transform:uppercase;color:", ";padding:0.1em 0.8em;background:white;border:none;border:3px solid ", ";border-radius:3px;position:relative;box-shadow:3px 3px 0px ", ";&::after{display:none;content:\" \";z-index:-1;position:absolute;width:100%;height:100%;border-radius:3px;background:repeating-linear-gradient( 45deg,", ",", " 4px,white 4px,white 8px );background-size:500%;bottom:-7px;right:-7px;animation:shadow linear 25s;animation-iteration-count:infinite;}&:focus{outline:none;}&:hover{box-shadow:none;::after{display:block;}}"], _config_var__WEBPACK_IMPORTED_MODULE_1__["font_size"].text, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1);
+})(["font-family:\"Roboto\";font-size:", ";font-weight:600;text-transform:uppercase;color:", ";padding:0.1em 0.8em;max-height:31px;background:white;border:none;border:3px solid ", ";border-radius:3px;position:relative;box-shadow:3px 3px 0px ", ";&::after{display:none;content:\" \";z-index:-1;position:absolute;width:100%;height:100%;border-radius:3px;background:repeating-linear-gradient( 45deg,", ",", " 4px,white 4px,white 8px );background-size:500%;bottom:-7px;right:-7px;animation:shadow linear 25s;animation-iteration-count:infinite;}&:focus{outline:none;}&:hover{box-shadow:none;::after{display:block;}}"], _config_var__WEBPACK_IMPORTED_MODULE_1__["font_size"].text, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_1__["colors"].dark_1);
 /* harmony default export */ __webpack_exports__["default"] = (Button);
 
 /***/ }),
@@ -601,9 +601,9 @@ function CalendarIcon(props) {
     viewBox: "0 0 24 24",
     "aria-labelledby": "calendarIconTitle calendarIconDesc",
     stroke: "#333333",
-    "stroke-width": "2.4",
-    "stroke-linecap": "square",
-    "stroke-linejoin": "miter",
+    strokeWidth: "2.4",
+    strokeLinecap: "square",
+    strokeLineJoin: "miter",
     fill: "none",
     color: "#333333",
     __source: {
@@ -670,9 +670,9 @@ function CollectionIcon(props) {
     viewBox: "0 0 24 24",
     "aria-labelledby": "starIconTitle starIconDesc",
     stroke: "#333333",
-    "stroke-width": "2.4",
-    "stroke-linecap": "square",
-    "stroke-linejoin": "miter",
+    strokeWidth: "2.4",
+    strokeLinecap: "square",
+    strokeLineJoin: "miter",
     fill: "none",
     color: "#333333",
     __source: {
@@ -731,9 +731,9 @@ function CommentIcon(props) {
     viewBox: "0 0 24 24",
     "aria-labelledby": "chatAltIconTitle chatAltIconDesc",
     stroke: "#333333",
-    "stroke-width": "2.4",
-    "stroke-linecap": "square",
-    "stroke-linejoin": "miter",
+    strokeWidth: "2.4",
+    strokeLinecap: "square",
+    strokeLineJoin: "miter",
     fill: "none",
     color: "#333333",
     __source: {
@@ -767,6 +767,65 @@ function CommentIcon(props) {
 
 /***/ }),
 
+/***/ "./components/icons/FilterIcon.js":
+/*!****************************************!*\
+  !*** ./components/icons/FilterIcon.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return FilterIcon; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/components/icons/FilterIcon.js";
+
+function FilterIcon(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    role: "img",
+    xmlns: "http://www.w3.org/2000/svg",
+    width: "40px",
+    height: "40px",
+    viewBox: "0 0 24 24",
+    "aria-labelledby": "filterIconTitle filterIconDesc",
+    stroke: "#333333",
+    strokeWidth: "2.4",
+    strokeLinecap: "square",
+    strokeLineJoin: "miter",
+    fill: "none",
+    color: "#333333",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3
+    },
+    __self: this
+  }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
+    id: "filterIconTitle",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, "Filter"), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("desc", {
+    id: "filterIconDesc",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, "Icon of a funnel"), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M10 12.261L4.028 3.972h16L14 12.329V17l-4 3z",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }), " ");
+}
+
+/***/ }),
+
 /***/ "./components/icons/LanguageIcon.js":
 /*!******************************************!*\
   !*** ./components/icons/LanguageIcon.js ***!
@@ -792,9 +851,9 @@ function LanguageIcon(props) {
     viewBox: "0 0 24 24",
     "aria-labelledby": "languageIconTitle languageIconDesc",
     stroke: "#333333",
-    "stroke-width": "2.4",
-    "stroke-linecap": "square",
-    "stroke-linejoin": "miter",
+    strokeWidth: "2.4",
+    strokeLinecap: "square",
+    strokeLineJoin: "miter",
     fill: "none",
     color: "#333333",
     __source: {
@@ -871,9 +930,9 @@ function LikeIcon(props) {
     viewBox: "0 0 24 24",
     "aria-labelledby": "favouriteIconTitle favouriteIconDesc",
     stroke: "#333333",
-    "stroke-width": "2.4",
-    "stroke-linecap": "square",
-    "stroke-linejoin": "miter",
+    strokeWidth: "2.4",
+    strokeLinecap: "square",
+    strokeLineJoin: "miter",
     fill: "none",
     color: "#333333",
     __source: {
@@ -932,9 +991,9 @@ function LiveIcon(props) {
     viewBox: "0 0 24 24",
     "aria-labelledby": "radioIconTitle radioIconDesc",
     stroke: "#333333",
-    "stroke-width": "2.4",
-    "stroke-linecap": "square",
-    "stroke-linejoin": "miter",
+    strokeWidth: "2.4",
+    strokeLinecap: "square",
+    strokeLineJoin: "miter",
     fill: "none",
     color: "#333333",
     __source: {
@@ -1002,9 +1061,9 @@ function PlayIcon(props) {
     viewBox: "0 0 24 24",
     "aria-labelledby": "playIconTitle playIconDesc",
     stroke: "#333333",
-    "stroke-width": "2.4",
-    "stroke-linecap": "square",
-    "stroke-linejoin": "miter",
+    strokeWidth: "2.4",
+    strokeLinecap: "square",
+    strokeLineJoin: "miter",
     fill: "none",
     color: "#333333",
     __source: {
@@ -1063,9 +1122,9 @@ function RecommendationsIcon(props) {
     viewBox: "0 0 24 24",
     "aria-labelledby": "happyFaceIconTitle happyFaceIconDesc",
     stroke: "#333333",
-    "stroke-width": "2.4",
-    "stroke-linecap": "square",
-    "stroke-linejoin": "miter",
+    strokeWidth: "2.4",
+    strokeLinecap: "square",
+    strokeLineJoin: "miter",
     fill: "none",
     color: "#333333",
     __source: {
@@ -1155,9 +1214,9 @@ function SettingsIcon(props) {
     viewBox: "0 0 24 24",
     "aria-labelledby": "settingsIconTitle settingsIconDesc",
     stroke: "#333333",
-    "stroke-width": "2.4",
-    "stroke-linecap": "square",
-    "stroke-linejoin": "miter",
+    strokeWidth: "2.4",
+    strokeLinecap: "square",
+    strokeLineJoin: "miter",
     fill: "none",
     color: "#333333",
     __source: {
@@ -1225,9 +1284,9 @@ function TagIcon(props) {
     viewBox: "0 0 24 24",
     "aria-labelledby": "tagAltIconTitle tagAltIconDesc",
     stroke: "#333333",
-    "stroke-width": "2.4",
-    "stroke-linecap": "square",
-    "stroke-linejoin": "miter",
+    strokeWidth: "2.4",
+    strokeLinecap: "square",
+    strokeLineJoin: "miter",
     fill: "none",
     color: "#333333",
     __source: {
@@ -1295,9 +1354,9 @@ function UserIcon(props) {
     viewBox: "0 0 24 24",
     "aria-labelledby": "userIconTitle userIconDesc",
     stroke: "#333333",
-    "stroke-width": "2.4",
-    "stroke-linecap": "square",
-    "stroke-linejoin": "miter",
+    strokeWidth: "2.4",
+    strokeLinecap: "square",
+    strokeLineJoin: "miter",
     fill: "none",
     color: "#333333",
     __source: {
@@ -1366,9 +1425,9 @@ function VolumeLoudIcon(props) {
     viewBox: "0 0 24 24",
     "aria-labelledby": "volumeLoudIconTitle volumeLoudIconDesc",
     stroke: "#333333",
-    "stroke-width": "2.4",
-    "stroke-linecap": "square",
-    "stroke-linejoin": "miter",
+    strokeWidth: "2.4",
+    strokeLinecap: "square",
+    strokeLineJoin: "miter",
     fill: "none",
     color: "#333333",
     __source: {
@@ -1421,7 +1480,7 @@ function VolumeLoudIcon(props) {
 /*!***********************************!*\
   !*** ./components/icons/index.js ***!
   \***********************************/
-/*! exports provided: CalendarIcon, CollectionIcon, CommentIcon, LanguageIcon, LikeIcon, LiveIcon, PlayIcon, RecommendationsIcon, SettingsIcon, TagIcon, UserIcon, VolumeLoudIcon */
+/*! exports provided: CalendarIcon, CollectionIcon, CommentIcon, FilterIcon, LanguageIcon, LikeIcon, LiveIcon, PlayIcon, RecommendationsIcon, SettingsIcon, TagIcon, UserIcon, VolumeLoudIcon */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1461,6 +1520,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony import */ var _CollectionIcon__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./CollectionIcon */ "./components/icons/CollectionIcon.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CollectionIcon", function() { return _CollectionIcon__WEBPACK_IMPORTED_MODULE_11__["default"]; });
+
+/* harmony import */ var _FilterIcon__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./FilterIcon */ "./components/icons/FilterIcon.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "FilterIcon", function() { return _FilterIcon__WEBPACK_IMPORTED_MODULE_12__["default"]; });
+
 
 
 
@@ -2472,17 +2535,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/create */ "co
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js":
-/*!*********************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js ***!
-  \*********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/define-properties */ "core-js/library/fn/object/define-properties");
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js":
 /*!*******************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js ***!
@@ -2491,17 +2543,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/define-proper
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/define-property */ "core-js/library/fn/object/define-property");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/freeze */ "core-js/library/fn/object/freeze");
 
 /***/ }),
 
@@ -2820,36 +2861,6 @@ function _setPrototypeOf(o, p) {
   };
 
   return _setPrototypeOf(o, p);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js ***!
-  \**********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _taggedTemplateLiteral; });
-/* harmony import */ var _core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-properties */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js");
-/* harmony import */ var _core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/freeze */ "./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js");
-/* harmony import */ var _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1__);
-
-
-function _taggedTemplateLiteral(strings, raw) {
-  if (!raw) {
-    raw = strings.slice(0);
-  }
-
-  return _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default()(_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0___default()(strings, {
-    raw: {
-      value: _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default()(raw)
-    }
-  }));
 }
 
 /***/ }),
@@ -3308,35 +3319,22 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-bootstrap-grid */ "styled-bootstrap-grid");
-/* harmony import */ var styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _config_var__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../config/var */ "./config/var.js");
-/* harmony import */ var _components_header_Header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/header/Header */ "./components/header/Header.js");
-/* harmony import */ var _components_section_Section__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/section/Section */ "./components/section/Section.js");
-/* harmony import */ var _components_main_MainSlider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/main/MainSlider */ "./components/main/MainSlider.js");
-/* harmony import */ var _components_title_Title__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/title/Title */ "./components/title/Title.js");
-/* harmony import */ var _components_box_shadow_Shadow__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/box-shadow/Shadow */ "./components/box-shadow/Shadow.js");
-/* harmony import */ var _components_sidebar_Sidebar__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/sidebar/Sidebar */ "./components/sidebar/Sidebar.js");
-/* harmony import */ var _components_block_Block__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/block/Block */ "./components/block/Block.js");
-/* harmony import */ var _components_button_Button__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/button/Button */ "./components/button/Button.js");
-/* harmony import */ var _components_emoji_Emoji__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/emoji/Emoji */ "./components/emoji/Emoji.js");
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-bootstrap-grid */ "styled-bootstrap-grid");
+/* harmony import */ var styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _config_var__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../config/var */ "./config/var.js");
+/* harmony import */ var _components_header_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/header/Header */ "./components/header/Header.js");
+/* harmony import */ var _components_section_Section__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/section/Section */ "./components/section/Section.js");
+/* harmony import */ var _components_main_MainSlider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/main/MainSlider */ "./components/main/MainSlider.js");
+/* harmony import */ var _components_title_Title__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/title/Title */ "./components/title/Title.js");
+/* harmony import */ var _components_box_shadow_Shadow__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/box-shadow/Shadow */ "./components/box-shadow/Shadow.js");
+/* harmony import */ var _components_sidebar_Sidebar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/sidebar/Sidebar */ "./components/sidebar/Sidebar.js");
+/* harmony import */ var _components_block_Block__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/block/Block */ "./components/block/Block.js");
+/* harmony import */ var _components_button_Button__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/button/Button */ "./components/button/Button.js");
+/* harmony import */ var _components_emoji_Emoji__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/emoji/Emoji */ "./components/emoji/Emoji.js");
 var _jsxFileName = "/home/anat2906/projects/JS/PA_individual_project/pages/index.js";
 
-function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n      * {\n        font-family: \"Roboto\", sans-serif;\n      }\n\n      body {\n        background: white;\n        color: ", ";\n      }\n\n      a {\n        text-decoraton: none;\n        color: inherit;\n        cursor: pointer;\n      }\n      \n      .slick-next:before {\n        font-size: 30px;\n        color: ", ";\n        content: \"\u27AD\";\n        transform: translateX(-50%);\n        position: absolute;\n        line-height: 0;\n        display: none;\n      }\n      .slick-prev:before {\n        transform: translateX(-50%);\n        position: absolute;\n        line-height: 0;\n        font-size: 30px;\n        color: ", ";\n        content: \"\u27AD\";\n        transform: translateX(-50%);\n        margin-top: -50%;\n        display: none;\n      }\n      .slick-prev {\n        transform: scaleX(-1);\n      }\n      \n      @keyframes shadow {\n        0% {\n          background-position: 0% 50%;\n        }\n        50% {\n          background-position: 100% 50%;\n        }\n        100% {\n          background-position: 0% 50%;\n        }\n      }\n    "]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
 
 
 
@@ -3348,306 +3346,280 @@ function _templateObject() {
 
 
 
-
-
-
-
-var Global = Object(styled_components__WEBPACK_IMPORTED_MODULE_3__["createGlobalStyle"])(_templateObject(), _config_var__WEBPACK_IMPORTED_MODULE_4__["colors"].dark_1, _config_var__WEBPACK_IMPORTED_MODULE_4__["colors"].dark_3, _config_var__WEBPACK_IMPORTED_MODULE_4__["colors"].dark_3);
-var gridTheme = {
-  col: {
-    padding: 5
-  },
-  container: {
-    padding: 5
-  }
-};
 
 var Index = function Index() {
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Global, {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_header_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 21
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_2__["GridThemeProvider"], {
-    gridTheme: gridTheme,
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 22
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_header_Header__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 86
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("main", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 87
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_2__["Container"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_1__["Container"], {
     className: "d-flex",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 23
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     xs: 2,
     sm: 2,
     md: 2,
     lg: 2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 24
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_section_Section__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_section_Section__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 25
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_block_Block__WEBPACK_IMPORTED_MODULE_11__["ColorBlock"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_block_Block__WEBPACK_IMPORTED_MODULE_9__["ColorBlock"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 26
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_block_Block__WEBPACK_IMPORTED_MODULE_11__["ColorBlockTitle"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_block_Block__WEBPACK_IMPORTED_MODULE_9__["ColorBlockTitle"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92
+      lineNumber: 27
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h5", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93
+      lineNumber: 28
     },
     __self: this
-  }, "Browse by")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_block_Block__WEBPACK_IMPORTED_MODULE_11__["ColorBlockContent"], {
+  }, "Browse by")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_block_Block__WEBPACK_IMPORTED_MODULE_9__["ColorBlockContent"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 30
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_button_Button__WEBPACK_IMPORTED_MODULE_12__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_button_Button__WEBPACK_IMPORTED_MODULE_10__["default"], {
     className: "mb-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 31
     },
     __self: this
-  }, "Events"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_button_Button__WEBPACK_IMPORTED_MODULE_12__["default"], {
+  }, "Events"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_button_Button__WEBPACK_IMPORTED_MODULE_10__["default"], {
     className: "mb-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 32
     },
     __self: this
-  }, "Speakers"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_button_Button__WEBPACK_IMPORTED_MODULE_12__["default"], {
+  }, "Speakers"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_button_Button__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 33
     },
     __self: this
-  }, "Speakers"))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+  }, "Speakers"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     xs: 7,
     sm: 7,
     md: 7,
     lg: 7,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 38
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_section_Section__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_section_Section__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 39
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_2__["Container"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_1__["Container"], {
     fluid: "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 40
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_box_shadow_Shadow__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    color: _config_var__WEBPACK_IMPORTED_MODULE_4__["colors"].accent_3,
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_box_shadow_Shadow__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    color: _config_var__WEBPACK_IMPORTED_MODULE_2__["colors"].accent_3,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 41
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_title_Title__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_title_Title__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107
+      lineNumber: 42
     },
     __self: this
-  }, "Newest ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_emoji_Emoji__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    size: _config_var__WEBPACK_IMPORTED_MODULE_4__["font_size"].text,
+  }, "Newest ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_emoji_Emoji__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    size: _config_var__WEBPACK_IMPORTED_MODULE_2__["font_size"].text,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108
+      lineNumber: 43
     },
     __self: this
-  }, "\uD83C\uDF08")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_main_MainSlider__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, "\uD83C\uDF08")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_main_MainSlider__WEBPACK_IMPORTED_MODULE_5__["default"], {
     className: "mb-1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 45
     },
     __self: this
-  })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_section_Section__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_section_Section__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 49
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_2__["Container"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_1__["Container"], {
     fluid: "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115
+      lineNumber: 50
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_box_shadow_Shadow__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    color: _config_var__WEBPACK_IMPORTED_MODULE_4__["colors"].accent_2,
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_box_shadow_Shadow__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    color: _config_var__WEBPACK_IMPORTED_MODULE_2__["colors"].accent_2,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 51
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_title_Title__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_title_Title__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117
+      lineNumber: 52
     },
     __self: this
-  }, "Top Rated ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_emoji_Emoji__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    size: _config_var__WEBPACK_IMPORTED_MODULE_4__["font_size"].text,
+  }, "Top Rated ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_emoji_Emoji__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    size: _config_var__WEBPACK_IMPORTED_MODULE_2__["font_size"].text,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118
+      lineNumber: 53
     },
     __self: this
-  }, "\uD83D\uDE80\uD83D\uDE80\uD83D\uDE80")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_main_MainSlider__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, "\uD83D\uDE80\uD83D\uDE80\uD83D\uDE80")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_main_MainSlider__WEBPACK_IMPORTED_MODULE_5__["default"], {
     className: "mb-1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 55
     },
     __self: this
-  })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_section_Section__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_section_Section__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124
+      lineNumber: 59
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_2__["Container"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_1__["Container"], {
     fluid: "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 60
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_box_shadow_Shadow__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    color: _config_var__WEBPACK_IMPORTED_MODULE_4__["colors"].accent_4,
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_box_shadow_Shadow__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    color: _config_var__WEBPACK_IMPORTED_MODULE_2__["colors"].accent_4,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126
+      lineNumber: 61
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_title_Title__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_title_Title__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 127
+      lineNumber: 62
     },
     __self: this
-  }, "Popular on this week ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_emoji_Emoji__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    size: _config_var__WEBPACK_IMPORTED_MODULE_4__["font_size"].text,
+  }, "Popular on this week", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_emoji_Emoji__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    size: _config_var__WEBPACK_IMPORTED_MODULE_2__["font_size"].text,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128
+      lineNumber: 64
     },
     __self: this
-  }, "\uD83D\uDD25\uD83D\uDD25\uD83D\uDD25")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_main_MainSlider__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, "\uD83D\uDD25\uD83D\uDD25\uD83D\uDD25")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_main_MainSlider__WEBPACK_IMPORTED_MODULE_5__["default"], {
     className: "mb-1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130
+      lineNumber: 66
     },
     __self: this
-  })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_section_Section__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_section_Section__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 134
+      lineNumber: 70
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_2__["Container"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_1__["Container"], {
     fluid: "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135
+      lineNumber: 71
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_box_shadow_Shadow__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    color: _config_var__WEBPACK_IMPORTED_MODULE_4__["colors"].accent_1,
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_box_shadow_Shadow__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    color: _config_var__WEBPACK_IMPORTED_MODULE_2__["colors"].accent_1,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 72
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_title_Title__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_title_Title__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 73
     },
     __self: this
-  }, "Live Streams ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_emoji_Emoji__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    size: _config_var__WEBPACK_IMPORTED_MODULE_4__["font_size"].text,
+  }, "Live Streams ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_emoji_Emoji__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    size: _config_var__WEBPACK_IMPORTED_MODULE_2__["font_size"].text,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138
+      lineNumber: 74
     },
     __self: this
-  }, "\uD83C\uDFA5\u2728")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_main_MainSlider__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, "\uD83C\uDFA5\u2728")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_main_MainSlider__WEBPACK_IMPORTED_MODULE_5__["default"], {
     className: "mb-1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140
+      lineNumber: 76
     },
     __self: this
-  }))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_2__["Col"], {
+  }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(styled_bootstrap_grid__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     xs: 3,
     sm: 3,
     md: 3,
     lg: 3,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 145
+      lineNumber: 81
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_section_Section__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_section_Section__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 146
+      lineNumber: 82
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_sidebar_Sidebar__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_sidebar_Sidebar__WEBPACK_IMPORTED_MODULE_8__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 147
+      lineNumber: 83
     },
     __self: this
-  }))))))));
+  })))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
@@ -3699,17 +3671,6 @@ module.exports = require("core-js/library/fn/object/create");
 
 /***/ }),
 
-/***/ "core-js/library/fn/object/define-properties":
-/*!**************************************************************!*\
-  !*** external "core-js/library/fn/object/define-properties" ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/object/define-properties");
-
-/***/ }),
-
 /***/ "core-js/library/fn/object/define-property":
 /*!************************************************************!*\
   !*** external "core-js/library/fn/object/define-property" ***!
@@ -3718,17 +3679,6 @@ module.exports = require("core-js/library/fn/object/define-properties");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/object/define-property");
-
-/***/ }),
-
-/***/ "core-js/library/fn/object/freeze":
-/*!***************************************************!*\
-  !*** external "core-js/library/fn/object/freeze" ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/object/freeze");
 
 /***/ }),
 
