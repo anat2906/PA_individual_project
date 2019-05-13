@@ -1,3 +1,7 @@
+# tools
+codealike.json
+.vscode
+#
 node_modules
-yarn.lock
 .next
+yarn.lock

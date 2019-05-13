@@ -1,8 +1,7 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Document, { Head, Main, NextScript } from "next/document";
-import { createGlobalStyle } from "styled-components";
-import { GridThemeProvider } from "styled-bootstrap-grid";
-import { colors, font_size } from "../config/var";
+import { createGlobalStyle, ServerStyleSheet } from "styled-components";
+import { colors } from "../config/var";
 
 const Global = createGlobalStyle`
       * {
@@ -56,19 +55,15 @@ const Global = createGlobalStyle`
         }
       }
     `;
-const gridTheme = {
-  col: {
-    padding: 5
-  },
-  container: {
-    padding: 5
-  }
-};
 
 export default class MyDocument extends Document {
-  static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps };
+  static async getInitialProps({ renderPage }) {
+    const sheet = new ServerStyleSheet();
+    const page = renderPage(App => props =>
+      sheet.collectStyles(<App {...props} />)
+    );
+    const styleTags = sheet.getStyleElement();
+    return { ...page, styleTags };
   }
   render() {
     return (
@@ -100,15 +95,12 @@ export default class MyDocument extends Document {
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
           />
+          {this.props.styleTags}
         </Head>
         <body>
-          <GridThemeProvider gridTheme={gridTheme}>
-            <>
-              <Global />
-              <Main />
-              <NextScript />
-            </>
-          </GridThemeProvider>
+          <Global />
+          <Main />
+          <NextScript />
         </body>
       </html>
     );
