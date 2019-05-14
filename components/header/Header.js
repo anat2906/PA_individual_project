@@ -15,7 +15,7 @@ class Header extends Component {
       top: 0;
       left: 0;
       position: sticky;
-      z-index: 10
+      z-index: 5
     `;
     return (
       <Header>
