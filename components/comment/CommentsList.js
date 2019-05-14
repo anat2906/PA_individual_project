@@ -9,7 +9,6 @@ export default class CommentsList extends Component {
     return (
       <div className="pr-5">
         <CommentAdd />
-        <CommentEdit />
         <Comment />
         <Comment />
       </div>

@@ -5,7 +5,7 @@ import { Container, Col } from "styled-bootstrap-grid";
 import { colors, font_size } from "../config/var";
 import Header from "../components/header/Header";
 import Section from "../components/section/Section";
-import { StyledSidebar, SectionTitle } from "../components/sidebar/Sidebar";
+import { SectionTitle } from "../components/sidebar/Sidebar";
 import Player from "../components/player/Player";
 import Title from "../components/title/Title";
 import Button from "../components/button/Button";

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import PT from "prop-types";
 import { colors, font_size } from "../../config/var";
 import { Block } from "../block/Block";
 import { ReplyIcon, DeleteIcon, EditIcon } from "../icons";
@@ -60,5 +61,11 @@ class Comment extends Component {
     );
   }
 }
+
+Comment.propTypes = {
+  name: PT.string,
+  last_name: PT.string,
+  date: PT.string,
+};
 
 export default Comment;

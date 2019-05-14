@@ -19,7 +19,7 @@ const Footer = styled.div`
   justify-content: flex-end;
   padding: 0.5em 0;
   a {
-    margin-left: 1em;
+    margin-left: 0.5em;
     font-weight: 700;
     font-size: ${font_size.text_sm};
     font-family: "Roboto", sans-serif;
@@ -30,7 +30,7 @@ export default class CommentForm extends Component {
   render() {
     return (
       <>
-        <Textarea   placeholder="Leave your comment here"/>
+        <Textarea   placeholder="Leave your comment here..."/>
         <Footer>
           <a>Cancel</a>
           <a>Submit</a>
