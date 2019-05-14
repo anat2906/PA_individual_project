@@ -19,28 +19,39 @@ const Global = createGlobalStyle`
         cursor: pointer;
       }
       
+      .slick-slider {
+        margin-top: 1.5em;
+        margin-bottom: 0 !important;
+      }
+
       .slick-next:before {
-        font-size: 30px;
-        color: ${colors.dark_3};
-        content: "➭";
-        transform: translateX(-50%);
+        font-size: 25px;
+        color: ${colors.dark_1};
+        content: "➞";
         position: absolute;
         line-height: 0;
-        display: none;
+        display: block;
       }
       .slick-prev:before {
-        transform: translateX(-50%);
         position: absolute;
         line-height: 0;
-        font-size: 30px;
-        color: ${colors.dark_3};
-        content: "➭";
-        transform: translateX(-50%);
-        margin-top: -50%;
-        display: none;
+        font-size: 25px;
+        color: ${colors.dark_1};
+        content: "➞";
+        display: block;
       }
       .slick-prev {
+        top: -12%;
+        left: 0;
         transform: scaleX(-1);
+        opacity: 1;
+      }
+
+      .slick-next {
+        transform: none;
+        top: -12%;
+        right: 0;
+        opacity: 1;
       }
       
       @keyframes shadow {
