@@ -11,7 +11,7 @@ export default function LikeIcon(props) {
       stroke="#333333"
       strokeWidth="2.4"
       strokeLinecap="square"
-      strokeLineJoin="miter"
+      strokeLinejoin="miter"
       fill="none"
       color="#333333"
     >

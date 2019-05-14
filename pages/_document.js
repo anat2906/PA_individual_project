@@ -59,8 +59,8 @@ const Global = createGlobalStyle`
 export default class MyDocument extends Document {
   static async getInitialProps({ renderPage }) {
     const sheet = new ServerStyleSheet();
-    const page = renderPage(App => props =>
-      sheet.collectStyles(<App {...props} />)
+    const page = renderPage(MyApp => props =>
+      sheet.collectStyles(<MyApp {...props} />)
     );
     const styleTags = sheet.getStyleElement();
     return { ...page, styleTags };
@@ -69,7 +69,7 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          X{" "}
+          <link rel="shorcut icon" href="favicon.ico" type="image/x-icon" />
           <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
