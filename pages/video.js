@@ -23,6 +23,7 @@ import {
   RecommendationsIcon,
   CollectionIcon
 } from "../components/icons";
+import Modal from "../components/modal/Modal";
 
 const DateSection = styled.div`
   display: flex;
@@ -197,6 +198,7 @@ class VideoPage extends Component {
               </Section>
             </Col>
           </Container>
+          <Modal />
         </main>
       </>
     );

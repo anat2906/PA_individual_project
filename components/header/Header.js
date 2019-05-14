@@ -19,7 +19,7 @@ class Header extends Component {
     `;
     return (
       <Header>
-        <Container className="d-flex">
+        <Container className="d-flex align-items-center">
             <Col xs={4} sm={4} md={2} lg={2}>
               <HeaderLogo />
             </Col>

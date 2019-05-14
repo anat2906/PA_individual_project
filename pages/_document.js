@@ -10,7 +10,7 @@ const Global = createGlobalStyle`
 
       body {
         background: white;
-        color: ${colors.dark_1};
+        color: ${colors.dark_2};
       }
 
       a {
@@ -80,7 +80,7 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <link rel="shorcut icon" href="favicon.ico" type="image/x-icon" />
+          <link rel="shorcut icon" href="static/logo/logo.png" type="image/x-icon" />
           <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
