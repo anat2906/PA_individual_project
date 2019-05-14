@@ -11,8 +11,14 @@ import UserIcon from "./UserIcon";
 import VolumeLoudIcon from "./VolumeLoud";
 import CollectionIcon from "./CollectionIcon";
 import FilterIcon from "./FilterIcon";
+import DeleteIcon from "./DeleteIcon";
+import EditIcon from "./EditIcon";
+import ReplyIcon from "./ReplyIcon";
 
 export {
+  DeleteIcon,
+  EditIcon,
+  ReplyIcon,
   CalendarIcon,
   CollectionIcon,
   CommentIcon,

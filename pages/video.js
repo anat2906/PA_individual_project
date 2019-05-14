@@ -14,7 +14,7 @@ import STooltip from "../components/tooltip/Tooltip";
 import { FInfo } from "../components/videoCard/VideoCard";
 import VideoCard from "../components/videoCard/VideoCard";
 import Hashtag from "../components/hashtag/Hashtag";
-import { CommentInput, Comment } from "../components/comment";
+import { CommentSection } from "../components/comment";
 import {
   UserIcon,
   PlayIcon,
@@ -85,10 +85,6 @@ const Description = styled.div`
     font-size: ${font_size.text};
     margin-bottom: 0.5em;
   }
-`;
-
-const CommentSection = styled.div`
-  padding-top: 1.5em;
 `;
 
 class VideoPage extends Component {
@@ -169,15 +165,7 @@ class VideoPage extends Component {
                   <Hashtag>#ryan_dahl</Hashtag>
                   <Hashtag>#js_conf_eu</Hashtag>
                 </Description>
-                <CommentInput />
-                <CommentSection>
-                  <Comment />
-                  <Comment />
-                  <Comment />
-                  <Comment />
-                  <Comment />
-                  <Comment />
-                </CommentSection>
+                <CommentSection />
               </Section>
             </Col>
             <Col xs={3} sm={3} md={3} lg={3}>
@@ -198,7 +186,6 @@ class VideoPage extends Component {
               </Section>
             </Col>
           </Container>
-          <Modal />
         </main>
       </>
     );

@@ -20,7 +20,7 @@ const ModalBody = styled.div`
 `;
 
 const SModal = styled(Block)`
-  max-width: 40vw;
+  max-width: 30vw;
   max-height: 70%;
   overflow: auto;
   position: absolute;
@@ -34,6 +34,7 @@ const SModal = styled(Block)`
   padding: 0;
   margin: 0;
   color: ${colors.dark_1};
+  border-radius: 3px;
 `;
 
 const ModalFade = styled.div`
