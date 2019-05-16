@@ -1,17 +1,25 @@
 import React, { Component } from "react";
-import styled from "styled-components";
+import PT from "prop-types";
+import styled, { css } from "styled-components";
+import { ifProp } from "styled-tools";
 import Comment from "./Comment";
-import CommentAdd from "./CommentAdd";
-import CommentEdit from "./CommentEdit";
+
+const SList = styled.div`
+  margin-left: ${ifProp(
+    "level", "4em" , 0
+  )}
+`;
 
 export default class CommentsList extends Component {
   render() {
     return (
-      <div className="pr-5">
-        <CommentAdd />
+      <SList {...this.props}>
         <Comment />
-        <Comment />
-      </div>
+      </SList>
     );
   }
 }
+
+CommentsList.propTypes = {
+  level: PT.bool
+};

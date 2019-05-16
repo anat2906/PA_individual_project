@@ -19,7 +19,8 @@
     "react-simple-tooltip": "^2.5.0",
     "react-slick": "^0.24.0",
     "styled-bootstrap-grid": "^3.0.2",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "styled-tools": "^1.7.1"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.0"

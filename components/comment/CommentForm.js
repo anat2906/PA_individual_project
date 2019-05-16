@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { colors, font_size } from "../../config/var";
+import Emoji from "../emoji/Emoji";
 
 const Textarea = styled.textarea`
   width: 100%;
@@ -32,8 +33,8 @@ export default class CommentForm extends Component {
       <>
         <Textarea   placeholder="Leave your comment here..."/>
         <Footer>
-          <a>Cancel</a>
-          <a>Submit</a>
+          <a>Cancel<Emoji size={font_size.text_sm}>🙅🏼</Emoji></a>
+          <a>Submit<Emoji size={font_size.text_sm}>📝</Emoji></a>
         </Footer>
       </>
     );

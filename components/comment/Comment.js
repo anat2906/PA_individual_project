@@ -5,6 +5,7 @@ import { colors, font_size } from "../../config/var";
 import { Block } from "../block/Block";
 import { ReplyIcon, DeleteIcon, EditIcon } from "../icons";
 import CommentHeader from "./CommentHeader";
+import CommentsList from "./CommentsList";
 
 export const SComment = styled(Block)`
   margin: 0.5em;
@@ -37,35 +38,44 @@ const Footer = styled.div`
 `;
 
 class Comment extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
-      <SComment>
-        <CommentHeader />
-        <Body>
-          <p>
-            some text some text some text some text some text some text some
-            text some text{" "}
-          </p>
-        </Body>
-        <Footer>
-          <div>
-            <span>15/05/2019</span>
-          </div>
-          <div className="d-flex">
-            <EditIcon />
-            <DeleteIcon />
-            <ReplyIcon />
-          </div>
-        </Footer>
-      </SComment>
+      <>
+        <SComment>
+          <CommentHeader
+            is_add_form={false}
+            reply_to_first_name={"Dan"}
+            reply_to_last_name={"Smith"}
+          />
+          <Body>
+            <p>
+              some text some text some text some text some text some text some
+              text some text{" "}
+            </p>
+          </Body>
+          <Footer>
+            <div>
+              <span>15/05/2019</span>
+            </div>
+            <div className="d-flex">
+              <a>
+                <EditIcon />
+              </a>
+              <a>
+                <DeleteIcon />
+              </a>
+              <a>
+                <ReplyIcon />
+              </a>
+            </div>
+          </Footer>
+        </SComment>
+      </>
     );
   }
 }
-
-Comment.propTypes = {
-  name: PT.string,
-  last_name: PT.string,
-  date: PT.string,
-};
 
 export default Comment;

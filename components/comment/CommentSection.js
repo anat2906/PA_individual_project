@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { colors, font_size } from "../../config/var";
-import Emoji from "../emoji/Emoji";
 import CommentsList from "./CommentsList";
+import CommentAdd from "./CommentAdd";
 
 const Header = styled.div`
   display: flex;
@@ -24,11 +24,11 @@ export default class CommentSection extends Component {
       <div>
         <Header>
           <p>20 comments</p>
-          <a>
-            Add a comment <Emoji size={font_size.text}>📝</Emoji>
-          </a>
         </Header>
-        <CommentsList />
+        <div className="pr-5">
+          <CommentAdd />
+          <CommentsList level={false}/>
+        </div>
       </div>
     );
   }

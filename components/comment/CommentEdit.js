@@ -6,7 +6,7 @@ import { SComment } from "./Comment";
 function CommentEdit(props) {
   return (
     <SComment>
-      <CommentHeader />
+      <CommentHeader is_add_form={false}/>
       <CommentForm />
     </SComment>
   );

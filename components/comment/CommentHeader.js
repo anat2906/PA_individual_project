@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import PT from "prop-types";
 import styled from "styled-components";
 import { colors, font_size } from "../../config/var";
 import CommentAvatar from "./CommentAvatar";
-import { LikeIcon } from "../icons";
+import { LikeIcon, ReplyIcon } from "../icons";
 
 const Header = styled.div`
   padding: 0.5em 0;
@@ -18,6 +19,11 @@ const Header = styled.div`
     font-size: ${font_size.text_sm};
     color: ${colors.dark_3};
   }
+`;
+
+const AuthorName = styled.div`
+  display: flex;
+  margin-right: 1.5em;
   h6 {
     margin: 0;
     margin-left: 0.5em;
@@ -28,20 +34,47 @@ const Header = styled.div`
   }
 `;
 
+const Reply = styled.div`
+  display: flex;
+  span {
+    margin: 0 0.5em;
+  }
+  svg {
+    width: 10px;
+    height: 10px;
+  }
+`;
+
 export default class CommentHeader extends Component {
   render() {
     return (
       <Header>
         <div className="d-flex align-items-center">
           <CommentAvatar />
-          <h6>Name</h6>
-          <h6>Last Name</h6>
+          <AuthorName>
+            <h6>First Name</h6>
+            <h6>Last Name</h6>
+          </AuthorName>
+          {this.props.reply_to_first_name ? (
+            <Reply>
+              <span>{this.props.reply_to_first_name}</span>
+              <span>{this.props.reply_to_last_name}</span>
+              <ReplyIcon />
+            </Reply>
+          ) : null}
         </div>
-        <div>
-          <LikeIcon />
-          <span>10</span>
-        </div>
+        {this.props.is_add_form ? null : (
+          <div>
+            <LikeIcon />
+            <span>10</span>
+          </div>
+        )}
       </Header>
     );
   }
 }
+
+CommentHeader.propTypes = {
+  is_add_form: PT.bool,
+  reply_to_first_name: PT.string
+};
