@@ -19,41 +19,6 @@ const Global = createGlobalStyle`
         cursor: pointer;
       }
       
-      .slick-slider {
-        margin-top: 1.5em;
-        margin-bottom: 0 !important;
-      }
-
-      .slick-next:before {
-        font-size: 25px;
-        color: ${colors.dark_1};
-        content: "➞";
-        position: absolute;
-        line-height: 0;
-        display: block;
-      }
-      .slick-prev:before {
-        position: absolute;
-        line-height: 0;
-        font-size: 25px;
-        color: ${colors.dark_1};
-        content: "➞";
-        display: block;
-      }
-      .slick-prev {
-        top: -12%;
-        left: 0;
-        transform: scaleX(-1);
-        opacity: 1;
-      }
-
-      .slick-next {
-        transform: none;
-        top: -12%;
-        right: 0;
-        opacity: 1;
-      }
-      
       @keyframes shadow {
         0% {
           background-position: 0% 50%;
