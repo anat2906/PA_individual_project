@@ -1,7 +1,8 @@
+import React, { Component } from "react";
 import styled from "styled-components";
 import { colors, font_size } from "../../config/var";
 
-const Button = styled.button`
+const SButton = styled.button`
   font-family: "Roboto";
   font-size: ${font_size.text};
   font-weight: 600;
@@ -46,5 +47,19 @@ const Button = styled.button`
     }
   }
 `;
+
+class Button extends Component {
+    render() {
+    return (
+      <>
+        {this.props.disabled ? (
+          <SBtnDisabled {...this.props}>{this.props.children}</SBtnDisabled>
+        ) : (
+          <SButton {...this.props}>{this.props.children}</SButton>
+        )}
+      </>
+    );
+  }
+}
 
 export default Button;

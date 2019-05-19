@@ -14,6 +14,8 @@ import FilterIcon from "./FilterIcon";
 import DeleteIcon from "./DeleteIcon";
 import EditIcon from "./EditIcon";
 import ReplyIcon from "./ReplyIcon";
+import VideoIcon from "./VideoIcon";
+import FollowersIcon from "./FollowersIcon";
 
 export {
   DeleteIcon,
@@ -31,5 +33,7 @@ export {
   SettingsIcon,
   TagIcon,
   UserIcon,
-  VolumeLoudIcon
+  VolumeLoudIcon,
+  VideoIcon,
+  FollowersIcon
 };

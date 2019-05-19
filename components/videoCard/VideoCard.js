@@ -26,6 +26,7 @@ const Footer = styled.div`
 const FTitle = styled.div`
   font-family: "Roboto", sans-serif;
   font-size: ${font_size.text_sm};
+  color: ${colors.dark_1};
   position: absolute;
   padding: 0.3em;
   top: 0;
@@ -57,8 +58,7 @@ class VideoCard extends Component {
         <Link href="/video">
           <Video>
             <img
-              {...this.props}
-              src="https://img.youtube.com/vi/M3BM9TB-8yA/hqdefault.jpg"
+              src="static/video.jpg"
             />
             <FTitle>
               <span>
