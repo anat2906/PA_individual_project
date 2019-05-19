@@ -16,6 +16,8 @@ import EditIcon from "./EditIcon";
 import ReplyIcon from "./ReplyIcon";
 import VideoIcon from "./VideoIcon";
 import FollowersIcon from "./FollowersIcon";
+import GithubIcon from "./GithubIcon";
+import LinkedinIcon from "./LinkedinIcon";
 
 export {
   DeleteIcon,
@@ -35,5 +37,7 @@ export {
   UserIcon,
   VolumeLoudIcon,
   VideoIcon,
-  FollowersIcon
+  FollowersIcon,
+  GithubIcon,
+  LinkedinIcon
 };

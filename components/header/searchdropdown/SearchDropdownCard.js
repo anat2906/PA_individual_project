@@ -70,7 +70,7 @@ class EventCard extends Component {
     return (
       <SEventCard>
         <SCardAvatar>
-          <img src="static/avatar.png" />
+          <img src="static/react-europe.png" />
         </SCardAvatar>
         <h6>Event Name</h6>
       </SEventCard>

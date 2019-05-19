@@ -21,6 +21,8 @@ const ColorBlockTitle = styled.div`
   background: ${props => props.color};
   padding: 0.3em 0.5em;
   color: white;
+  display: flex;
+  justify-content: space-between;
 `;
 
 const ColorBlockContent = styled.div`

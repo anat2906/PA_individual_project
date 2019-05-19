@@ -8,7 +8,6 @@ import ResultsNav from "../components/resultsPage/resultsNav";
 import VideoCard from "../components/videoCard/VideoCard";
 import EventCard from "../components/eventCard/EventCard";
 import Section from "../components/section/Section";
-import MainAds from "../components/main/MainAds";
 
 const CardWrapper = styled(Col)`
   padding: 0.5em 1em;
