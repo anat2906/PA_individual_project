@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { colors, font_size } from "../../config/var";
 
-const Hashtag = styled.div`
+const SHashtag = styled.div`
   display: inline-block;
   background: ${colors.pale_2};
   border-radius: 15px;
@@ -10,5 +10,9 @@ const Hashtag = styled.div`
   font-family: "PT Mono";
   margin: 0.2em;
 `;
+
+function Hashtag(props) {
+  return <SHashtag>#{props.children}</SHashtag>;
+}
 
 export default Hashtag;

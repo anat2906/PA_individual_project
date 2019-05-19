@@ -12,6 +12,7 @@ import {
   ColorBlockTitle,
   ColorBlockContent
 } from "../components/block/Block";
+import Hashtag from "../components/hashtag/Hashtag";
 
 export default class ProfilePage extends Component {
   render() {
@@ -26,36 +27,48 @@ export default class ProfilePage extends Component {
             <Section>
               <ProfileHeader />
             </Section>
-            <Section>
-              <ColorBlock color={colors.accent_4}>
-                <ColorBlockTitle color={colors.accent_4}>
-                  <h5>Videos</h5>
-                  <button>view all</button>
-                </ColorBlockTitle>
-                <ColorBlockContent className="d-flex">
-                  <Col xs={3} sm={3} md={3} lg={3}>
-                    <VideoCard />
-                  </Col>
-                  <Col xs={3} sm={3} md={3} lg={3}>
-                    <VideoCard />
-                  </Col>
-                  <Col xs={3} sm={3} md={3} lg={3}>
-                    <VideoCard />
-                  </Col>
-                  <Col xs={3} sm={3} md={3} lg={3}>
-                    <VideoCard />
-                  </Col>
-                </ColorBlockContent>
-              </ColorBlock>
-            </Section>
-            <Section>
-              <ColorBlock color={colors.accent_3}>
-                <ColorBlockTitle color={colors.accent_3}>
-                  <h5>Collections</h5>
-                  <button>view all</button>
-                </ColorBlockTitle>
-                <ColorBlockContent>videocards videocards</ColorBlockContent>
-              </ColorBlock>
+            <Section className="d-flex">
+              <Col xs={9} sm={9} md={9} lg={9}>
+                <ColorBlock color={colors.accent_4}>
+                  <ColorBlockTitle color={colors.accent_4}>
+                    <h5>Videos</h5>
+                  </ColorBlockTitle>
+                  <ColorBlockContent className="d-flex">
+                    <Col xs={3} sm={3} md={3} lg={3}>
+                      <VideoCard />
+                    </Col>
+                    <Col xs={3} sm={3} md={3} lg={3}>
+                      <VideoCard />
+                    </Col>
+                    <Col xs={3} sm={3} md={3} lg={3}>
+                      <VideoCard />
+                    </Col>
+                    <Col xs={3} sm={3} md={3} lg={3}>
+                      <VideoCard />
+                    </Col>
+                  </ColorBlockContent>
+                </ColorBlock>
+              </Col>
+              <Col xs={3} sm={3} md={3} lg={3}>
+                <ColorBlock color={colors.accent_2} className="mb-3">
+                  <ColorBlockTitle color={colors.accent_2}>
+                    <h5>Collections</h5>
+                  </ColorBlockTitle>
+                  <ColorBlockContent>no collections yet</ColorBlockContent>
+                </ColorBlock>
+                <ColorBlock color={colors.accent_3}>
+                  <ColorBlockTitle color={colors.accent_3}>
+                    <h5>Followed Topics</h5>
+                  </ColorBlockTitle>
+                  <ColorBlockContent>
+                    <Hashtag>go</Hashtag>
+                    <Hashtag>python</Hashtag>
+                    <Hashtag>react</Hashtag>
+                    <Hashtag>AI</Hashtag>
+                    <Hashtag>Highload2019</Hashtag>
+                  </ColorBlockContent>
+                </ColorBlock>
+              </Col>
             </Section>
           </Container>
         </main>

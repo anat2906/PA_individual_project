@@ -9,7 +9,7 @@ import { GithubIcon, LinkedinIcon } from "../icons";
 
 const SHeader = styled.div`
   display: flex;
-  padding: 2em 1em;
+  padding: 1em 0.5em;
   align-items: center;
   background: ${colors.light_1};
   border-radius: 3px;
@@ -21,12 +21,19 @@ const MainInfo = styled.div`
 `;
 
 const MainInfoName = styled.div`
+  display: flex;
+  align-items: center;
   h2 {
     font-size: ${font_size.title};
     color: ${colors.dark_1};
     font-weight: 700;
     margin: 0;
+    margin-right: 0.5em; 
     padding: 0;
+  }
+  svg {
+    width: 25px;
+    height: 25px;
   }
 `;
 const MainInfoBio = styled.p`
@@ -34,20 +41,6 @@ const MainInfoBio = styled.p`
   font-size: ${font_size.text};
   color: ${colors.dark_2};
   margin: 0.5em 0;
-`;
-const MainInfoContacts = styled.div`
-  display: flex;
-  margin: 0;
-  padding: 0;
-  padding-top: 1em;
-  a {
-    margin: 0;
-    margin-right: 0.3em;
-    svg {
-      width: 30px;
-      height: 30px;
-    }
-  }
 `;
 
 const AdditionalInfo = styled.div`
@@ -86,17 +79,12 @@ export default class ProfileHeader extends Component {
             <Col xs={8} sm={8} md={8} lg={8}>
               <MainInfoName>
                 <h2>Name Lastname</h2>
-                <MainInfoBio>Put your bio right here!</MainInfoBio>
-              </MainInfoName>
-              <Button>Follow</Button>
-              <MainInfoContacts>
                 <a>
                   <GithubIcon />
                 </a>
-                <a>
-                  <LinkedinIcon />
-                </a>
-              </MainInfoContacts>
+              </MainInfoName>
+              <MainInfoBio>Put your bio right here!</MainInfoBio>
+              <Button>Follow</Button>
             </Col>
           </MainInfo>
         </Col>

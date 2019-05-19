@@ -159,11 +159,11 @@ class VideoPage extends Component {
                     where there are a mix of anchor links and buttons but they
                     should be styled identically.
                   </p>
-                  <Hashtag>#development</Hashtag>
-                  <Hashtag>#node_js</Hashtag>
-                  <Hashtag>#js</Hashtag>
-                  <Hashtag>#ryan_dahl</Hashtag>
-                  <Hashtag>#js_conf_eu</Hashtag>
+                  <Hashtag>development</Hashtag>
+                  <Hashtag>node_js</Hashtag>
+                  <Hashtag>js</Hashtag>
+                  <Hashtag>ryan_dahl</Hashtag>
+                  <Hashtag>js_conf_eu</Hashtag>
                 </Description>
                 <CommentSection />
               </Section>
