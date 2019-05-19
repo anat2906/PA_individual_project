@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { Container, Col, Row } from "styled-bootstrap-grid";
+import { Container, Col } from "styled-bootstrap-grid";
 import { colors } from "../../config/var";
 import HeaderLogo from "./HeaderLogo";
 import HeaderLogin from "./HeaderLogin";
@@ -16,21 +16,21 @@ class Header extends Component {
       top: 0;
       left: 0;
       position: sticky;
-      z-index: 5
+      z-index: 5;
     `;
     return (
       <Header>
         <Container className="d-flex align-items-center">
-            <Col xs={4} sm={4} md={2} lg={2}>
-              <HeaderLogo />
-            </Col>
-            <Col xs={4} sm={4} md={7} lg={7}>
-              <HeaderSearch />
-              <SearchDropdown />
-            </Col>
-            <Col xs={4} sm={4} md={3} lg={3}>
-              <HeaderLogin />
-            </Col>
+          <Col xs={4} sm={4} md={2} lg={2}>
+            <HeaderLogo />
+          </Col>
+          <Col xs={4} sm={4} md={7} lg={7}>
+            <HeaderSearch />
+            <SearchDropdown />
+          </Col>
+          <Col xs={4} sm={4} md={3} lg={3}>
+            <HeaderLogin />
+          </Col>
         </Container>
       </Header>
     );
