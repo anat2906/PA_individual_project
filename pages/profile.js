@@ -13,6 +13,7 @@ import {
   ColorBlockContent
 } from "../components/block/Block";
 import Hashtag from "../components/hashtag/Hashtag";
+import CollectionCard from "../components/collectionCard/CollectionCard";
 
 export default class ProfilePage extends Component {
   render() {
@@ -50,13 +51,7 @@ export default class ProfilePage extends Component {
                 </ColorBlock>
               </Col>
               <Col xs={3} sm={3} md={3} lg={3}>
-                <ColorBlock color={colors.accent_2} className="mb-3">
-                  <ColorBlockTitle color={colors.accent_2}>
-                    <h5>Collections</h5>
-                  </ColorBlockTitle>
-                  <ColorBlockContent>no collections yet</ColorBlockContent>
-                </ColorBlock>
-                <ColorBlock color={colors.accent_3}>
+                <ColorBlock color={colors.accent_3} className="mb-3">
                   <ColorBlockTitle color={colors.accent_3}>
                     <h5>Followed Topics</h5>
                   </ColorBlockTitle>
@@ -66,6 +61,16 @@ export default class ProfilePage extends Component {
                     <Hashtag>react</Hashtag>
                     <Hashtag>AI</Hashtag>
                     <Hashtag>Highload2019</Hashtag>
+                  </ColorBlockContent>
+                </ColorBlock>
+                <ColorBlock color={colors.accent_2}>
+                  <ColorBlockTitle color={colors.accent_2}>
+                    <h5>Collections</h5>
+                  </ColorBlockTitle>
+                  <ColorBlockContent>
+                    <CollectionCard />
+                    <CollectionCard />
+                    <CollectionCard />
                   </ColorBlockContent>
                 </ColorBlock>
               </Col>

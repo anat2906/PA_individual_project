@@ -28,7 +28,7 @@ const MainInfoName = styled.div`
     color: ${colors.dark_1};
     font-weight: 700;
     margin: 0;
-    margin-right: 0.5em; 
+    margin-right: 0.5em;
     padding: 0;
   }
   svg {
@@ -69,7 +69,7 @@ export default class ProfileHeader extends Component {
   render() {
     return (
       <SHeader>
-        <Col xs={8} sm={8} md={8} lg={8}>
+        <Col xs={9} sm={9} md={9} lg={9}>
           <MainInfo>
             <Col xs={4} sm={4} md={4} lg={4}>
               <ProfileAvatar>
@@ -88,7 +88,7 @@ export default class ProfileHeader extends Component {
             </Col>
           </MainInfo>
         </Col>
-        <Col xs={4} sm={4} md={4} lg={4}>
+        <Col xs={3} sm={3} md={3} lg={3}>
           <AdditionalInfo>
             <AddInfoItem>
               <h6>Uploaded videos</h6>
