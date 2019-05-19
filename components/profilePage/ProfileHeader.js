@@ -5,7 +5,7 @@ import { colors, font_size } from "../../config/var";
 import { ProfileAvatar } from "./ProfileAvatar";
 import { VideoIcon } from "../icons";
 import Button from "../button/Button";
-import { GithubIcon, LinkedinIcon } from "../icons";
+import { GithubIcon } from "../icons";
 
 const SHeader = styled.div`
   display: flex;

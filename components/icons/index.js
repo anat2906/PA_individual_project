@@ -18,6 +18,7 @@ import VideoIcon from "./VideoIcon";
 import FollowersIcon from "./FollowersIcon";
 import GithubIcon from "./GithubIcon";
 import LinkedinIcon from "./LinkedinIcon";
+import PlaylistIcon from "./PlaylistIcon";
 
 export {
   DeleteIcon,
@@ -39,5 +40,6 @@ export {
   VideoIcon,
   FollowersIcon,
   GithubIcon,
-  LinkedinIcon
+  LinkedinIcon,
+  PlaylistIcon
 };
