@@ -49,16 +49,17 @@ class Comment extends Component {
             is_add_form={false}
             reply_to_first_name={"Dan"}
             reply_to_last_name={"Smith"}
+            author_name={this.props.item.first_name}
+            author_last_name={this.props.item.last_name}
           />
           <Body>
             <p>
-              some text some text some text some text some text some text some
-              text some text{" "}
+                {this.props.item.text}
             </p>
           </Body>
           <Footer>
             <div>
-              <span>15/05/2019</span>
+              <span>{this.props.item.date}</span>
             </div>
             <div className="d-flex">
               <a>

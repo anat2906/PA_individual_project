@@ -52,8 +52,8 @@ export default class CommentHeader extends Component {
         <div className="d-flex align-items-center">
           <CommentAvatar />
           <AuthorName>
-            <h6>First Name</h6>
-            <h6>Last Name</h6>
+            <h6>{this.props.author_name}</h6>
+            <h6>{this.props.author_last_name}</h6>
           </AuthorName>
           {this.props.reply_to_first_name ? (
             <Reply>

@@ -27,7 +27,7 @@ export default class CommentSection extends Component {
         </Header>
         <div className="pr-5">
           <CommentAdd />
-          <CommentsList level={false}/>
+          <CommentsList level={false} CommentsList = {this.props.CommentsList}/>
         </div>
       </div>
     );

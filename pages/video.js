@@ -24,6 +24,27 @@ import {
   CollectionIcon
 } from "../components/icons";
 import Modal from "../components/modal/Modal";
+//
+import { CommentsList } from "../mobx/models/CommentsListModel";
+
+const CommentsList = CommentsList.create({
+  items: [
+    {
+      author: "Author 1",
+      text: "comment text 1",
+      data: "02/02/2018",
+      children: [],
+      reply_to: ""
+    },
+    {
+      author: "Author 2",
+      text: "comment text 2",
+      data: "02/02/2018",
+      children: [],
+      reply_to: ""
+    }
+  ]
+});
 
 const DateSection = styled.div`
   display: flex;
@@ -165,7 +186,7 @@ class VideoPage extends Component {
                   <Hashtag>ryan_dahl</Hashtag>
                   <Hashtag>js_conf_eu</Hashtag>
                 </Description>
-                <CommentSection />
+                <CommentSection  CommentsList = {CommentsList}/>
               </Section>
             </Col>
             <Col xs={3} sm={3} md={3} lg={3}>

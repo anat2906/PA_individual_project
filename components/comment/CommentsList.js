@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {observer} from "mobx-react";
 import PT from "prop-types";
 import styled, { css } from "styled-components";
 import { ifProp } from "styled-tools";
@@ -8,13 +9,15 @@ const SList = styled.div`
   margin-left: ${ifProp(
     "level", "4em" , 0
   )}
-`;
-
-export default class CommentsList extends Component {
+`;А
+class CommentsList extends Component {
   render() {
     return (
       <SList {...this.props}>
-        <Comment />
+        {
+          this.props.CommentsList.items.map ((item, idx) => <Comment key={idx} item={item} />
+          )
+        }
       </SList>
     );
   }
@@ -23,3 +26,5 @@ export default class CommentsList extends Component {
 CommentsList.propTypes = {
   level: PT.bool
 };
+
+export default observer(CommentsList) 
