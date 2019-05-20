@@ -21,7 +21,7 @@ export default class ProfilePage extends Component {
     return (
       <>
         <Head>
-          <title>Video</title>
+          <title>Profile</title>
         </Head>
         <Header />
         <main>

@@ -47,26 +47,29 @@ const Reply = styled.div`
 
 export default class CommentHeader extends Component {
   render() {
+    const {
+      is_add_form,
+      item
+    } = this.props;
     return (
       <Header>
         <div className="d-flex align-items-center">
           <CommentAvatar />
           <AuthorName>
-            <h6>{this.props.author_name}</h6>
-            <h6>{this.props.author_last_name}</h6>
+            <h6>{item.first_name}</h6>
+            <h6>{item.last_name}</h6>
           </AuthorName>
-          {this.props.reply_to_first_name ? (
+          {item.reply_to ? (
             <Reply>
-              <span>{this.props.reply_to_first_name}</span>
-              <span>{this.props.reply_to_last_name}</span>
+              <span>{item.reply_to}</span>
               <ReplyIcon />
             </Reply>
           ) : null}
         </div>
-        {this.props.is_add_form ? null : (
+        {is_add_form ? null : (
           <div>
+            <span className="mr-2">{item.likes_count}</span>
             <LikeIcon />
-            <span>10</span>
           </div>
         )}
       </Header>

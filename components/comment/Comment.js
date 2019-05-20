@@ -49,24 +49,22 @@ class Comment extends Component {
     this.renderEditable = this.renderEditable.bind(this);
   }
 
-  onToggleEdit = () => {
+  onToggleEdit() {
     this.setState({ isEditing: true });
   };
 
   renderEditable() {
+    console.log(this.props)
     return <CommentEdit item={this.props.item} />;
   }
   render() {
     return this.state.isEditing ? (
-      this.renderEditable
+      this.renderEditable()
     ) : (
       <SComment>
         <CommentHeader
           is_add_form={false}
-          reply_to_first_name={"Dan"}
-          reply_to_last_name={"Smith"}
-          author_name={this.props.item.first_name}
-          author_last_name={this.props.item.last_name}
+          item={this.props.item}
         />
         <Body>
           <p>{this.props.item.text}</p>
@@ -76,8 +74,8 @@ class Comment extends Component {
             <span>{this.props.item.date}</span>
           </div>
           <div className="d-flex">
-            <a>
-              <EditIcon onClick={this.onToggleEdit} />
+            <a onClick={this.onToggleEdit}>
+              <EditIcon />
             </a>
             <a>
               <DeleteIcon />

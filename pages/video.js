@@ -33,7 +33,8 @@ const _CommentsList = CommentsList.create({
       first_name: "First",
       last_name: "Author",
       text: "comment text 1",
-      data: "02/02/2018",
+      date: "02/02/2018",
+      likes_count: 8,
       children: [],
       reply_to: ""
     },
@@ -41,7 +42,8 @@ const _CommentsList = CommentsList.create({
       first_name: "Second",
       last_name: "Author",
       text: "comment text 2",
-      data: "02/02/2018",
+      date: "02/02/2018",
+      likes_count: 5,
       children: [],
       reply_to: ""
     }

@@ -27,7 +27,7 @@ class CommentForm extends Component {
         <STextarea
           placeholder="Leave your comment here..."
           value={this.props.item.text}
-          onChange={this.onTextChange}
+          onChange={()=> {this.props.onTextChange}}
         />
         <Footer>
           <a>
@@ -40,10 +40,6 @@ class CommentForm extends Component {
       </>
     );
   }
-
-  onTextChange = event => {
-    this.props.item.changeText(event.target.value);
-  };
 }
 
 export default observer(CommentForm);
