@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { observer } from "mobx-react";
 import styled from "styled-components";
 import PT from "prop-types";
 import { colors, font_size } from "../../config/var";
@@ -6,6 +7,7 @@ import { Block } from "../block/Block";
 import { ReplyIcon, DeleteIcon, EditIcon } from "../icons";
 import CommentHeader from "./CommentHeader";
 import CommentsList from "./CommentsList";
+import CommentEdit from "./CommentEdit";
 
 export const SComment = styled(Block)`
   margin: 0.5em;
@@ -40,43 +42,54 @@ const Footer = styled.div`
 class Comment extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      isEditing: false
+    };
+    this.onToggleEdit = this.onToggleEdit.bind(this);
+    this.renderEditable = this.renderEditable.bind(this);
+  }
+
+  onToggleEdit = () => {
+    this.setState({ isEditing: true });
+  };
+
+  renderEditable() {
+    return <CommentEdit item={this.props.item} />;
   }
   render() {
-    return (
-      <>
-        <SComment>
-          <CommentHeader
-            is_add_form={false}
-            reply_to_first_name={"Dan"}
-            reply_to_last_name={"Smith"}
-            author_name={this.props.item.first_name}
-            author_last_name={this.props.item.last_name}
-          />
-          <Body>
-            <p>
-                {this.props.item.text}
-            </p>
-          </Body>
-          <Footer>
-            <div>
-              <span>{this.props.item.date}</span>
-            </div>
-            <div className="d-flex">
-              <a>
-                <EditIcon />
-              </a>
-              <a>
-                <DeleteIcon />
-              </a>
-              <a>
-                <ReplyIcon />
-              </a>
-            </div>
-          </Footer>
-        </SComment>
-      </>
+    return this.state.isEditing ? (
+      this.renderEditable
+    ) : (
+      <SComment>
+        <CommentHeader
+          is_add_form={false}
+          reply_to_first_name={"Dan"}
+          reply_to_last_name={"Smith"}
+          author_name={this.props.item.first_name}
+          author_last_name={this.props.item.last_name}
+        />
+        <Body>
+          <p>{this.props.item.text}</p>
+        </Body>
+        <Footer>
+          <div>
+            <span>{this.props.item.date}</span>
+          </div>
+          <div className="d-flex">
+            <a>
+              <EditIcon onClick={this.onToggleEdit} />
+            </a>
+            <a>
+              <DeleteIcon />
+            </a>
+            <a>
+              <ReplyIcon />
+            </a>
+          </div>
+        </Footer>
+      </SComment>
     );
   }
 }
 
-export default Comment;
+export default observer(Comment);

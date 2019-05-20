@@ -30,7 +30,7 @@ export default class FormField extends Component {
     return (
       <>
         {this.props.type === "textarea" ? (
-          <STextarea {...this.props} />
+          <STextarea item={this.props.item} {...this.props} />
         ) : this.props.type === "text" ? (
           <SInput type="text" {...this.props} />
         ) : this.props.type === "password" ? (

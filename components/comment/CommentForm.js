@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { observer } from "mobx-react";
 import styled from "styled-components";
 import { font_size } from "../../config/var";
 import Emoji from "../emoji/Emoji";
@@ -19,11 +20,15 @@ const Footer = styled.div`
   }
 `;
 
-export default class CommentForm extends Component {
+class CommentForm extends Component {
   render() {
     return (
       <>
-        <STextarea placeholder="Leave your comment here..." />
+        <STextarea
+          placeholder="Leave your comment here..."
+          value={this.props.item.text}
+          onChange={this.onTextChange}
+        />
         <Footer>
           <a>
             Cancel<Emoji size={font_size.text_sm}>🙅🏼</Emoji>
@@ -35,4 +40,10 @@ export default class CommentForm extends Component {
       </>
     );
   }
+
+  onTextChange = event => {
+    this.props.item.changeText(event.target.value);
+  };
 }
+
+export default observer(CommentForm);
