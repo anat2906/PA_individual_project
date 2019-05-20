@@ -9,7 +9,7 @@ const SList = styled.div`
   margin-left: ${ifProp(
     "level", "4em" , 0
   )}
-`;А
+`;
 class CommentsList extends Component {
   render() {
     return (

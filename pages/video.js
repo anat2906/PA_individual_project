@@ -27,17 +27,19 @@ import Modal from "../components/modal/Modal";
 //
 import { CommentsList } from "../mobx/models/CommentsListModel";
 
-const CommentsList = CommentsList.create({
+const _CommentsList = CommentsList.create({
   items: [
     {
-      author: "Author 1",
+      first_name: "First",
+      last_name: "Author",
       text: "comment text 1",
       data: "02/02/2018",
       children: [],
       reply_to: ""
     },
     {
-      author: "Author 2",
+      first_name: "Second",
+      last_name: "Author",
       text: "comment text 2",
       data: "02/02/2018",
       children: [],
@@ -186,7 +188,7 @@ class VideoPage extends Component {
                   <Hashtag>ryan_dahl</Hashtag>
                   <Hashtag>js_conf_eu</Hashtag>
                 </Description>
-                <CommentSection  CommentsList = {CommentsList}/>
+                <CommentSection CommentsList={_CommentsList} />
               </Section>
             </Col>
             <Col xs={3} sm={3} md={3} lg={3}>

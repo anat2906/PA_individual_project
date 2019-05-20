@@ -6,7 +6,7 @@ const CommentsListItem = types
     last_name: types.string,
     text: types.string,
     data: types.string,
-    children: types.optional(types.array, []),
+    children: types.frozen(types.array),
     reply_to: types.optional(types.string, "")
   })
   .actions(self => ({
@@ -15,13 +15,14 @@ const CommentsListItem = types
     }
   }));
 
-const CommentsList = types.model({
-  items: types.optional(types.array(CommentsListItem), [])
-})
-.actions(self => ({
-  addItem(item){
-    self.items.push(item)
-  }
-}))
+const CommentsList = types
+  .model({
+    items: types.optional(types.array(CommentsListItem), [])
+  })
+  .actions(self => ({
+    addItem(item) {
+      self.items.push(item);
+    }
+  }));
 
 export { CommentsList, CommentsListItem };
