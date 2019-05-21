@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { observer } from "mobx-react";
 import styled from "styled-components";
 import { TextareaForm } from "../form";
 
@@ -6,6 +7,7 @@ const STextarea = styled(TextareaForm)`
   width: 100%;
 `;
 
+@observer
 class CommentForm extends Component {
   render() {
     return (
@@ -13,9 +15,8 @@ class CommentForm extends Component {
         <STextarea
           placeholder="Leave your comment here..."
           value={this.props.item.text}
-          onChange={() => {
-            console.log("ch")
-            this.props.onTextChange;
+          onChange={event => {
+            this.props.onTextChange(event);
           }}
         />
       </>
