@@ -10,7 +10,7 @@ class CommentEdit extends Component {
   }
 
   onTextChange = event => {
-    console(event.target.value)
+    console.log(event.target.value)
     this.props.item.changeText(event.target.value);
   };
 
