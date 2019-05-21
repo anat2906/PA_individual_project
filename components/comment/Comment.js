@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { observer } from "mobx-react";
+import { clone, getSnapshot, applySnapshot } from "mobx-state-tree";
 import styled from "styled-components";
 import PT from "prop-types";
 import { colors, font_size } from "../../config/var";
@@ -34,39 +35,53 @@ class Comment extends Component {
     this.onToggleEdit = this.onToggleEdit.bind(this);
     this.renderEditable = this.renderEditable.bind(this);
     this.onCancelEdit = this.onCancelEdit.bind(this);
+    this.onSaveEdit = this.onSaveEdit.bind(this);
   }
 
   onToggleEdit() {
-    this.setState({ isEditing: true });
+    this.setState({ isEditing: true, clone: clone(this.props.item) });
   }
 
   onCancelEdit() {
     this.setState({ isEditing: false });
   }
 
+  onSaveEdit() {
+    applySnapshot(this.props.item, getSnapshot(this.state.clone));
+    this.setState({
+      isEditing: false,
+      clone: null
+    });
+  }
+
   renderEditable() {
-    return <CommentEdit item={this.props.item} />;
+    return (
+      <CommentEdit
+        item={this.state.clone}
+        onCancelEdit={this.onCancelEdit}
+        onSaveEdit={this.onSaveEdit}
+      />
+    );
   }
   render() {
     return (
-      <SComment>
+      <>
         {this.state.isEditing ? (
           this.renderEditable()
         ) : (
-          <>
+          <SComment>
             <CommentHeader is_add_form={false} item={this.props.item} />
             <Body>
               <p>{this.props.item.text}</p>
             </Body>
-          </>
+            <CommentFooter
+              is_editable={false}
+              item={this.props.item}
+              onToggleEdit={this.onToggleEdit}
+            />
+          </SComment>
         )}
-        <CommentFooter
-          is_editable={this.state.isEditing}
-          item={this.props.item}
-          onToggleEdit={this.onToggleEdit}
-          onCancelEdit={this.onCancelEdit}
-        />
-      </SComment>
+      </>
     );
   }
 }

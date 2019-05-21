@@ -19,14 +19,31 @@ const SFooter = styled.div`
   }
 `;
 
+const EditIcons = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  button {
+    border: none;
+    background: none;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    font-size: ${font_size.text_sm};
+  }
+`;
+
 export default class CommentFooter extends Component {
   constructor(props) {
     super(props);
   }
 
   onCancelEdit = () => {
-      console.log("cancel")
+    console.log("cancel");
     this.props.onCancelEdit();
+  };
+
+  onSaveEdit = () => {
+    this.props.onSaveEdit();
   };
 
   onToggleEdit = () => {
@@ -37,15 +54,15 @@ export default class CommentFooter extends Component {
     return (
       <SFooter>
         {this.props.is_editable ? (
-          <>
-            <a onClick={this.onCancelEdit}>
+          <EditIcons>
+            <button type="button" onClick={this.onCancelEdit}>
               Cancel
               <Emoji size={font_size.text_sm}>🙅🏼</Emoji>
-            </a>
-            <a>
+            </button>
+            <button type="button" onClick={this.onSaveEdit}>
               Submit<Emoji size={font_size.text_sm}>📝</Emoji>
-            </a>
-          </>
+            </button>
+          </EditIcons>
         ) : (
           <>
             <div>
