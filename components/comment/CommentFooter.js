@@ -72,7 +72,7 @@ export default class CommentFooter extends Component {
               <a onClick={this.onToggleEdit}>
                 <EditIcon />
               </a>
-              <a>
+              <a onClick={this.props.item.remove}>
                 <DeleteIcon />
               </a>
               <a>

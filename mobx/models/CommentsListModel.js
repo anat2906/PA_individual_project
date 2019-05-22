@@ -1,4 +1,4 @@
-import { types } from "mobx-state-tree";
+import { types, getParent, destroy } from "mobx-state-tree";
 
 const CommentsListItem = types
   .model({
@@ -15,6 +15,9 @@ const CommentsListItem = types
   .actions(self => ({
     changeText(new_text) {
       self.text = new_text;
+    },
+    remove() {
+      getParent(self, 2).remove(self)
     }
   }));
 
@@ -25,6 +28,10 @@ const CommentsList = types
   .actions(self => ({
     addItem(item) {
       self.items.push(item);
+    },
+    remove(item) {
+      console.log("remove")
+      destroy(item)
     }
   }));
 

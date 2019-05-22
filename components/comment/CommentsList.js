@@ -11,11 +11,15 @@ const SList = styled.div`
   )}
 `;
 class CommentsList extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <SList {...this.props}>
         {
-          this.props.CommentsList.items.map ((item, idx) => <Comment key={idx} item={item} />
+          this.props.CommentsList.items.map ((item, idx) => <Comment key={idx} item={item}/>
           )
         }
       </SList>

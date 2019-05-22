@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { observer } from "mobx-react";
 import styled from "styled-components";
 import { colors, font_size } from "../../config/var";
 import CommentsList from "./CommentsList";
@@ -18,16 +19,21 @@ const Header = styled.div`
   }
 `;
 
+@observer
 export default class CommentSection extends Component {
   render() {
     return (
       <div>
         <Header>
-          <p>20 comments</p>
+          {this.props.CommentsList.items.length === 1 ? (
+            <p>{this.props.CommentsList.items.length} comment</p>
+          ) : (
+            <p>{this.props.CommentsList.items.length} comments</p>
+          )}
         </Header>
         <div className="pr-5">
           {/* <CommentAdd /> */}
-          <CommentsList level={false} CommentsList = {this.props.CommentsList}/>
+          <CommentsList level={false} CommentsList={this.props.CommentsList} />
         </div>
       </div>
     );
