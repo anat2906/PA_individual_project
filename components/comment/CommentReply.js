@@ -9,8 +9,7 @@ export default class CommentReply extends Component {
       <SComment>
         <CommentHeader
           is_add_form={true}
-          reply_to_first_name={"Dan"}
-          reply_to_last_name={"Smith"}
+          reply_to = {this.props.item.reply_to}
         />
         <CommentForm />
       </SComment>

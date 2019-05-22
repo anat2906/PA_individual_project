@@ -47,11 +47,15 @@ class Comment extends Component {
   }
 
   onSaveEdit() {
-    applySnapshot(this.props.item, getSnapshot(this.state.clone));
-    this.setState({
-      isEditing: false,
-      clone: null
-    });
+    if (this.state.clone.text){
+      applySnapshot(this.props.item, getSnapshot(this.state.clone));
+      this.setState({
+        isEditing: false,
+        clone: null
+      });
+    }else {
+      this.onCancelEdit()
+    }
   }
 
   renderEditable() {

@@ -8,7 +8,7 @@ const CommentsListItem = types
     date: types.string,
     likes_count: types.optional(types.integer, 0),
     children: types.late(() => {
-      return types.array(CommentsListItem)
+      return types.array(CommentsListItem);
     }),
     reply_to: types.optional(types.string, "")
   })
@@ -17,12 +17,12 @@ const CommentsListItem = types
       self.text = new_text;
     },
     remove() {
-      getParent(self, 2).remove(self)
+      getParent(self, 2).remove(self);
     },
     addlike() {
       self.likes_count++;
-      console.log("like")
-    },
+      console.log("like");
+    }
   }));
 
 const CommentsList = types
@@ -31,11 +31,14 @@ const CommentsList = types
   })
   .actions(self => ({
     addItem(item) {
-      self.items.push(item);
+      if (item.text) {
+        self.items.push(item);
+      } else {
+        return;
+      }
     },
     remove(item) {
-      console.log("remove")
-      destroy(item)
+      destroy(item);
     }
   }));
 
