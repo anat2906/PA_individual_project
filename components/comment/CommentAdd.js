@@ -20,10 +20,27 @@ class CommentAdd extends Component {
         reply_to: ""
       })
     };
-  }
+    this.onAdd = this.onAdd.bind(this);
+    this.onTextChange = this.onTextChange.bind(this);
+    this.onCancelEdit = this.onCancelEdit.bind(this)
+  };
 
   onAdd = () => {
     this.props.CommentsList.addItem(this.state.entry);
+    this.setState({
+      entry: CommentsListItem.create({
+        first_name: "New",
+        last_name: "Author",
+        text: "",
+        date: "02/02/2019",
+        likes_count: 0,
+        children: [],
+        reply_to: ""
+      })
+    });
+  };
+
+  onCancelEdit = () => {
     this.setState({
       entry: CommentsListItem.create({
         first_name: "New",
@@ -46,7 +63,7 @@ class CommentAdd extends Component {
       <SComment>
         <CommentHeader is_add_form={true} item={this.state.entry} />
         <CommentForm onTextChange={this.onTextChange} item={this.state.entry} />
-        <CommentFooter is_editable={true} onSaveEdit={this.onAdd} />
+        <CommentFooter is_editable={true} onSaveEdit={this.onAdd} onCancelEdit={this.onCancelEdit}/>
       </SComment>
     );
   }
