@@ -6,7 +6,7 @@ import { TextareaForm } from "../form";
 const STextarea = styled(TextareaForm)`
   width: 100%;
 `;
-
+@observer
 class CommentForm extends Component {
   render() {
     return (

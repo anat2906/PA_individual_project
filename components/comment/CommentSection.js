@@ -32,7 +32,7 @@ export default class CommentSection extends Component {
           )}
         </Header>
         <div className="pr-5">
-          {/* <CommentAdd /> */}
+          <CommentAdd CommentsList={this.props.CommentsList} />
           <CommentsList level={false} CommentsList={this.props.CommentsList} />
         </div>
       </div>
