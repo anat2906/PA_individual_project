@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { observer } from "mobx-react";
 import PT from "prop-types";
 import styled from "styled-components";
 import { colors, font_size } from "../../config/var";
@@ -44,13 +45,10 @@ const Reply = styled.div`
     height: 10px;
   }
 `;
-
+@observer
 export default class CommentHeader extends Component {
   render() {
-    const {
-      is_add_form,
-      item
-    } = this.props;
+    const { is_add_form, item } = this.props;
     return (
       <Header>
         <div className="d-flex align-items-center">
@@ -69,7 +67,9 @@ export default class CommentHeader extends Component {
         {is_add_form ? null : (
           <div>
             <span className="mr-2">{item.likes_count}</span>
-            <LikeIcon />
+            <a onClick={item.addlike}>
+              <LikeIcon />
+            </a>
           </div>
         )}
       </Header>

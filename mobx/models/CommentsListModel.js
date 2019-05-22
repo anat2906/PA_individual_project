@@ -18,7 +18,11 @@ const CommentsListItem = types
     },
     remove() {
       getParent(self, 2).remove(self)
-    }
+    },
+    addlike() {
+      self.likes_count++;
+      console.log("like")
+    },
   }));
 
 const CommentsList = types
