@@ -1,56 +1,88 @@
 import React, { Component } from "react";
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import { colors, font_size } from "../../config/var";
 
-const SButton = styled.button`
-  font-family: "Roboto";
-  font-size: ${font_size.text};
-  font-weight: 600;
-  text-transform: uppercase;
-  color: ${colors.dark_1};
-  padding: 0.1em 0.8em;
-  max-height: 31px;
-  background: white;
-  border: none;
-  border: 3px solid ${colors.dark_1};
-  border-radius: 3px;
-  position: relative;
-  box-shadow: 3px 3px 0px ${colors.dark_1};
-  &::after {
-    display: none;
-    content: " ";
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 3px;
-    background: repeating-linear-gradient(
-      45deg,
-      ${colors.dark_1},
-      ${colors.dark_1} 4px,
-      white 4px,
-      white 8px
-    );
-    background-size: 500%;
-    bottom: -7px;
-    right: -7px;
-    animation: shadow linear 25s;
-    animation-iteration-count: infinite;
+const Global = createGlobalStyle`
+@keyframes shadow {
+  0% {
+    background-position: 0% 50%;
   }
-  &:focus {
-    outline: none;
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+`;
+
+const SButton = styled.div`
+  position: relative;
+  width: auto;
+  max-height: 31px;
+  margin: 0.5em 0;
+  button {
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    max-height: 31px;
+    font-family: "Roboto";
+    font-size: ${font_size.text};
+    font-weight: 600;
+    text-transform: uppercase;
+    color: ${colors.dark_1};
+    padding: 0.1em 0.8em;
+    background: white;
+    border: none;
+    border: 3px solid ${colors.dark_1};
+    border-radius: 3px;
+    box-shadow: 3px 3px 0px ${colors.dark_1};
   }
   &:hover {
-    box-shadow: none;
-    ::after {
+    button {
+      box-shadow: none;
+    }
+    div {
       display: block;
     }
   }
 `;
 
+const SShadow = styled.div`
+  display: none;
+  position: absolute;
+  height: 100%;
+  height: 31px;
+  width: 100%;
+  border-radius: 3px;
+  background: repeating-linear-gradient(
+    45deg,
+    ${colors.dark_1},
+    ${colors.dark_1} 4px,
+    white 4px,
+    white 8px
+  );
+  background-size: 500%;
+  bottom: -5px;
+  right: -7px;
+  animation: shadow linear 25s;
+  animation-iteration-count: infinite;
+  &:focus {
+    outline: none;
+  }
+`;
+
 class Button extends Component {
   render() {
-    return <SButton {...this.props}>{this.props.children}</SButton>;
+    return (
+      <>
+        <Global />
+        <SButton>
+          <button {...this.props}>{this.props.children}</button>
+          <SShadow />
+        </SButton>
+      </>
+    );
   }
 }
 

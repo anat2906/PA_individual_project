@@ -84,7 +84,9 @@ export default class ProfileHeader extends Component {
                 </a>
               </MainInfoName>
               <MainInfoBio>Put your bio right here!</MainInfoBio>
-              <Button>Follow</Button>
+              <Col xs={3} sm={3} md={3} lg={3}>
+                <Button>Follow</Button>
+              </Col>
             </Col>
           </MainInfo>
         </Col>

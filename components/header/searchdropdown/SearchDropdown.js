@@ -5,7 +5,7 @@ import { Col } from "styled-bootstrap-grid";
 import { VideoCard, EventCard } from "./SearchDropdownCard";
 
 const SDropdown = styled.div`
-  display: block;
+  display: none;
   position: absolute;
   z-index: 5;
   width: 100%;

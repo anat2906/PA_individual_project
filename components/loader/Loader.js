@@ -18,6 +18,8 @@ const SLoader = styled.div`
   svg {
     animation: fade linear 1.5s;
     animation-iteration-count: infinite;
+    width: 4em;
+    height: 3em;
   }
 `;
 
