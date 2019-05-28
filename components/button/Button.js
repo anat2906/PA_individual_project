@@ -49,16 +49,8 @@ const SButton = styled.button`
 `;
 
 class Button extends Component {
-    render() {
-    return (
-      <>
-        {this.props.disabled ? (
-          <SBtnDisabled {...this.props}>{this.props.children}</SBtnDisabled>
-        ) : (
-          <SButton {...this.props}>{this.props.children}</SButton>
-        )}
-      </>
-    );
+  render() {
+    return <SButton {...this.props}>{this.props.children}</SButton>;
   }
 }
 

@@ -28,7 +28,7 @@ import Modal from "../components/modal/Modal";
 import { CommentsList } from "../mobx/models/CommentsListModel";
 
 const _CommentsList = CommentsList.create({
-  items: [
+  children: [
     {
       first_name: "First",
       last_name: "Author",

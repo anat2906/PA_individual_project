@@ -19,7 +19,7 @@ class CommentsList extends Component {
     return (
       <SList {...this.props}>
         {
-          this.props.CommentsList.items.map ((item, idx) => <Comment key={idx} item={item}/>
+          this.props.CommentsList.children.map ((item, idx) => <Comment key={idx} item={item}/>
           )
         }
       </SList>

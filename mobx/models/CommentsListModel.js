@@ -1,4 +1,11 @@
-import { types, getParent, destroy } from "mobx-state-tree";
+import {
+  types,
+  getParent,
+  destroy,
+  flow,
+  getRoot,
+  getSnapshot
+} from "mobx-state-tree";
 
 const CommentsListItem = types
   .model({
@@ -22,12 +29,15 @@ const CommentsListItem = types
     addlike() {
       self.likes_count++;
       console.log("like");
+    },
+    createReply(item) {
+      self.children.push(item);
     }
   }));
 
 const CommentsList = types
   .model({
-    items: types.optional(types.array(CommentsListItem), [])
+    children: types.optional(types.array(CommentsListItem), [])
   })
   .actions(self => ({
     addItem(item) {

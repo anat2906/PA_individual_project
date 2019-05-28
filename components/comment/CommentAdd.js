@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { observer } from "mobx-react";
 import { CommentsListItem } from "../../mobx/models/CommentsListModel";
 import CommentHeader from "./CommentHeader";
 import CommentForm from "./CommentForm";

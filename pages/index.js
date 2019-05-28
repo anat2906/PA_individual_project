@@ -16,6 +16,7 @@ import {
 import Button from "../components/button/Button";
 import Emoji from "../components/emoji/Emoji";
 import MainAds from "../components/main/MainAds";
+import Loader from "../components/loader/Loader";
 
 const Index = () => (
   <>
@@ -34,9 +35,12 @@ const Index = () => (
               <ColorBlockContent>
                 <Button className="mb-2">Events</Button>
                 <Button className="mb-2">Speakers</Button>
+                <div>
+                  <Loader />
+                </div>
               </ColorBlockContent>
             </ColorBlock>
-            <MainAds className="mt-4"/>
+            <MainAds className="mt-4" />
           </Section>
         </Col>
         <Col xs={7} sm={7} md={7} lg={7}>

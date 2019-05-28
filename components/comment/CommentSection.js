@@ -25,10 +25,10 @@ export default class CommentSection extends Component {
     return (
       <div>
         <Header>
-          {this.props.CommentsList.items.length === 1 ? (
-            <p>{this.props.CommentsList.items.length} comment</p>
+          {this.props.CommentsList.children.length === 1 ? (
+            <p>{this.props.CommentsList.children.length} comment</p>
           ) : (
-            <p>{this.props.CommentsList.items.length} comments</p>
+            <p>{this.props.CommentsList.children.length} comments</p>
           )}
         </Header>
         <div className="pr-5">

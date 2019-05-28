@@ -23,7 +23,6 @@ class CommentEdit extends Component {
         <CommentForm
           onTextChange={this.onTextChange}
           item={this.props.item}
-          initialText={this.props.item.text}
         />
         <CommentFooter is_editable={true} {...this.props}/>
       </SComment>
