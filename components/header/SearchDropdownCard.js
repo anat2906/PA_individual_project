@@ -34,6 +34,7 @@ const SCardAvatar = styled.div`
 
 const SEventCard = styled.div`
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 0.5em 0.2em;
   h6 {
@@ -49,7 +50,6 @@ const SEventCard = styled.div`
 class VideoCard extends Component {
   constructor(props) {
     super(props);
-    this.state = { is_loading: true };
   }
   render() {
     return (
@@ -64,7 +64,6 @@ class VideoCard extends Component {
 class EventCard extends Component {
   constructor(props) {
     super(props);
-    this.state = { is_loading: true };
   }
   render() {
     return (

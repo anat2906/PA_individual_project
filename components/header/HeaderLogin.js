@@ -10,7 +10,7 @@ const SLoginIcon = styled.div`
   align-items: center;
   cursor: pointer;
   justify-content: end;
-  p {
+  p, a {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
@@ -62,7 +62,7 @@ class HeaderLogin extends Component {
           <LangList />
         </Dropdown>
         <SLoginIcon>
-          <p> Login </p>
+          <a> Login </a>
           <UserIcon />
         </SLoginIcon>
       </Row>
