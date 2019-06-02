@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { colors, font_size } from "../../../config/var";
+import { colors, font_size } from "../../config/var";
 
 const SVideoCard = styled.div`
   text-align: center;

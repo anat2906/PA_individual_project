@@ -7,7 +7,6 @@ const SCard = styled.div`
   position: relative;
   margin-bottom: 0.5em;
   img {
-    filter: blur(1px);
     width: 100%;
     height: 80%;
   }

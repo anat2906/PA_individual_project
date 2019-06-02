@@ -5,7 +5,6 @@ import { colors } from "../../config/var";
 import HeaderLogo from "./HeaderLogo";
 import HeaderLogin from "./HeaderLogin";
 import HeaderSearch from "./HeaderSearch";
-import SearchDropdown from "./searchdropdown/SearchDropdown";
 
 class Header extends Component {
   render() {
@@ -26,7 +25,6 @@ class Header extends Component {
           </Col>
           <Col xs={4} sm={4} md={7} lg={7}>
             <HeaderSearch />
-            <SearchDropdown />
           </Col>
           <Col xs={4} sm={4} md={3} lg={3}>
             <HeaderLogin />

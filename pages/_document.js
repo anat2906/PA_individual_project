@@ -14,7 +14,7 @@ const Global = createGlobalStyle`
       }
 
       a {
-        text-decoraton: none;
+        text-decoration: none;
         color: inherit;
         cursor: pointer;
       }
@@ -33,7 +33,11 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <link rel="shorcut icon" href="static/logo/logo.png" type="image/x-icon" />
+          <link
+            rel="shorcut icon"
+            href="static/logo/logo.png"
+            type="image/x-icon"
+          />
           <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
