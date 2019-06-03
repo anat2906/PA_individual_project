@@ -3,8 +3,8 @@ import { Row, Col, Container } from "styled-bootstrap-grid";
 import Head from "next/head";
 import Header from "../components/header/Header";
 import Section from "../components/section/Section";
-import AccountForm from "../components/accountPage/accountForm";
 import AccountSidebar from "../components/accountPage/accountSidebar";
+import AccountSubscriptions from "../components/accountPage/accountSubscriptions";
 
 export default class AccountPage extends Component {
   render() {
@@ -22,7 +22,7 @@ export default class AccountPage extends Component {
                   <AccountSidebar />
                 </Col>
                 <Col xs={9} sm={9} md={9} lg={9}>
-                  <div/>
+                  <AccountSubscriptions />
                 </Col>
               </Row>
             </Section>
