@@ -37,7 +37,9 @@ export default class FormField extends Component {
           <SInput type="password" {...this.props} />
         ) : this.props.type === "email" ? (
           <SInput type="email" {...this.props} />
-        ) : null}
+        ) : this.props.type === "file" ? (
+          <SInput type="file" {...this.props} />
+        ): null}
       </>
     );
   }

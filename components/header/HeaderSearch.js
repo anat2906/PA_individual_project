@@ -26,7 +26,7 @@ const SResults = styled.div`
 const ResultsSection = styled.div`
   width: 100%;
   padding: 0.3em 0.2em;
-  padding-top: 1em;
+  border-bottom: 1px solid ${colors.shadow};
   h4 {
     font-size: ${font_size.text};
     color: ${colors.dark_2};

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import Link from "next/link";
+import { Link } from "../../routes";
 
 const Logo = styled.div`
   background-image: url("static/logo/logo.png");
@@ -14,7 +14,7 @@ const Logo = styled.div`
 class HeaderLogo extends Component {
   render() {
     return (
-      <Link href="/">
+      <Link route="main">
         <Logo />
       </Link>
     );

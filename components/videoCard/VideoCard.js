@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Link from "next/link";
+import { Link } from "../../routes";
 import styled from "styled-components";
 import { Col } from "styled-bootstrap-grid";
 import STooltip from "../tooltip/Tooltip";
@@ -55,11 +55,9 @@ class VideoCard extends Component {
   render() {
     return (
       <div className="d-flex flex-column" {...this.props}>
-        <Link href="/video">
+        <Link route="video">
           <Video>
-            <img
-              src="static/video.jpg"
-            />
+            <img src="static/video.jpg" />
             <FTitle>
               <span>
                 10 Things I Regret About Node.js - Ryan Dahl - JSConf EU 2018
