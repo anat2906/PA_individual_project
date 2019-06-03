@@ -35,9 +35,6 @@ const Index = () => (
               <ColorBlockContent>
                 <Button className="mb-2">Events</Button>
                 <Button className="mb-2">Speakers</Button>
-                <div>
-                  <Loader />
-                </div>
               </ColorBlockContent>
             </ColorBlock>
             <MainAds className="mt-4" />

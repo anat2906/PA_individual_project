@@ -2,6 +2,7 @@ import React from "react";
 import Document, { Head, Main, NextScript } from "next/document";
 import { createGlobalStyle, ServerStyleSheet } from "styled-components";
 import { colors } from "../config/var";
+import LogoImg  from "../static/logo/logo.png"
 
 const Global = createGlobalStyle`
       * {
@@ -35,7 +36,7 @@ export default class MyDocument extends Document {
         <Head>
           <link
             rel="shorcut icon"
-            href="static/logo/logo.png"
+            href={LogoImg}
             type="image/x-icon"
           />
           <link

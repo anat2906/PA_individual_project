@@ -33,14 +33,15 @@ const SInputWrapper = styled.div`
 const SFieldset = styled.fieldset`
   display: flex;
   flex-direction: column;
-  border: 1px solid ${colors.dark_3} !important;
+  border: 1px solid ${colors.shadow} !important;
   border-radius: 3px;
   padding: 0.5em 1em;
   margin-bottom: 2em;
   legend {
     max-width: 20%;
-    background-color: ${colors.light_3};
+    background-color: ${colors.light_1};
     color: ${colors.dark_1};
+    font-weight: 700;
     padding: 0.2em 0.5em;
     font-size: ${font_size.title_sm};
     border-radius: 3px;

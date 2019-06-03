@@ -4,6 +4,7 @@ import { colors, font_size } from "../../config/var";
 import STooltip from "../tooltip/Tooltip";
 import { FInfo } from "../videoCard/VideoCard";
 import { VideoIcon, FollowersIcon } from "../icons";
+import EventImg from "../../static/react-europe.png";
 
 const SEventCard = styled.div`
   cursor: pointer;
@@ -65,7 +66,7 @@ export default function EventCard(props) {
   return (
     <SEventCard>
       <SCardAvatar>
-        <img src="static/react-europe.png" />
+        <img src={EventImg} />
         <STitle>
           <span>React Europe</span>
         </STitle>

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { colors, font_size } from "../../config/var";
 import { ColorBlock, ColorBlockTitle, ColorBlockContent } from "../block/Block";
 import Emoji from "../emoji/Emoji";
+import { Link } from "../../routes";
 
 const SSidebar = styled.ul`
   list-style-type: none;
@@ -12,19 +13,20 @@ const SSidebar = styled.ul`
     a {
       font-size: ${font_size.text};
       font-weight: 700;
-      text-transform: uppercase;
+      text-transform: capitalize;
       &:hover {
         text-decoration: underline !important;
+        color: inherit !important;
       }
     }
   }
 `;
 
 const SDelete = styled.div`
-  padding-top: 5em;
+  padding-top: 3em;
   a {
     color: red !important;
-    font-size: ${font_size.text};
+    font-size: ${font_size.text_sm};
     &:hover {
       text-decoration: underline !important;
     }
@@ -41,14 +43,18 @@ export default class AccountSidebar extends Component {
         <ColorBlockContent>
           <SSidebar>
             <li>
-              <a>
-                Profile <Emoji size={font_size.text_sm}>👩‍💻</Emoji>
-              </a>
+              <Link route="account_settings">
+                <a>
+                  Profile <Emoji size={font_size.text_sm}>👩‍💻</Emoji>
+                </a>
+              </Link>
             </li>
             <li>
-              <a>
-                Subscriptions <Emoji size={font_size.text_sm}>➕</Emoji>
-              </a>
+              <Link route="account_subscriptions">
+                <a>
+                  Subscriptions <Emoji size={font_size.text_sm}>➕</Emoji>
+                </a>
+              </Link>
             </li>
           </SSidebar>
           <SDelete>

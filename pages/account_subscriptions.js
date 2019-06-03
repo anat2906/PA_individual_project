@@ -11,7 +11,7 @@ export default class AccountPage extends Component {
     return (
       <>
         <Head>
-          <title>Account Details</title>
+          <title>Account Subscriptions</title>
         </Head>
         <Header />
         <main>

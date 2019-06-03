@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { colors, font_size } from "../../config/var";
+import EventImg from "../../static/react-europe.png"
 
 const SVideoCard = styled.div`
   text-align: center;
@@ -69,7 +70,7 @@ class EventCard extends Component {
     return (
       <SEventCard>
         <SCardAvatar>
-          <img src="static/react-europe.png" />
+          <img src={EventImg} />
         </SCardAvatar>
         <h6>Event Name</h6>
       </SEventCard>

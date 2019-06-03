@@ -21,7 +21,7 @@ export const colors = {
 
 export const font_size = {
   title: "25px",
-  title_sm: "18px",
+  title_sm: "20px",
   text: "15px",
   text_sm: "13px"
 };

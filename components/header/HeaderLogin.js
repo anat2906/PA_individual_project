@@ -20,8 +20,8 @@ const SLoginIcon = styled.div`
     margin: 0;
     padding: 0;
     margin-left: 0.5em;
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
   }
 `;
 
