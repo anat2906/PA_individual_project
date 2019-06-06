@@ -7,7 +7,7 @@ import Header from "../components/header/Header";
 import Section from "../components/section/Section";
 import { SectionTitle } from "../components/sidebar/Sidebar";
 import Player from "../components/player/Player";
-import Title from "../components/title/Title";
+import { Title } from "../components/title/Title";
 import Button from "../components/button/Button";
 import Shadow from "../components/box-shadow/Shadow";
 import STooltip from "../components/tooltip/Tooltip";
@@ -23,7 +23,6 @@ import {
   RecommendationsIcon,
   CollectionIcon
 } from "../components/icons";
-import Modal from "../components/modal/Modal";
 //
 import { CommentsList } from "../mobx/models/CommentsListModel";
 

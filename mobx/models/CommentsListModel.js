@@ -2,9 +2,6 @@ import {
   types,
   getParent,
   destroy,
-  flow,
-  getRoot,
-  getSnapshot
 } from "mobx-state-tree";
 
 const CommentsListItem = types

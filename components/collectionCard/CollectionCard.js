@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import PT from "prop-types";
 import { colors, font_size } from "../../config/var";
 import { PlayIcon, PlaylistIcon } from "../icons";
 
@@ -8,7 +9,7 @@ const SCard = styled.div`
   margin-bottom: 0.5em;
   img {
     width: 100%;
-    height: 80%;
+    height: auto;
   }
 `;
 
@@ -64,9 +65,15 @@ export default function CollectionCard(props) {
           <span>5 videos</span>
         </SPlayItem>
       </SPlay>
-      <STitle>
-        <a>My Favourites</a>
-      </STitle>
+      {props.title ? (
+        <STitle>
+          <a>My Favourites</a>
+        </STitle>
+      ) : null}
     </SCard>
   );
 }
+
+CollectionCard.propTypes = {
+  title: PT.bool
+};

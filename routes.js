@@ -9,3 +9,4 @@ routes
 .add({name: "profile", pattern: "/profile", page: "profile"})
 .add({name: "results", pattern: "/results", page: "results"})
 .add({name: "video", pattern: "/video", page: "video"})
+.add({name: "collection", pattern: "/collection", page: "collection"})

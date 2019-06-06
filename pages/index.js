@@ -5,7 +5,7 @@ import { colors, font_size } from "../config/var";
 import Header from "../components/header/Header";
 import Section from "../components/section/Section";
 import MainSlider from "../components/main/MainSlider";
-import Title from "../components/title/Title";
+import { Title } from "../components/title/Title";
 import Shadow from "../components/box-shadow/Shadow";
 import Sidebar from "../components/sidebar/Sidebar";
 import {

@@ -7,4 +7,10 @@ const Title = styled.h2`
   font-weight: 700;
   color: ${colors.dark_1};
 `;
-export default Title;
+const SmTitle = styled.h2`
+  font-family: "Roboto", sans-serif;
+  font-size: ${font_size.title_sm};
+  font-weight: 700;
+  color: ${colors.dark_1};
+`;
+export { Title, SmTitle };
