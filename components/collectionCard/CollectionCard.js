@@ -7,6 +7,7 @@ import { PlayIcon, PlaylistIcon } from "../icons";
 const SCard = styled.div`
   position: relative;
   margin-bottom: 0.5em;
+  cursor: pointer;
   img {
     width: 100%;
     height: auto;

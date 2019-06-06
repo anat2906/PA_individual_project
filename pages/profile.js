@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Container, Col } from "styled-bootstrap-grid";
-import styled from "styled-components";
 import Head from "next/head";
 import { colors, font_size } from "../config/var";
 import Header from "../components/header/Header";
@@ -15,6 +14,7 @@ import {
 import Hashtag from "../components/hashtag/Hashtag";
 import CollectionCard from "../components/collectionCard/CollectionCard";
 import Emoji from "../components/emoji/Emoji";
+import { Link } from "../routes";
 
 export default class ProfilePage extends Component {
   render() {
@@ -33,7 +33,9 @@ export default class ProfilePage extends Component {
               <Col xs={9} sm={9} md={9} lg={9}>
                 <ColorBlock color={colors.accent_4}>
                   <ColorBlockTitle color={colors.accent_4}>
-                    <h5>Videos <Emoji size={font_size.text}>🎞</Emoji></h5>
+                    <h5>
+                      Videos <Emoji size={font_size.text}>🎞</Emoji>
+                    </h5>
                   </ColorBlockTitle>
                   <ColorBlockContent className="d-flex">
                     <Col xs={3} sm={3} md={3} lg={3}>
@@ -74,9 +76,15 @@ export default class ProfilePage extends Component {
                     </h5>
                   </ColorBlockTitle>
                   <ColorBlockContent>
-                    <CollectionCard />
-                    <CollectionCard />
-                    <CollectionCard />
+                    <Link route="collection">
+                      <CollectionCard />
+                    </Link>
+                    <Link route="collection">
+                      <CollectionCard />
+                    </Link>
+                    <Link route="collection">
+                      <CollectionCard />
+                    </Link>
                   </ColorBlockContent>
                 </ColorBlock>
               </Col>
