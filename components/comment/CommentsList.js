@@ -8,8 +8,9 @@ import Comment from "./Comment";
 const SList = styled.div`
   margin-left: ${ifProp(
     "level", "4em" , 0
-  )}
+  )};
 `;
+
 class CommentsList extends Component {
   constructor(props) {
     super(props);

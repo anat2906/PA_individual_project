@@ -37,6 +37,9 @@ class CommentReply extends Component {
         reply_to: ""
       })
     });
+    if (this.props.close){
+      this.props.close()
+    }
   };
 
   onCancelEdit = () => {

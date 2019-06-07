@@ -1,8 +1,4 @@
-import {
-  types,
-  getParent,
-  destroy,
-} from "mobx-state-tree";
+import { types, getParent } from "mobx-state-tree";
 
 const CommentsListItem = types
   .model({
@@ -20,8 +16,11 @@ const CommentsListItem = types
     changeText(new_text) {
       self.text = new_text;
     },
+    removeItem(sub_item) {
+      self.children = self.children.filter(c => c !== sub_item)
+    },
     remove() {
-      getParent(self, 2).remove(self);
+      getParent(self, 2).removeItem(self);
     },
     addlike() {
       self.likes_count++;
@@ -39,13 +38,13 @@ const CommentsList = types
   .actions(self => ({
     addItem(item) {
       if (item.text) {
-        self.items.push(item);
+        self.children.push(item);
       } else {
         return;
       }
     },
-    remove(item) {
-      destroy(item);
+    removeItem(item) {
+      self.children = self.children.filter(c => c !== item);
     }
   }));
 

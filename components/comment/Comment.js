@@ -104,7 +104,14 @@ class Comment extends Component {
                 onCancelReply={this.onCancelReply}
               />
             </SComment>
-            {this.state.reply ? <CommentReply item={this.props.item} /> : null}
+            {this.state.reply ? (
+              <CommentReply
+                item={this.props.item}
+                close={() => this.setState({
+                  reply: false
+                })}
+              />
+            ) : null}
             {this.props.item.children ? (
               <CommentsList CommentsList={this.props.item} />
             ) : null}

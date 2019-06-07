@@ -15,7 +15,7 @@ const SFooter = styled.div`
   }
   span {
     font-family: "PT Mono";
-    font-size: ${font_size.text_sm};ch
+    font-size: ${font_size.text_sm};
   }
 `;
 
