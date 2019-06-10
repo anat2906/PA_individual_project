@@ -1,6 +1,7 @@
 import React from "react";
 import { GridThemeProvider } from "styled-bootstrap-grid";
 import App, { Container } from "next/app";
+import ModalManager from "../components/modal/ModalManager";
 
 const gridTheme = {
   col: {
@@ -17,7 +18,9 @@ export default class MyApp extends App {
     return (
       <Container>
         <GridThemeProvider gridTheme={gridTheme}>
-          <Component {...pageProps} />
+          <ModalManager>
+            <Component {...pageProps} />
+          </ModalManager>
         </GridThemeProvider>
       </Container>
     );

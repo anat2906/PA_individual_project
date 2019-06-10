@@ -4,13 +4,15 @@ import { Row } from "styled-bootstrap-grid";
 import { colors, font_size } from "../../config/var";
 import { LanguageIcon, UserIcon } from "../icons";
 import Dropdown from "../dropdown/Dropdown";
+import withModalManager from "../modal/withModalManager";
 
 const SLoginIcon = styled.div`
   display: flex;
   align-items: center;
   cursor: pointer;
   justify-content: end;
-  p, a {
+  p,
+  a {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
@@ -34,13 +36,17 @@ const SLangList = styled.ul`
       }
     }
   }
-`
+`;
 
 function LangList(props) {
   return (
     <SLangList>
-      <li><a>ru</a></li>
-      <li><a>eng</a></li>
+      <li>
+        <a>ru</a>
+      </li>
+      <li>
+        <a>eng</a>
+      </li>
     </SLangList>
   );
 }
@@ -54,6 +60,20 @@ function LoginIcon() {
   );
 }
 
+const LoginButton = withModalManager(({ modal_manager: { openModal } }) => (
+  <SLoginIcon>
+    <a
+      onClick={() => {
+        openModal("modal");
+      }}
+    >
+      {" "}
+      Login{" "}
+    </a>
+    <UserIcon />
+  </SLoginIcon>
+));
+
 class HeaderLogin extends Component {
   render() {
     return (
@@ -61,10 +81,7 @@ class HeaderLogin extends Component {
         <Dropdown trigger={<LoginIcon />} className="mr-3">
           <LangList />
         </Dropdown>
-        <SLoginIcon>
-          <a> Login </a>
-          <UserIcon />
-        </SLoginIcon>
+        <LoginButton />
       </Row>
     );
   }

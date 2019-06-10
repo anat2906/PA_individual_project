@@ -25,6 +25,7 @@
     "polished": "^3.3.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-modal": "^3.8.1",
     "react-simple-tooltip": "^2.5.0",
     "react-slick": "^0.24.0",
     "react-textarea-autosize": "^7.1.0",

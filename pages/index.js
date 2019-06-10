@@ -17,6 +17,7 @@ import Button from "../components/button/Button";
 import Emoji from "../components/emoji/Emoji";
 import MainAds from "../components/main/MainAds";
 import Loader from "../components/loader/Loader";
+import Modal from "../components/modal/Modal";
 
 const Index = () => (
   <>
@@ -88,6 +89,7 @@ const Index = () => (
             <Sidebar />
           </Section>
         </Col>
+        <Modal name="modal">Modal</Modal>
       </Container>
     </main>
   </>

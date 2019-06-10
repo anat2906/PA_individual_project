@@ -19,6 +19,7 @@ import FollowersIcon from "./FollowersIcon";
 import GithubIcon from "./GithubIcon";
 import LinkedinIcon from "./LinkedinIcon";
 import PlaylistIcon from "./PlaylistIcon";
+import CancelIcon from "./CancelIcon";
 
 export {
   DeleteIcon,
@@ -41,5 +42,6 @@ export {
   FollowersIcon,
   GithubIcon,
   LinkedinIcon,
-  PlaylistIcon
+  PlaylistIcon,
+  CancelIcon
 };
