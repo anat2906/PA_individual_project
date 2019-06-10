@@ -1,23 +1,17 @@
-import React, { Fragment } from "react";
 import Head from "next/head";
-import { Container, Row, Col } from "styled-bootstrap-grid";
-import { colors, font_size } from "../config/var";
-import Header from "../components/header/Header";
-import Section from "../components/section/Section";
-import MainSlider from "../components/main/MainSlider";
-import { Title } from "../components/title/Title";
+import React from "react";
+import { Col, Container } from "styled-bootstrap-grid";
+import { ColorBlock, ColorBlockContent, ColorBlockTitle } from "../components/block/Block";
 import Shadow from "../components/box-shadow/Shadow";
-import Sidebar from "../components/sidebar/Sidebar";
-import {
-  ColorBlock,
-  ColorBlockTitle,
-  ColorBlockContent
-} from "../components/block/Block";
 import Button from "../components/button/Button";
 import Emoji from "../components/emoji/Emoji";
+import Header from "../components/header/Header";
 import MainAds from "../components/main/MainAds";
-import Loader from "../components/loader/Loader";
-import Modal from "../components/modal/Modal";
+import MainSlider from "../components/main/MainSlider";
+import Section from "../components/section/Section";
+import Sidebar from "../components/sidebar/Sidebar";
+import { Title } from "../components/title/Title";
+import { colors, font_size } from "../config/var";
 
 const Index = () => (
   <>
@@ -89,7 +83,6 @@ const Index = () => (
             <Sidebar />
           </Section>
         </Col>
-        <Modal name="modal">Modal</Modal>
       </Container>
     </main>
   </>

@@ -75,7 +75,7 @@ class Modal extends Component {
     return (
       <ReactModal isOpen={isOpen(name)} style={customStyles}>
         <ModalHeader>
-          <h5>Modal header</h5>
+          <h5>{this.props.header}</h5>
           <ModalCancel>
             <a onClick={this.close}>
               <CancelIcon />

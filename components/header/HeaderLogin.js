@@ -5,6 +5,7 @@ import { colors, font_size } from "../../config/var";
 import { LanguageIcon, UserIcon } from "../icons";
 import Dropdown from "../dropdown/Dropdown";
 import withModalManager from "../modal/withModalManager";
+import LoginModal from "../modal/LoginModal";
 
 const SLoginIcon = styled.div`
   display: flex;
@@ -82,6 +83,7 @@ class HeaderLogin extends Component {
           <LangList />
         </Dropdown>
         <LoginButton />
+        <LoginModal name="modal" />
       </Row>
     );
   }
