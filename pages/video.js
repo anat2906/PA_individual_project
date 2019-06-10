@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import styled from "styled-components";
 import Head from "next/head";
+import { Link } from "../routes";
 import { Container, Col } from "styled-bootstrap-grid";
 import { colors, font_size } from "../config/var";
 import Header from "../components/header/Header";
@@ -8,7 +9,6 @@ import Section from "../components/section/Section";
 import Player from "../components/player/Player";
 import { Title } from "../components/title/Title";
 import Button from "../components/button/Button";
-import Shadow from "../components/box-shadow/Shadow";
 import STooltip from "../components/tooltip/Tooltip";
 import { FInfo } from "../components/videoCard/VideoCard";
 import Hashtag from "../components/hashtag/Hashtag";
@@ -72,6 +72,10 @@ const AuthorSection = styled.div`
   border-bottom: 1px solid ${colors.shadow};
   padding-bottom: 1em;
   padding-top: 1em;
+  a {
+    color: ${colors.dark_1};
+  }
+
   svg {
     width: 35px;
     height: 35px;
@@ -81,6 +85,7 @@ const AuthorSection = styled.div`
     margin: 0;
     font-family: "Roboto", sans-serif;
     font-size: ${font_size.text};
+    color: ${colors.dark_1};
   }
 `;
 
@@ -134,10 +139,14 @@ class VideoPage extends Component {
                   <Button>Add to collection</Button>
                 </div>
                 <AuthorSection>
-                  <div className="d-flex align-items-center mr-3">
-                    <UserIcon />
-                    <h6>Username</h6>
-                  </div>
+                  <Link route="profile">
+                    <a>
+                      <div className="d-flex align-items-center mr-3">
+                        <UserIcon />
+                        <h6>Username</h6>
+                      </div>
+                    </a>
+                  </Link>
                   <Button>Follow</Button>
                 </AuthorSection>
                 <ViewsSection>
