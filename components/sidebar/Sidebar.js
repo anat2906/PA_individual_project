@@ -24,8 +24,8 @@ export const SectionTitle = styled.div`
   align-items: center;
   margin-bottom: 0.5em;
   svg {
-    width: 27px;
-    height: 27px;
+    width: ${font_size.title};
+    height: ${font_size.title};
   }
   h5 {
     margin-right: 0.5em;

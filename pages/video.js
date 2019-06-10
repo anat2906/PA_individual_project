@@ -5,14 +5,12 @@ import { Container, Col } from "styled-bootstrap-grid";
 import { colors, font_size } from "../config/var";
 import Header from "../components/header/Header";
 import Section from "../components/section/Section";
-import { SectionTitle } from "../components/sidebar/Sidebar";
 import Player from "../components/player/Player";
 import { Title } from "../components/title/Title";
 import Button from "../components/button/Button";
 import Shadow from "../components/box-shadow/Shadow";
 import STooltip from "../components/tooltip/Tooltip";
 import { FInfo } from "../components/videoCard/VideoCard";
-import VideoCard from "../components/videoCard/VideoCard";
 import Hashtag from "../components/hashtag/Hashtag";
 import { CommentSection } from "../components/comment";
 import {
@@ -20,11 +18,12 @@ import {
   PlayIcon,
   LikeIcon,
   CommentIcon,
-  RecommendationsIcon,
   CollectionIcon
 } from "../components/icons";
 //
 import { CommentsList } from "../mobx/models/CommentsListModel";
+import Recommendations from "../components/videoPage/Recommendations";
+import PlaylistSidebar from "../components/videoPage/PlaylistSidebar";
 
 const _CommentsList = CommentsList.create({
   children: [
@@ -96,9 +95,6 @@ const VideoInfo = styled(FInfo)`
     width: 20px;
     height: 20px;
   }
-  span {
-    16px;
-  }
 `;
 
 const Description = styled.div`
@@ -112,6 +108,9 @@ const Description = styled.div`
 `;
 
 class VideoPage extends Component {
+  static async getInitialProps({ pathname, query }) {
+    return { pathname, query };
+  }
   render() {
     return (
       <>
@@ -194,19 +193,8 @@ class VideoPage extends Component {
             </Col>
             <Col xs={3} sm={3} md={3} lg={3}>
               <Section>
-                <Shadow color={colors.accent_3}>
-                  <SectionTitle className="mb-3">
-                    <h5>Recommended</h5>
-                    <RecommendationsIcon />
-                  </SectionTitle>
-                  <VideoCard className="mb-3" />
-                  <VideoCard className="mb-3" />
-                  <VideoCard className="mb-3" />
-                  <VideoCard className="mb-3" />
-                  <VideoCard className="mb-3" />
-                  <VideoCard className="mb-3" />
-                  <VideoCard className="mb-3" />
-                </Shadow>
+                {this.props.query.playlist ? <PlaylistSidebar /> : null}
+                <Recommendations />
               </Section>
             </Col>
           </Container>

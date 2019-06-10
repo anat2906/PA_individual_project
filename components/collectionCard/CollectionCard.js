@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PT from "prop-types";
+// import { Link } from "../../routes";
 import { colors, font_size } from "../../config/var";
 import { PlayIcon, PlaylistIcon } from "../icons";
 
@@ -54,24 +55,26 @@ const SPlayItem = styled.div`
 
 export default function CollectionCard(props) {
   return (
-    <SCard>
-      <img src="static/video.jpg" />
-      <SPlay>
-        <SPlayItem>
-          <PlayIcon />
-          <span>Play All</span>
-        </SPlayItem>
-        <SPlayItem>
-          <PlaylistIcon />
-          <span>5 videos</span>
-        </SPlayItem>
-      </SPlay>
-      {props.title ? (
-        <STitle>
-          <a>My Favourites</a>
-        </STitle>
-      ) : null}
-    </SCard>
+    // <Link route="video">
+      <SCard>
+        <img src="static/video.jpg" />
+        <SPlay>
+          <SPlayItem>
+            <PlayIcon />
+            <span>Play All</span>
+          </SPlayItem>
+          <SPlayItem>
+            <PlaylistIcon />
+            <span>5 videos</span>
+          </SPlayItem>
+        </SPlay>
+        {props.title ? (
+          <STitle>
+            <a>My Favourites</a>
+          </STitle>
+        ) : null}
+      </SCard>
+    // </Link>
   );
 }
 

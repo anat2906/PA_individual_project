@@ -5,6 +5,7 @@ import { colors, font_size } from "../../config/var";
 import VideoCard from "../videoCard/VideoCard";
 import CollectionCard from "../collectionCard/CollectionCard";
 import { ColorBlock, ColorBlockTitle, ColorBlockContent } from "../block/Block";
+import { Link } from "../../routes";
 
 const SWrapper = styled.div`
   width: 100%;
@@ -38,7 +39,11 @@ export default class Collection extends Component {
           <ColorBlockContent className="d-flex">
             <Col xs={3} sm={3} md={3} lg={3}>
               <SCollectionLeft>
-                <CollectionCard title={false} />
+                <Link route="video" params={{ playlist: "hello!" }}>
+                  <a>
+                    <CollectionCard title={false} />
+                  </a>
+                </Link>
                 <SDescription>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and

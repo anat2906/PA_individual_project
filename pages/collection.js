@@ -22,7 +22,7 @@ export default class CollectionPage extends Component {
         <main>
           <Container>
             <Section>
-              <Title>Collections <Emoji size={font_size.title_sm}>🌟🌟🌟</Emoji></Title>
+              <Title>Collections <Emoji size={font_size.title_sm}>💎💎💎</Emoji></Title>
               <Collection />
             </Section>
             <Section>
