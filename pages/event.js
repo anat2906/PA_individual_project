@@ -4,8 +4,8 @@ import { Container, Col } from "styled-bootstrap-grid";
 import { colors, font_size } from "../config/var";
 import Header from "../components/header/Header";
 import Section from "../components/section/Section";
-import EventHeader from "../components/eventpage/EventHeader";
-import EventVideos from "../components/eventpage/EventVideos"
+import EventHeader from "../components/eventPage/EventHeader";
+import EventVideos from "../components/eventPage/EventVideos";
 
 export default class EventPage extends Component {
   render() {
@@ -19,8 +19,8 @@ export default class EventPage extends Component {
           <Container>
             <Section>
               <EventHeader />
-              <EventVideos />
             </Section>
+            <EventVideos />
           </Container>
         </main>
       </>

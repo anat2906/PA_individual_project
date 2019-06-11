@@ -7,7 +7,7 @@ const SEventHeader = styled.div`
   display: flex;
   padding: 1.5em 0.5em;
   align-items: center;
-  background: ${colors.light_1};
+  background: ${colors.light_2};
   border-radius: 3px;
   justify-content: center;
 `;
@@ -49,9 +49,9 @@ export default function EventHeader() {
     <SEventHeader>
         <MainInfoEvent>
           <MainInfoTitle>
-            <h2>This is title of event</h2>
+            <h2>React Amsterdam</h2>
           </MainInfoTitle>
-          <MainInfoDate>25/05/2019</MainInfoDate>
+          <MainInfoDate>25/05/2019 - 26/05/2019</MainInfoDate>
           <MainInfoDesc>Loooong description of event is here!</MainInfoDesc>
         </MainInfoEvent>
     </SEventHeader>
