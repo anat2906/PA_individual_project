@@ -77,13 +77,19 @@ export default class ProfilePage extends Component {
                   </ColorBlockTitle>
                   <ColorBlockContent>
                     <Link route="collection">
-                      <CollectionCard />
+                      <a>
+                        <CollectionCard />
+                      </a>
                     </Link>
                     <Link route="collection">
-                      <CollectionCard />
+                      <a>
+                        <CollectionCard />
+                      </a>
                     </Link>
                     <Link route="collection">
-                      <CollectionCard />
+                      <a>
+                        <CollectionCard />
+                      </a>
                     </Link>
                   </ColorBlockContent>
                 </ColorBlock>
