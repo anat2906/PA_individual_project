@@ -16,7 +16,6 @@ export default function VideoIcon(props) {
       color="#333333"
     >
       {" "}
-      <title id="filmIconTitle">Film</title>{" "}
       <desc id="filmIconDesc">Icon of a movie camera (camcoder)</desc>{" "}
       <path strokeLinecap="round" d="M16 10.087l5-1.578v7.997l-4.998-1.578" />{" "}
       <path d="M16 7H3v11h13z" />{" "}

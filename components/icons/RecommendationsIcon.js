@@ -16,7 +16,6 @@ export default function RecommendationsIcon(props) {
       color="#333333"
     >
       {" "}
-      <title id="happyFaceIconTitle">Happy Face</title>{" "}
       <desc id="happyFaceIconDesc">Icon of a face with a smile</desc>{" "}
       <path d="M7.3010863,14.0011479 C8.0734404,15.7578367 9.98813711,17 11.9995889,17 C14.0024928,17 15.913479,15.7546194 16.6925307,14.0055328" />{" "}
       <line strokeLinecap="round" x1="9" y1="9" x2="9" y2="9" />{" "}

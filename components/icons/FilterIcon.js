@@ -15,7 +15,6 @@ export default function FilterIcon(props) {
       color="#333333"
     >
       {" "}
-      <title id="filterIconTitle">Filter</title>{" "}
       <desc id="filterIconDesc">Icon of a funnel</desc>{" "}
       <path d="M10 12.261L4.028 3.972h16L14 12.329V17l-4 3z" />{" "}
     </svg>

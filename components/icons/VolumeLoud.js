@@ -16,7 +16,6 @@ export default function VolumeLoudIcon(props) {
       color="#333333"
     >
       {" "}
-      <title id="volumeLoudIconTitle">Volume Loud</title>{" "}
       <desc id="volumeLoudIconDesc">High level volume</desc>{" "}
       <path d="M13 5v14l-5-4H3V9h5z" />{" "}
       <path strokeLinecap="round" d="M13 14c1.5-1 1.5-3 0-4" />{" "}

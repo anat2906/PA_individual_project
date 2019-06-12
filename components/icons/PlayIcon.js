@@ -16,7 +16,6 @@ export default function PlayIcon(props) {
       color="#333333"
     >
       {" "}
-      <title id="playIconTitle">Play</title>{" "}
       <desc id="playIconDesc">Play the currently selected track</desc>{" "}
       <path d="M20 12L5 21V3z" />{" "}
     </svg>

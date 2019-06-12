@@ -15,7 +15,6 @@ export default function PlaylistIcon(props) {
       color="#333333"
     >
       {" "}
-      <title id="listAltIconTitle" />{" "}
       <desc id="listAltIconDesc">
         Icon of a unordered list with a bigger highlighted item on top
       </desc>{" "}

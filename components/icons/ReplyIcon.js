@@ -15,7 +15,6 @@ export default function ReplyIcon(props) {
       color="#333333"
     >
       {" "}
-      <title id="directionLeftIconTitle">Turn Left</title>{" "}
       <desc id="directionLeftIconDesc">Icon of a arrow turning left</desc>{" "}
       <path d="M6,7 L13.1666667,7 C17.0555556,7 19,8.94444444 19,12.8333333 C19,16.7222222 19,19.4444444 19,21" />{" "}
       <polyline points="8 10 5 7 8 4 8 4" />{" "}

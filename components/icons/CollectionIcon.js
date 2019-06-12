@@ -15,7 +15,6 @@ export default function CollectionIcon(props) {
       color="#333333"
     >
       {" "}
-      <title id="starIconTitle">Star</title>{" "}
       <desc id="starIconDesc">Icon of a five-pointed star</desc>{" "}
       <polygon points="12 17.844 6.183 20.902 7.294 14.425 2.588 9.838 9.092 8.893 12 3 14.908 8.893 21.412 9.838 16.706 14.425 17.817 20.902" />{" "}
     </svg>

@@ -16,7 +16,6 @@ export default function LanguageIcon(props) {
       color="#333333"
     >
       {" "}
-      <title id="languageIconTitle">Language</title>{" "}
       <desc id="languageIconDesc">Icon of a globe</desc>{" "}
       <circle cx="12" cy="12" r="10" />{" "}
       <path

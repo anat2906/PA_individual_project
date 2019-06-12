@@ -16,7 +16,6 @@ export default function CommentIcon(props) {
       color="#333333"
     >
       {" "}
-      <title id="chatAltIconTitle">Chat</title>{" "}
       <desc id="chatAltIconDesc">Icon of a rectangular chat bubble</desc>{" "}
       <path d="M13,17 L7,21 L7,17 L3,17 L3,4 L21,4 L21,17 L13,17 Z" />{" "}
     </svg>
